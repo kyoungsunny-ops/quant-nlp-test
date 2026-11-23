@@ -1,0 +1,60 @@
+name: Quant V3.2 (12시 / 21시)
+
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'    # 한국시간 12:00 (UTC 03:00), 월~금
+    - cron: '0 12 * * 1-5'   # 한국시간 21:00 (UTC 12:00), 월~금
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '슬롯 강제 지정 (비우면 현재 시각으로 자동 판단)'
+        required: false
+        type: choice
+        options: ['', '1200', '2100']
+      force:
+        description: '휴장일/데이터 미반영이어도 강제 실행 (1 = 예)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quant-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy tqdm requests scipy scikit-learn
+
+      - name: Run quant (파일명이 다르면 quant_v32.py 부분을 수정하세요)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_SLOT: ${{ github.event.inputs.slot }}
+          FORCE_RUN: ${{ github.event.inputs.force }}
+        run: python quant_v32.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data *.csv
+          if git diff --staged --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "update quant results ($(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M KST'))"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
