@@ -120,6 +120,44 @@ def ma5_status(r):
     return '5일선 위' if up_now else '5일선 아래'
 
 # ------------------------------------------------------------
+# 한글 종목명 (캐시 data/names.json -> FinanceDataReader -> 네이버 순서로 시도, 모두 실패하면 영문명 유지)
+# ------------------------------------------------------------
+NAMES_FILE = f'{JSON_DIR}/names.json'
+
+def load_names():
+    try:
+        with open(NAMES_FILE, encoding='utf-8') as f: return json.load(f)
+    except: return {}
+
+def fetch_korean_names(codes, cache):
+    missing = [c for c in codes if c not in cache]
+    if not missing: return cache
+    # 1) FinanceDataReader 상장 종목 목록
+    try:
+        if importlib.util.find_spec('FinanceDataReader') is None:
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-q', 'finance-datareader'])
+        import FinanceDataReader as fdr
+        lst = fdr.StockListing('KRX')
+        m = dict(zip(lst['Code'].astype(str).str.zfill(6), lst['Name']))
+        for c in missing:
+            if m.get(c): cache[c] = str(m[c])
+    except Exception as e:
+        print('[한글명] FinanceDataReader 실패:', e)
+    # 2) 네이버 모바일 API (남은 종목만)
+    for c in [c for c in missing if c not in cache]:
+        try:
+            r = requests.get(f'https://m.stock.naver.com/api/stock/{c}/basic',
+                             headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
+            nm = r.json().get('stockName') if r.status_code == 200 else None
+            if nm: cache[c] = nm
+        except Exception as e:
+            print(f'[한글명] 네이버 조회 실패 {c}:', e)
+        time.sleep(0.3)
+    left = [c for c in missing if c not in cache]
+    print(f'[한글명] 신규 {len(missing)}개 중 {len(missing)-len(left)}개 성공' + (f', 실패(영문명 유지): {left}' if left else ''))
+    return cache
+
+# ------------------------------------------------------------
 # 동적 유니버스 수집 (yf.screen)
 # ------------------------------------------------------------
 def get_top(exchange, market, n):
@@ -344,6 +382,14 @@ for df in (top10, top30):
     df['ma5_status'] = df.apply(ma5_status, axis=1)
     df['rank_change'] = df['prev_rank'] - df['rank']   # 양수 = 순위 상승
 
+# 한글 종목명 적용 (원래 이름은 name_en에 보관)
+names_cache = fetch_korean_names(sorted(set(top30['code']) | set(top10['code'])), load_names())
+with open(NAMES_FILE, 'w', encoding='utf-8') as f:
+    json.dump(names_cache, f, ensure_ascii=False, indent=1, sort_keys=True)
+for df in (top10, top30):
+    df['name_en'] = df['name']
+    df['name'] = df['code'].map(names_cache).fillna(df['name'])
+
 top10.to_csv(TOP10_FILE, index=False, encoding='utf-8-sig')
 top30.to_csv(TOP30_FILE, index=False, encoding='utf-8-sig')
 
@@ -362,7 +408,7 @@ if not IS_INTRADAY:
 # JSON 저장 (정적 웹페이지가 읽는 파일)
 # ------------------------------------------------------------
 date_disp = current_analysis_date.strftime('%Y-%m-%d')
-json_cols = ['rank','rank_change','prev_rank','code','ticker','name','market','price','ret1','ret5','ret20',
+json_cols = ['rank','rank_change','prev_rank','code','ticker','name','name_en','market','price','ret1','ret5','ret20',
              'ma5','ma20','ma60','ma120','ma5_gap','ma20_gap','ma5_status','rsi14','macd_hist',
              'volume_ratio','atr_pct','risk_score','final_score','grade',
              'target_price','target_return','stop_price','stop_return']
