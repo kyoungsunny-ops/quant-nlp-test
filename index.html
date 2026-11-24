@@ -59,7 +59,7 @@ main{display:grid;grid-template-columns:380px 1fr;gap:16px;padding:16px 20px;max
 .bar i{position:absolute;top:0;bottom:0;left:0;border-radius:4px;background:var(--ink)}
 .bar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--sub)}
 dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:7px 12px}
-dt{color:var(--sub)}dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+dt{color:var(--sub);position:relative}dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
 .hr{border:0;border-top:1px solid var(--line);margin:12px 0}
 .item{padding:10px 0;border-top:1px solid var(--line)}
 .item:first-of-type{border-top:0;padding-top:0}
@@ -68,6 +68,11 @@ dt{color:var(--sub)}dd{margin:0;font-weight:600;font-variant-numeric:tabular-num
 .pill.pos{background:var(--agree-bg);color:var(--agree)}.pill.neg{background:var(--split-bg);color:var(--split)}.pill.neu{background:var(--bg);color:var(--sub)}
 .issues{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
 .issues span{border:1px solid var(--line);border-radius:14px;padding:1px 10px;font-size:12.5px}
+.tip{display:inline-block;position:relative;margin-left:5px;width:16px;height:16px;line-height:14px;text-align:center;font-size:11px;font-weight:700;font-style:normal;border:1px solid var(--sub);color:var(--sub);border-radius:50%;cursor:help;vertical-align:middle;outline:none}
+.tip:focus{border-color:var(--ink);color:var(--ink)}
+.tip .box{display:none;position:absolute;left:-8px;top:22px;z-index:20;width:280px;max-width:calc(100vw - 56px);padding:10px 12px;background:var(--ink);color:var(--panel);border-radius:8px;font-size:12.5px;font-weight:400;line-height:1.55;text-align:left;box-shadow:0 4px 14px rgba(0,0,0,.28);white-space:normal}
+.tip:hover .box,.tip:focus .box{display:block}
+.tip .box b{display:block;margin-bottom:3px;font-size:13px}
 .empty{color:var(--sub);padding:18px 4px;text-align:center}
 .err{max-width:760px;margin:40px auto;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
 footer{max-width:1280px;margin:0 auto;padding:4px 20px 24px;color:var(--sub);font-size:12px}
@@ -85,7 +90,7 @@ footer{max-width:1280px;margin:0 auto;padding:4px 20px 24px;color:var(--sub);fon
 
 <script>
 // ===== 설정 =====
-var SHOW_TARGET = false;     // 목표가·기대수익률 표시 여부 (공개 페이지는 false 권장)
+var SHOW_TARGET = true;     // 목표가·기대수익률 표시 여부 (공개 페이지는 false 권장)
 var QUANT_STRONG = 60;       // 뉴스·공시 분석 연결 시 "퀀트 강함" 기준 점수 (실제 데이터 보며 조정)
 var SOURCES = [              // 앞에서부터 시도 (raw는 최신 커밋을 몇 분 내 반영)
   "https://raw.githubusercontent.com/kyoungsunny-ops/quant-nlp-test/main/data/",
@@ -109,6 +114,24 @@ function loadJson(name, required){
   return next();
 }
 
+var TIPS={
+score:"<b>최종 점수 · 등급 · 순위</b>점수 = (모멘텀 25 + 상대강도 15 + 추세 15 + 가속도 10 + 수급 10 + 기술 10) − 위험점수. 여기에 전일 종가 점수를 30% 섞어 순위가 하루 만에 크게 흔들리지 않게 합니다. 이론상 최대 약 85점입니다.<br>등급: 85↑ A+ · 78↑ A · 70↑ B+ · 62↑ B · 55↑ C · 미만 D<br>순위는 과열·급락 종목을 제외한 뒤 점수순으로 매깁니다.",
+ma5:"<b>5일선</b>최근 5거래일 종가의 평균입니다. 이격(%) = (현재가 ÷ 5일선 − 1) × 100. 현재가가 위에 있으면 단기 상승 우위입니다.<br><b>상승전환</b>: 어제는 5일선 아래, 오늘은 위. <b>하락전환</b>은 그 반대입니다.",
+ma20:"<b>20일선</b>최근 20거래일 종가 평균(약 한 달)입니다. 이격이 크면 단기 과열 가능성이 있어, 위험 점수에서 12%↑ +2, 20%↑ +4가 붙고 현재가가 20일선 아래면 +4가 붙습니다.",
+ma60:"<b>60일선 / 120일선</b>각각 최근 60·120거래일 종가 평균(중장기 추세선)입니다. 현재가 &gt; 20일선 &gt; 60일선 &gt; 120일선 순서(정배열)일수록 추세 점수가 높습니다.",
+ret:"<b>수익률</b>(오늘 종가 ÷ n거래일 전 종가 − 1) × 100. 5일은 약 1주, 20일은 약 1개월 상승률입니다. 20일 수익률이 매우 크면 모멘텀은 높지만 이미 많이 오른 종목이라는 뜻이기도 합니다. 5일 +30%↑는 순위에서 제외됩니다.",
+rsi:"<b>RSI(14)</b>최근 14일의 상승폭과 하락폭의 균형을 0~100으로 나타냅니다. RSI = 100 − 100 ÷ (1 + 평균상승폭 ÷ 평균하락폭). 50↑ 상승 우위, 70↑ 과열권으로 봅니다.<br>이 점수 체계에서는 50~68이면 가점(+4), 65↑부터 위험 가산, 80↑는 순위에서 제외합니다.",
+macd:"<b>MACD 모멘텀 (가격 대비 %)</b>MACD = 12일 지수이평 − 26일 지수이평, 시그널 = MACD의 9일 지수이평, 히스토그램 = MACD − 시그널. 히스토그램은 원 단위라 주가가 높은 종목일수록 크게 나와 종목끼리 비교할 수 없습니다. 그래서 <b>현재가로 나눈 % 값</b>으로 바꿔 보여줍니다.<br>+(붉은색): 상승 모멘텀이 시그널보다 강함 / −(파란색): 약해짐. 절댓값이 클수록 그 정도가 큽니다. 점수 계산에는 부호만 쓰입니다(양수 +3점, 음수는 위험 +1.5).",
+vol:"<b>거래량 비율</b>최근 5일 평균 거래량 ÷ 최근 20일 평균 거래량. 1.0을 넘으면 최근 거래가 평소보다 많다는 뜻입니다. 점수에는 거래대금 비율도 함께 반영됩니다. 12시 데이터는 장중 누적이라 낮게 나옵니다.",
+atr:"<b>변동성 (ATR%)</b>ATR = 일간 변동폭(고가−저가, 전일 종가 대비 갭 포함)의 14일 지수이평. ATR% = ATR ÷ 현재가 × 100. 하루 평균 움직임 폭이라 클수록 위험하지만 움직임도 큽니다. 4.5%↑ 위험 +2.5, 6%↑ +4, 10%↑는 순위에서 제외됩니다.",
+risk:"<b>위험 점수</b>최대 25점, 최종 점수에서 차감됩니다. RSI 과열, 20일 고점 근접, 5일 급등, 높은 변동성, 급락, 20일선 이탈, 이동평균과의 과도한 이격, 상승 둔화, MACD 음수 등 해당 항목의 가산점을 모두 더한 값입니다. 낮을수록 안정적입니다."
+};
+function tip(k){return '<span class="tip" tabindex="0" role="button" aria-label="설명 보기">?<span class="box" role="tooltip">'+TIPS[k]+'</span></span>'}
+function macdTxt(s){
+  if(s.macd_hist==null||!s.price)return "-";
+  var v=s.macd_hist/s.price*100;
+  return '<span class="'+cl(v)+'">'+pc(v,2)+'</span> '+(v>0?"상승 우위":v<0?"하락 우위":"중립");
+}
 function statusClass(s){return s==="상승전환"?"agree":s==="하락전환"?"split":"flat"}
 function rel(st){
   var nl=NLP&&NLP.stocks&&NLP.stocks[st.code]; if(!nl) return null;
@@ -163,15 +186,15 @@ function renderDetail(){
    '<div class="price">'+num(s.price)+'원 <span class="'+cl(s.ret1)+'" style="font-size:14px">'+pc(s.ret1)+'</span></div></div>'+
    (r&&r.k!=="flat"?'<div class="verdict '+r.k+'">'+r.tag+'<span>'+r.t+'. '+r.d+'</span></div>':"")+
    '<div class="cols"><div class="panel col"><h3>퀀트 분석</h3><p class="sub">가격·거래량 기반, 코드로 계산</p>'+
-   '<div class="big">'+num(s.final_score,1)+'<small> / 100 · '+esc(s.grade)+' · '+s.rank+'위</small></div>'+
+   '<div class="big">'+num(s.final_score,1)+'<small> / 100 · '+esc(s.grade)+' · '+s.rank+'위'+tip('score')+'</small></div>'+
    '<div class="bar"><i style="width:'+Math.max(0,Math.min(100,s.final_score))+'%"></i></div>'+
-   '<dl><dt>5일선</dt><dd>'+num(s.ma5)+' ('+pc(s.ma5_gap,1)+') '+esc(s.ma5_status)+'</dd>'+
-   '<dt>20일선</dt><dd>'+num(s.ma20)+' ('+pc(s.ma20_gap,1)+')</dd>'+
-   '<dt>60일선 / 120일선</dt><dd>'+num(s.ma60)+' / '+num(s.ma120)+'</dd>'+
-   '<dt>수익률 5일 / 20일</dt><dd><span class="'+cl(s.ret5)+'">'+pc(s.ret5,1)+'</span> / <span class="'+cl(s.ret20)+'">'+pc(s.ret20,1)+'</span></dd>'+
-   '<dt>RSI(14)</dt><dd>'+num(s.rsi14,0)+'</dd><dt>MACD 히스토그램</dt><dd>'+num(s.macd_hist,2)+'</dd>'+
-   '<dt>거래량 비율(5일/20일)</dt><dd>'+num(s.volume_ratio,2)+'배</dd><dt>변동성(ATR%)</dt><dd>'+num(s.atr_pct,1)+'%</dd>'+
-   '<dt>위험 점수</dt><dd>'+num(s.risk_score,1)+'</dd></dl>'+tgt+'</div>'+
+   '<dl><dt>5일선'+tip('ma5')+'</dt><dd>'+num(s.ma5)+' ('+pc(s.ma5_gap,1)+') '+esc(s.ma5_status)+'</dd>'+
+   '<dt>20일선'+tip('ma20')+'</dt><dd>'+num(s.ma20)+' ('+pc(s.ma20_gap,1)+')</dd>'+
+   '<dt>60일선 / 120일선'+tip('ma60')+'</dt><dd>'+num(s.ma60)+' / '+num(s.ma120)+'</dd>'+
+   '<dt>수익률 5일 / 20일'+tip('ret')+'</dt><dd><span class="'+cl(s.ret5)+'">'+pc(s.ret5,1)+'</span> / <span class="'+cl(s.ret20)+'">'+pc(s.ret20,1)+'</span></dd>'+
+   '<dt>RSI(14)'+tip('rsi')+'</dt><dd>'+num(s.rsi14,0)+'</dd><dt>MACD 모멘텀(가격 대비)'+tip('macd')+'</dt><dd>'+macdTxt(s)+'</dd>'+
+   '<dt>거래량 비율(5일/20일)'+tip('vol')+'</dt><dd>'+num(s.volume_ratio,2)+'배</dd><dt>변동성(ATR%)'+tip('atr')+'</dt><dd>'+num(s.atr_pct,1)+'%</dd>'+
+   '<dt>위험 점수'+tip('risk')+'</dt><dd>'+num(s.risk_score,1)+'</dd></dl>'+tgt+'</div>'+
    nlpPanel(s)+'</div>';
 }
 function render(){
