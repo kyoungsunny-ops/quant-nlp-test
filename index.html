@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>QUANT V3.2 TOP 30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f5;--panel:#fff;--ink:#14202e;--sub:#5b6878;--line:#d9dfe7;
+  --up:#d6342c;--down:#1f5fbf;--agree:#1d7a55;--agree-bg:#e1f2ea;--split:#a85a00;--split-bg:#fdeed8;--sel:#e4ecf8}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0e141b;--panel:#161e28;--ink:#e6ebf1;--sub:#93a0b0;--line:#27323f;
+  --up:#ff6b61;--down:#6ea2f0;--agree:#5fd0a0;--agree-bg:#163528;--split:#ffb04d;--split-bg:#3a2a10;--sel:#1f2d42}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Malgun Gothic",sans-serif;font-size:14px;line-height:1.55;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+header{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--panel)}
+h1{font-size:17px;margin:0;font-weight:700}
+.meta{color:var(--sub);font-size:12.5px}
+.banner{max-width:1280px;margin:12px auto 0;padding:9px 14px;background:var(--split-bg);color:var(--split);border-radius:8px;font-size:13px;font-weight:600}
+main{display:grid;grid-template-columns:380px 1fr;gap:16px;padding:16px 20px;max-width:1280px;margin:0 auto}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.list-head{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.filter{display:flex;gap:4px;flex-wrap:wrap}
+.filter button{font:inherit;font-size:12px;padding:3px 9px;border:1px solid var(--line);background:transparent;color:var(--sub);border-radius:14px;cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.row{display:grid;grid-template-columns:28px 1fr auto;gap:2px 10px;width:100%;text-align:left;font:inherit;color:inherit;background:transparent;border:0;border-bottom:1px solid var(--line);padding:10px 14px;cursor:pointer;align-items:center}
+.row:last-child{border-bottom:0}
+.row:hover,.row[aria-selected="true"]{background:var(--sel)}
+.row[aria-selected="true"]{box-shadow:inset 3px 0 0 var(--ink)}
+.row:focus-visible,.filter button:focus-visible{outline:2px solid var(--down);outline-offset:-2px}
+.rk{font-weight:700;font-variant-numeric:tabular-nums;color:var(--sub)}
+.nm{font-weight:600}.cd{color:var(--sub);font-size:12px;margin-left:6px;font-weight:400}
+.sc{font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.sub{color:var(--sub);font-size:12.5px}
+.tag{font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:4px;justify-self:end;white-space:nowrap}
+.tag.agree{background:var(--agree-bg);color:var(--agree)}
+.tag.split{background:var(--split-bg);color:var(--split)}
+.tag.flat{background:var(--bg);color:var(--sub)}
+.mv{font-size:11.5px;margin-left:6px;font-weight:600}
+.up{color:var(--up)}.down{color:var(--down)}
+.detail{display:flex;flex-direction:column;gap:16px;min-width:0}
+.top{padding:16px 18px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+.top h2{margin:0;font-size:22px}
+.price{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.verdict{padding:12px 18px;border-radius:8px;font-weight:600}
+.verdict.agree{background:var(--agree-bg);color:var(--agree)}
+.verdict.split{background:var(--split-bg);color:var(--split)}
+.verdict span{font-weight:400;font-size:13px;color:var(--ink);margin-left:6px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col{padding:16px 18px;min-width:0}
+.col h3{margin:0 0 2px;font-size:15px}
+.col .sub{margin:0 0 14px}
+.big{font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.big small{font-size:14px;color:var(--sub);font-weight:400}
+.bar{height:8px;border-radius:4px;background:var(--bg);margin:8px 0 14px;position:relative;overflow:hidden}
+.bar i{position:absolute;top:0;bottom:0;left:0;border-radius:4px;background:var(--ink)}
+.bar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--sub)}
+dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:7px 12px}
+dt{color:var(--sub)}dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.hr{border:0;border-top:1px solid var(--line);margin:12px 0}
+.item{padding:10px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0;padding-top:0}
+.item .t{font-weight:600;margin-bottom:2px}.item .s{color:var(--sub);font-size:12.5px}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;padding:0 7px;border-radius:4px;margin-right:6px}
+.pill.pos{background:var(--agree-bg);color:var(--agree)}.pill.neg{background:var(--split-bg);color:var(--split)}.pill.neu{background:var(--bg);color:var(--sub)}
+.issues{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.issues span{border:1px solid var(--line);border-radius:14px;padding:1px 10px;font-size:12.5px}
+.empty{color:var(--sub);padding:18px 4px;text-align:center}
+.err{max-width:760px;margin:40px auto;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+footer{max-width:1280px;margin:0 auto;padding:4px 20px 24px;color:var(--sub);font-size:12px}
+@media(max-width:900px){main{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">QUANT V3.2 TOP 30</h1>
+  <div class="meta" id="asof">불러오는 중…</div>
+</header>
+<div id="banner"></div>
+<div id="app"></div>
+<footer>본 화면은 투자 권유가 아닌 참고용 정보입니다. 점수·지표는 프로그램이 계산하며, 데이터는 지연되거나 오류가 있을 수 있습니다.</footer>
+
+<script>
+// ===== 설정 =====
+var SHOW_TARGET = false;     // 목표가·기대수익률 표시 여부 (공개 페이지는 false 권장)
+var QUANT_STRONG = 60;       // 뉴스·공시 분석 연결 시 "퀀트 강함" 기준 점수 (실제 데이터 보며 조정)
+var SOURCES = [              // 앞에서부터 시도 (raw는 최신 커밋을 몇 분 내 반영)
+  "https://raw.githubusercontent.com/kyoungsunny-ops/quant-nlp-test/main/data/",
+  "data/"
+];
+
+var DATA=null, NLP=null, state={sel:0,f:"all"};
+function el(id){return document.getElementById(id)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function num(v,d){return v==null?"-":Number(v).toLocaleString("ko-KR",{minimumFractionDigits:d||0,maximumFractionDigits:d||0})}
+function pc(v,d){return v==null?"-":(v>0?"+":"")+Number(v).toFixed(d==null?2:d)+"%"}
+function cl(v){return v==null||v===0?"":(v>0?"up":"down")}
+
+function loadJson(name, required){
+  var i=0;
+  function next(){
+    if(i>=SOURCES.length) return required?Promise.reject(new Error(name+" 을(를) 불러오지 못했습니다")):Promise.resolve(null);
+    var url=SOURCES[i++]+name+"?t="+Date.now();
+    return fetch(url,{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(next);
+  }
+  return next();
+}
+
+function statusClass(s){return s==="상승전환"?"agree":s==="하락전환"?"split":"flat"}
+function rel(st){
+  var nl=NLP&&NLP.stocks&&NLP.stocks[st.code]; if(!nl) return null;
+  var q=st.final_score>=QUANT_STRONG, s=nl.score;
+  if(q&&s<=-30) return{k:"split",tag:"엇갈림",t:"퀀트는 강하고 공시·뉴스는 부정적입니다",d:"점수만 보지 말고 악재 내용을 먼저 확인하세요."};
+  if(!q&&s>=30) return{k:"split",tag:"엇갈림",t:"공시·뉴스는 긍정적이나 퀀트 점수는 낮습니다",d:"호재가 가격 흐름에 반영되는지 더 지켜볼 구간입니다."};
+  if((q&&s>=30)||(!q&&s<=-30)) return{k:"agree",tag:"일치",t:q?"퀀트와 공시·뉴스가 모두 긍정적입니다":"퀀트와 공시·뉴스가 모두 부정적입니다",d:"두 신호가 같은 방향입니다."};
+  return{k:"flat",tag:"중립",t:"뚜렷한 방향성이 없습니다",d:""};
+}
+function visible(){
+  return DATA.stocks.map(function(s,i){return i}).filter(function(i){
+    var s=DATA.stocks[i];
+    if(state.f==="turn") return s.ma5_status==="상승전환";
+    if(state.f==="above") return s.ma5_status==="상승전환"||s.ma5_status==="5일선 위";
+    if(state.f==="split"){var r=rel(s);return r&&r.k==="split"}
+    return true;});
+}
+function moveTag(c){
+  if(c==null) return "";
+  if(c>0) return '<span class="mv up">▲'+c+'</span>';
+  if(c<0) return '<span class="mv down">▼'+(-c)+'</span>';
+  return '<span class="mv sub">-</span>';
+}
+function renderList(){
+  var ids=visible(),h="";
+  ids.forEach(function(i){var s=DATA.stocks[i],r=rel(s);
+    h+='<button class="row" data-i="'+i+'" aria-selected="'+(i===state.sel)+'">'+
+      '<span class="rk">'+s.rank+'</span>'+
+      '<span><span class="nm">'+esc(s.name)+'</span><span class="cd">'+esc(s.code)+'</span>'+moveTag(s.rank_change)+'</span>'+
+      '<span class="sc">'+num(s.final_score,1)+'</span>'+
+      '<span></span><span class="sub">'+num(s.price)+'원 · RSI '+num(s.rsi14,0)+'</span>'+
+      '<span class="tag '+(r?r.k:statusClass(s.ma5_status))+'">'+esc(r?r.tag:s.ma5_status)+'</span></button>';});
+  el("list").innerHTML=h||'<div class="empty">조건에 맞는 종목이 없습니다. “전체”로 바꿔 보세요.</div>';
+}
+function nlpPanel(st){
+  var nl=NLP&&NLP.stocks&&NLP.stocks[st.code];
+  if(!nl) return '<div class="panel col"><h3>공시·뉴스 분석</h3><p class="sub">텍스트 해석 결과</p><div class="empty">아직 연결되지 않았습니다.<br>다음 단계에서 data/nlp.json을 만들면 이 자리에 표시됩니다.</div></div>';
+  var sc=nl.score,left=sc<0?50+sc/2:50,w=Math.abs(sc)/2;
+  var items=(nl.news||[]).map(function(x){var lb={pos:"긍정",neg:"부정",neu:"중립"}[x.l]||"중립";
+    return '<div class="item"><div class="t"><span class="pill '+(x.l||"neu")+'">'+lb+'</span>'+esc(x.t)+'</div><div class="s">'+esc(x.k)+' · '+esc(x.dt)+' · '+esc(x.d)+'</div></div>';}).join("");
+  return '<div class="panel col"><h3>공시·뉴스 분석</h3><p class="sub">텍스트 해석 결과</p>'+
+    '<div class="big">'+(sc>0?"+":"")+sc+'<small> / ±100 감성</small></div>'+
+    '<div class="bar"><span class="mid"></span><i style="left:'+left+'%;width:'+w+'%;background:'+(sc>=0?"var(--agree)":"var(--split)")+'"></i></div>'+
+    '<div class="issues">'+(nl.issues||[]).map(function(x){return"<span>"+esc(x)+"</span>"}).join("")+'</div>'+items+'</div>';
+}
+function renderDetail(){
+  var s=DATA.stocks[state.sel]; if(!s){el("detail").innerHTML="";return}
+  var r=rel(s);
+  var tgt=SHOW_TARGET?'<hr class="hr"><dl><dt>목표가</dt><dd>'+num(s.target_price)+'원 ('+pc(s.target_return)+')</dd><dt>손절가</dt><dd>'+num(s.stop_price)+'원 ('+pc(s.stop_return)+')</dd></dl>':"";
+  el("detail").innerHTML=
+   '<div class="panel top"><h2>'+esc(s.name)+'<span class="cd">'+esc(s.code)+' · '+esc(s.market)+'</span></h2>'+
+   '<div class="price">'+num(s.price)+'원 <span class="'+cl(s.ret1)+'" style="font-size:14px">'+pc(s.ret1)+'</span></div></div>'+
+   (r&&r.k!=="flat"?'<div class="verdict '+r.k+'">'+r.tag+'<span>'+r.t+'. '+r.d+'</span></div>':"")+
+   '<div class="cols"><div class="panel col"><h3>퀀트 분석</h3><p class="sub">가격·거래량 기반, 코드로 계산</p>'+
+   '<div class="big">'+num(s.final_score,1)+'<small> / 100 · '+esc(s.grade)+' · '+s.rank+'위</small></div>'+
+   '<div class="bar"><i style="width:'+Math.max(0,Math.min(100,s.final_score))+'%"></i></div>'+
+   '<dl><dt>5일선</dt><dd>'+num(s.ma5)+' ('+pc(s.ma5_gap,1)+') '+esc(s.ma5_status)+'</dd>'+
+   '<dt>20일선</dt><dd>'+num(s.ma20)+' ('+pc(s.ma20_gap,1)+')</dd>'+
+   '<dt>60일선 / 120일선</dt><dd>'+num(s.ma60)+' / '+num(s.ma120)+'</dd>'+
+   '<dt>수익률 5일 / 20일</dt><dd><span class="'+cl(s.ret5)+'">'+pc(s.ret5,1)+'</span> / <span class="'+cl(s.ret20)+'">'+pc(s.ret20,1)+'</span></dd>'+
+   '<dt>RSI(14)</dt><dd>'+num(s.rsi14,0)+'</dd><dt>MACD 히스토그램</dt><dd>'+num(s.macd_hist,2)+'</dd>'+
+   '<dt>거래량 비율(5일/20일)</dt><dd>'+num(s.volume_ratio,2)+'배</dd><dt>변동성(ATR%)</dt><dd>'+num(s.atr_pct,1)+'%</dd>'+
+   '<dt>위험 점수</dt><dd>'+num(s.risk_score,1)+'</dd></dl>'+tgt+'</div>'+
+   nlpPanel(s)+'</div>';
+}
+function render(){
+  var m=DATA.meta||{};
+  el("asof").textContent="기준일 "+(m.analysis_date||"-")+" · "+(m.slot_label||"")+" · 생성 "+(m.generated_at||"-")+" (KST)";
+  el("banner").innerHTML=m.is_intraday?'<div class="banner">12시 장중 시세입니다. 데이터가 지연될 수 있고, 거래량 지표는 장중 누적 기준이라 낮게 나옵니다.</div>':"";
+  var hasNlp=!!(NLP&&NLP.stocks);
+  el("app").innerHTML='<main><section class="panel" aria-label="종목 목록"><div class="list-head"><b>종목 순위</b><div class="filter" role="group" aria-label="필터">'+
+    '<button data-f="all" aria-pressed="true">전체</button><button data-f="turn" aria-pressed="false">5일선 상승전환</button><button data-f="above" aria-pressed="false">5일선 위</button>'+
+    (hasNlp?'<button data-f="split" aria-pressed="false">엇갈림</button>':"")+'</div></div><div id="list"></div></section><section class="detail" id="detail" aria-live="polite"></section></main>';
+  el("list").addEventListener("click",function(e){var b=e.target.closest(".row[data-i]");if(!b)return;state.sel=+b.dataset.i;renderList();renderDetail();
+    if(window.innerWidth<=900)el("detail").scrollIntoView({behavior:"smooth",block:"start"});});
+  document.querySelectorAll(".filter button").forEach(function(b){b.addEventListener("click",function(){
+    state.f=b.dataset.f;document.querySelectorAll(".filter button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+    var v=visible();if(v.length&&v.indexOf(state.sel)<0)state.sel=v[0];renderList();renderDetail();});});
+  renderList();renderDetail();
+}
+Promise.all([loadJson("latest.json",true),loadJson("nlp.json",false)]).then(function(r){
+  DATA=r[0];NLP=r[1];
+  if(!DATA.stocks||!DATA.stocks.length)throw new Error("종목 데이터가 비어 있습니다");
+  render();
+}).catch(function(e){
+  el("asof").textContent="불러오기 실패";
+  el("app").innerHTML='<div class="err"><b>데이터를 불러오지 못했습니다.</b><p class="sub">'+esc(e.message)+'</p>'+
+   '<p class="sub">확인할 것: ① repo에 data/latest.json이 있는지 ② 저장소가 공개(Public)인지 ③ 이 파일을 컴퓨터에서 직접 열지 않고 GitHub Pages 주소로 열었는지 ④ 스크립트 상단 SOURCES의 사용자명·저장소명·브랜치(main) 이름이 맞는지</p></div>';
+});
+</script>
+</body>
+</html>
