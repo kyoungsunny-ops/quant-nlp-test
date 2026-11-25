@@ -54,17 +54,58 @@ RULES = [
 EXCLUDE = {'적자': ['탈출', '축소', '개선'], '소송': ['승소', '취하']}   # 이런 말이 같이 있으면 해당 키워드는 무시
 DART_NOISE = ('소유상황보고서', '대량보유상황보고서')                    # 너무 잦아 의미가 적은 공시 제외
 
+# 뒤집기 규칙: 키워드 바로 뒤에 아래 단어가 붙으면 그 키워드의 점수 부호를 뒤집는다
+#   "실적 부진 선반영" -> 긍정, "유상증자 철회" -> 긍정, "수주 무산" -> 부정
+#   'full' = 점수를 그대로 뒤집음 / 'soft' = 뒤집되 크기를 +-FLIP_MAX로 제한(영향이 작은 경우)
+FLIP_RULES = (('선반영', 'soft'), ('둔화', 'soft'), ('우려 완화', 'soft'),
+              ('철회', 'full'), ('무산', 'full'), ('취소', 'full'), ('해소', 'full'))
+FLIP_MAX = 1          # 'soft' 뒤집기의 최대 점수 크기
+FLIP_GAP = 12         # 키워드와 뒤집기 단어 사이 허용 글자 수
+DELIMS = set(',，·…‘’“”"\'!?.;:()[]「」』『|/')   # 이런 기호가 사이에 있으면 서로 다른 문구로 보고 뒤집지 않음
+
+
+def _flip_mode(text, start, end):
+    """키워드(start~end) 바로 뒤에 뒤집기 단어가 붙었거나('실적 부진 선반영'),
+    '철회된 유상증자'처럼 바로 앞에 '단어+된/한'으로 붙어 있으면 (단어, 방식)을, 아니면 None을 반환"""
+    tail = text[end:end + FLIP_GAP + 6]
+    for word, mode in FLIP_RULES:
+        i = tail.find(word)
+        if i != -1 and i <= FLIP_GAP and not any(c in DELIMS for c in tail[:i]):
+            return word, mode
+    head = text[max(0, start - 10):start]
+    for word, mode in FLIP_RULES:
+        j = head.rfind(word)
+        if j != -1:
+            rest = head[j + len(word):]
+            if len(rest.strip()) <= 3 and rest.strip().startswith(('된', '한', '되는', '하는')) \
+                    and not any(c in DELIMS for c in rest):
+                return word, mode
+    return None
+
 
 def classify(text):
     """텍스트 -> (가중치 -2~+2, 이슈 태그 목록)"""
-    w, tags = 0, []
+    w, soft_w, tags = 0, 0, []
     for kw, wt, tag in RULES:
-        if kw in text:
-            if kw in EXCLUDE and any(x in text for x in EXCLUDE[kw]):
-                continue
+        i = text.find(kw)
+        if i == -1:
+            continue
+        if kw in EXCLUDE and any(x in text for x in EXCLUDE[kw]):
+            continue
+        t = tag
+        fm = _flip_mode(text, i, i + len(kw))
+        if fm:
+            word, mode = fm
+            if mode == 'full':
+                w += -wt
+            else:
+                soft_w += -wt        # soft 항목은 따로 모아 합계를 제한 ('적자전환'+'적자' 중복 방지)
+            t = f'{tag} {word}'
+        else:
             w += wt
-            if tag not in tags:
-                tags.append(tag)
+        if t not in tags:
+            tags.append(t)
+    w += max(-FLIP_MAX, min(FLIP_MAX, soft_w))
     return max(-2, min(2, w)), tags
 
 
