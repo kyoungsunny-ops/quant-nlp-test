@@ -168,14 +168,15 @@ function renderList(){
 }
 function nlpPanel(st){
   var nl=NLP&&NLP.stocks&&NLP.stocks[st.code];
-  if(!nl) return '<div class="panel col"><h3>공시·뉴스 분석</h3><p class="sub">텍스트 해석 결과</p><div class="empty">아직 연결되지 않았습니다.<br>다음 단계에서 data/nlp.json을 만들면 이 자리에 표시됩니다.</div></div>';
+  if(!nl) return '<div class="panel col"><h3>공시·뉴스 분석</h3><p class="sub">텍스트 해석 결과</p><div class="empty">'+(NLP&&NLP.stocks?'최근 수집된 공시·뉴스가 없습니다.':'아직 연결되지 않았습니다.<br>data/nlp.json이 생성되면 이 자리에 표시됩니다.')+'</div></div>';
   var sc=nl.score,left=sc<0?50+sc/2:50,w=Math.abs(sc)/2;
   var items=(nl.news||[]).map(function(x){var lb={pos:"긍정",neg:"부정",neu:"중립"}[x.l]||"중립";
-    return '<div class="item"><div class="t"><span class="pill '+(x.l||"neu")+'">'+lb+'</span>'+esc(x.t)+'</div><div class="s">'+esc(x.k)+' · '+esc(x.dt)+' · '+esc(x.d)+'</div></div>';}).join("");
+    var ttl=/^https?:\/\//.test(x.u||"")?'<a href="'+esc(x.u)+'" target="_blank" rel="noopener noreferrer" style="color:inherit">'+esc(x.t)+'</a>':esc(x.t);
+    return '<div class="item"><div class="t"><span class="pill '+(x.l||"neu")+'">'+lb+'</span>'+ttl+'</div><div class="s">'+esc(x.k)+' · '+esc(x.dt)+(x.d?' · '+esc(x.d):'')+'</div></div>';}).join("");
   return '<div class="panel col"><h3>공시·뉴스 분석</h3><p class="sub">텍스트 해석 결과</p>'+
     '<div class="big">'+(sc>0?"+":"")+sc+'<small> / ±100 감성</small></div>'+
     '<div class="bar"><span class="mid"></span><i style="left:'+left+'%;width:'+w+'%;background:'+(sc>=0?"var(--agree)":"var(--split)")+'"></i></div>'+
-    '<div class="issues">'+(nl.issues||[]).map(function(x){return"<span>"+esc(x)+"</span>"}).join("")+'</div>'+items+'</div>';
+    '<div class="issues">'+(nl.issues||[]).map(function(x){return"<span>"+esc(x)+"</span>"}).join("")+'</div>'+(items||'<div class="empty">최근 수집된 공시·뉴스가 없습니다.</div>')+'<p class="sub" style="margin:12px 0 0">공시 14일 · 뉴스 3일 · 키워드 규칙 기반 판정 (기준 '+esc(((NLP.meta||{}).generated_at)||"-")+')</p></div>';
 }
 function renderDetail(){
   var s=DATA.stocks[state.sel]; if(!s){el("detail").innerHTML="";return}
