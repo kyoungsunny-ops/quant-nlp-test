@@ -45,6 +45,13 @@ jobs:
           FORCE_RUN: ${{ github.event.inputs.force }}
         run: python quant_v32.py
 
+      - name: News / Disclosure NLP (실패해도 퀀트 결과는 저장됨)
+        continue-on-error: true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          FORCE_RUN: ${{ github.event.inputs.force }}
+        run: python nlp_collect.py
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
