@@ -39,6 +39,7 @@ main{display:grid;grid-template-columns:380px 1fr;gap:16px;padding:16px 20px;max
 .tag.agree{background:var(--agree-bg);color:var(--agree)}
 .tag.split{background:var(--split-bg);color:var(--split)}
 .tag.flat{background:var(--bg);color:var(--sub)}
+.tag.chip{justify-self:start}
 .mv{font-size:11.5px;margin-left:6px;font-weight:600}
 .up{color:var(--up)}.down{color:var(--down)}
 .detail{display:flex;flex-direction:column;gap:16px;min-width:0}
@@ -91,7 +92,6 @@ footer{max-width:1280px;margin:0 auto;padding:4px 20px 24px;color:var(--sub);fon
 <script>
 // ===== 설정 =====
 var SHOW_TARGET = false;     // 목표가·기대수익률 표시 여부 (공개 페이지는 false 권장)
-var QUANT_STRONG = 60;       // 뉴스·공시 분석 연결 시 "퀀트 강함" 기준 점수 (실제 데이터 보며 조정)
 var SOURCES = [              // 앞에서부터 시도 (raw는 최신 커밋을 몇 분 내 반영)
   "https://raw.githubusercontent.com/kyoungsunny-ops/quant-nlp-test/main/data/",
   "data/"
@@ -133,13 +133,15 @@ function macdTxt(s){
   return '<span class="'+cl(v)+'">'+pc(v,2)+'</span> '+(v>0?"상승 우위":v<0?"하락 우위":"중립");
 }
 function statusClass(s){return s==="상승전환"?"agree":s==="하락전환"?"split":"flat"}
+function ma5Label(s){var st=s.ma5_status||"";var a=st==="상승전환"?"▲ 5일선 상승전환":st==="하락전환"?"▼ 5일선 하락전환":st;return a+" "+pc(s.ma5_gap,1)}
 function rel(st){
+  // 목록의 모든 종목은 이미 퀀트 TOP 30에 뽑힌 종목이므로 퀀트 신호는 항상 "긍정"으로 본다.
+  // 따라서 비교 대상은 공시·뉴스 감성뿐이다 (퀀트가 부정인 경우는 없음).
   var nl=NLP&&NLP.stocks&&NLP.stocks[st.code]; if(!nl) return null;
-  var q=st.final_score>=QUANT_STRONG, s=nl.score;
-  if(q&&s<=-30) return{k:"split",tag:"엇갈림",t:"퀀트는 강하고 공시·뉴스는 부정적입니다",d:"점수만 보지 말고 악재 내용을 먼저 확인하세요."};
-  if(!q&&s>=30) return{k:"split",tag:"엇갈림",t:"공시·뉴스는 긍정적이나 퀀트 점수는 낮습니다",d:"호재가 가격 흐름에 반영되는지 더 지켜볼 구간입니다."};
-  if((q&&s>=30)||(!q&&s<=-30)) return{k:"agree",tag:"일치",t:q?"퀀트와 공시·뉴스가 모두 긍정적입니다":"퀀트와 공시·뉴스가 모두 부정적입니다",d:"두 신호가 같은 방향입니다."};
-  return{k:"flat",tag:"중립",t:"뚜렷한 방향성이 없습니다",d:""};
+  var s=nl.score;
+  if(s>=30) return{k:"agree",tag:"일치",t:"퀀트 상위 종목이고 공시·뉴스도 긍정적입니다",d:"두 신호가 같은 방향입니다."};
+  if(s<=-30) return{k:"split",tag:"엇갈림",t:"퀀트 상위 종목이지만 공시·뉴스는 부정적입니다",d:"점수만 보지 말고 악재 내용을 먼저 확인하세요."};
+  return{k:"flat",tag:"중립",t:"공시·뉴스에서 뚜렷한 방향성이 없습니다",d:""};
 }
 function visible(){
   return DATA.stocks.map(function(s,i){return i}).filter(function(i){
@@ -162,8 +164,9 @@ function renderList(){
       '<span class="rk">'+s.rank+'</span>'+
       '<span><span class="nm">'+esc(s.name)+'</span><span class="cd">'+esc(s.code)+'</span>'+moveTag(s.rank_change)+'</span>'+
       '<span class="sc">'+num(s.final_score,1)+'</span>'+
-      '<span></span><span class="sub">'+num(s.price)+'원 · RSI '+num(s.rsi14,0)+'</span>'+
-      '<span class="tag '+(r?r.k:statusClass(s.ma5_status))+'">'+esc(r?r.tag:s.ma5_status)+'</span></button>';});
+      '<span></span><span class="sub">'+num(s.price)+'원</span><span></span>'+
+      '<span></span><span class="tag chip '+statusClass(s.ma5_status)+'">'+esc(ma5Label(s))+'</span>'+
+      (r?'<span class="tag '+r.k+'">'+esc(r.tag)+'</span>':'<span></span>')+'</button>';});
   el("list").innerHTML=h||'<div class="empty">조건에 맞는 종목이 없습니다. “전체”로 바꿔 보세요.</div>';
 }
 function nlpPanel(st){
