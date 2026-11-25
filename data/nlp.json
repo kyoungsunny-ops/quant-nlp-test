@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-25 17:07",
+  "generated_at": "2026-11-25 17:45",
   "analysis_date": "2026-11-25",
   "method": "키워드 규칙 기반 (공시 가중 1.5배, 점수 = 가중치 합 x 25, 범위 -100~100)",
   "sources": [
@@ -11,7 +11,7 @@
  },
  "stocks": {
   "323410": {
-   "score": 75,
+   "score": 100,
    "issues": [
     "자사주"
    ],
@@ -39,6 +39,38 @@
      "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001159",
      "l": "neu",
      "dt": "11-13"
+    },
+    {
+     "k": "뉴스",
+     "t": "카카오뱅크, 66억원 규모 자사주 소각…주주환원 추진",
+     "d": "뉴스핌",
+     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yby1nYUNUOTdtaUg0MjRhSFUzdUJidFQ1dklvU0UzOXNIS3RKdHVvYjFoLTlLcmEybnhaSVFLSGNCd3NrNDVnUk13NWYzNmFXZjRIa1EtYzI2am5E?oc=5",
+     "l": "pos",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "카카오뱅크, 66억 자사주 소각…보유 물량 절반 넘게 줄인다",
+     "d": "뉴스로드",
+     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE44elFaZ1B0enNHRTF2enRXdlNlZGJVNkM0WExad0VSRDB4T0JYNXJFQlkyaUxMbkRrdmpVdUtuTF9XSlMxLXlBWjBqZGdOdGdzREZjaHZURDZCbXA1VWtESW55TGR5eXcwVThj0gFvQVVfeXFMTVlWbWJuWEJUMWdrSHlXRnVmWkxVLWlGN29CWUZvenF0U2tlUDlrNHN5UkkzUlFoaEF6RTBZcTN2UlVQdnNtS3RMVnJBRTlSQ2pzV1hIcEZ0ODNjNzZDMFU3THFVdVBHNDkzQnJYakNF?oc=5",
+     "l": "pos",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "카카오뱅크, '66억' 자사주 소각…주주환원율 50% 확대 목표에 속도",
+     "d": "더밸류뉴스",
+     "u": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE10MjdtZVF1c3ctQ2hpRDhWVzloUGhLeGRwRl84eEQ1UmRVaU1BLVhxZnNFQmY1dkxpcmlaVDE3SEV2cjhnMnEyQTR3UEtReC01UlVzZw?oc=5",
+     "l": "pos",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "카카오뱅크, 66억 규모 자사주 소각 결정",
+     "d": "한국경제",
+     "u": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QWDdRQm5vUm1NOXdvZXBydkJwTmhmdkJTTURwZzJCN3hqX05DVmtMbmJmOWtad0RaQzAxVXJ0TDZ1TEdhanZOSFpYNEk2MHo3Y1JkZkVPVmJDZw?oc=5",
+     "l": "pos",
+     "dt": "11-25"
     }
    ]
   },
@@ -168,42 +200,42 @@
     },
     {
      "k": "뉴스",
+     "t": "유한양행 ‘닥터버들’, ‘무신사 뷰티 성수’서 글로벌 소비자 만난다",
+     "d": "이코노미스트",
+     "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RVnhtR0ZqdlVYY3Z4NldRMGJvb0hXNUlxUnFabXhscGR3MUVWTC1NdFpSMGVUTjA5WXVUSWk4T1JMZWdRS1RuaTJFY3NaTUYxQmMwa19qejNpaWpyY21FVXdR?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "유한양행 15년 만에 투톱 체제…김열홍·강대식 공동 부대표에",
+     "d": "매일경제",
+     "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA2aERPUHBwY2d5MU5weEFlaWR2OWY5RWViMElTVmZMZjktelVxRjNmSUJrWTdVWVlNM1FKR2N4UWl0X0RldXJhOWwxSTVvUQ?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "유한양행 구강케어 '닥터버들', 무신사 뷰티 성수 공식 입점",
+     "d": "뉴스워치",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE82Szhkb0lONm9kQ1k5aVNnbDhmME00YzNOTHFBWnVPdC1Wd0VncG5WajQ4ZVR1SnhGYlNsNUpBcE9tQWxNSkxQX1JsZEF1UTZKTkVfUWhFX19WVXpQVkdmSE04NHhkcjJy?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "수주잔고 135% 늘어난 유한화학…유한양행, 해외 수익 다변화",
      "d": "뉴스핌",
      "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBnY01fbHZfX1VEOTBRSGQ2bFl4WnZuME0yTktHd0ZEcmFiTmFSSEJORTlIM3BVZnNCWmxnSjRZLWt0ZzhQNTVRMS1ETWtQOEtqN0NxWlZZT3BoLXpk?oc=5",
      "l": "pos",
      "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "유한양행 “차기 대표 확정된 바 없다”…공동부대표 인사에도 남은 경영승계 갈등",
-     "d": "동아일보",
-     "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZWWxjMWd5UHlrbU9KQ1JtUFpudjB4YXdGMndzNUxjOW5ZblVuQ0dYMG9PUmdBeGswX0JVWVhZeHhYMkUweTJ6SWw1NTlhc3I4dEhzeUZ6a3hUU1JTaTlQUV9xODcyZjJkVzJiSkY0R0hZSTV0VXc?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "유한양행 차기 사령탑에 김열홍·강대식…40년 순혈주의 깼다",
-     "d": "아시아경제",
-     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5YcUtiT0l6NzlaVzBpNm1lQmo0RFE2RHNTQW9vaV8zS0NLQkhsQjJIMlJWcnZkMFhLQU1RMXhvVXFBUHo3emliOGxoWTdVUWRJY0RSNmdoaExES0Nld0szXw?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "유한양행, 'R&D·생산' 쌍두마차 띄웠다···김열홍·강대식 공동부대표 발탁",
-     "d": "뉴스웨이",
-     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4bDZaTW5JbkthN2M3bENPdGYtb2FoR0J0Mkx0STlGRWk3aXRjNnNqdEtPSXdYenNYUkowdGEtOENDSWpIWXlYcjhSek53MG4zbjQ2S1RwMm5SSFFwOEROTkpPS2pSTTBD?oc=5",
-     "l": "neu",
-     "dt": "11-25"
     }
    ]
   },
   "097950": {
-   "score": 0,
+   "score": 50,
    "issues": [
-    "실적 부진",
+    "실적 부진 선반영",
     "실적 개선"
    ],
    "news": [
@@ -234,9 +266,9 @@
     {
      "k": "뉴스",
      "t": "CJ제일제당, 실적 부진 선반영…식품·바이오 수익성 회복 기대",
-     "d": "한국증권신문",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93aE5rdlE0NHhocWtwdWU0dnp3RGtuUVllV1VyS1Q2V2ctaG9VUkV3VUZLbHBJUDhqX0g1U2FVcUlQZ2ZPTVZsTWpKdF8yczV3dUV6eG15dWNaX1ZCS3lidmlhZVpBUllLRGpJVg?oc=5",
-     "l": "neg",
+     "d": "www.ksdaily.co.kr",
+     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CT1BqNlZndFAteVY3eUNWNmtYdkJzTWo3WDB2cVdHcDZmWFRaSHltMkFEWlFwZmVNVDd4MV9QT2hwXzNTQ3J0V3BMUnp2MWRQcnRpT2RrdEMtTEVIR1J2XzczYm4tSGNMdDBr?oc=5",
+     "l": "pos",
      "dt": "11-25"
     },
     {
@@ -336,9 +368,25 @@
     },
     {
      "k": "뉴스",
+     "t": "카카오게임즈 오딘Q, 27년 1월 26일 한국·대만·일본 동시 출시",
+     "d": "뉴스투온",
+     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Td2o3eXFCQ0R6OGRvUGJqbk40MDRKRFEyd1Y5T0VWNmlEa054MkRXXzRuQ3huMUhXdVByZnBqR01oN0lTeHZhTU1JR0ZXTnVnZDgzZF9uUk40ajd0cVA2dVVZcXJGNTFKc3dHVw?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "카카오게임즈 ‘오딘’, 무한의 탑 전층 보스전으로 개편…최대 4인 도전",
      "d": "지디넷코리아",
      "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DN3FKX1k0d01uQjFiU2RzOHBZTjRFNVdadWphOUJLT1pFa0lUZjlvdjJqZWl1b21YZmxMcEZVZk1LRjgyUExTOHNIQUJGdHlvcmNKOEFB?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "[게임월드] 넥슨ㆍ크래프톤ㆍ엔씨ㆍ넷마블ㆍ카카오게임즈ㆍ시프트업ㆍ컴투스홀딩스",
+     "d": "대한경제",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9LRTRxOVhDQlV5bzZSM3A5ZFN3NkFmVlcwRFlYME1mYnkzTnZBZ1otY0xNS1JrOGozci1sRWRtcDNOWFdWMnluaVE3YUszdXczNXdZUi1saEZwcXhacHpIZl9fWGdUZTVVMVlaNVdnZWZ2NEk?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
@@ -349,27 +397,11 @@
      "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE04S0JPd0ltNEZsbDk2R3lLSXZxN1k4N0VZVWRJejFCaEpCT3I3NU5sdkNNVmVaWUdKTFFVUEtKNzVoRThTU2g5aUM4LXMtRzl4Z0FpQi0yQ002MWNkTndtcWlFMVo4SHNEWWZkQ19VWlJpX3VvZlNZ0gF3QVVfeXFMTThLQk93SW00RmxsOTZHeUtJdnE3WTg3RVlVZEl6MUJoSkJPcjc1Tmx2Q01WZVpZR0pMUVVQS0o3NWhFOFNTaDlpQzgtcy1HOXhnQWlCLTJDTTYxY2ROd21xaUUxWjhIc0RZZmRDX1VaUmlfdW9mU1k?oc=5",
      "l": "neu",
      "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "카카오게임즈, 오딘 ‘무한의 탑’ 전면 개편…모든 층 보스전으로",
-     "d": "NSP통신",
-     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hNHZhSGU1clcyRXA2dXBudEdSOW5OSDhMSTVxNktGSFJUam1qckpCMGJUdTQ2TzJGcnFWZnEyMzRHcF9RRm5kWldERjM5bGNfVWNzSUpZb3FabjlpMFFsaQ?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "카카오게임즈, '오딘: 발할라 라이징' 무한의 탑 리뉴얼",
-     "d": "게임포커스",
-     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FVkZMWTR4UzdXdW04T0pOR1lCVDJtaHRweC1aaWpER1dzT2x6SHRWMzNOYWJkeGZHZjgxdGxEbkE0dzhYUUJmcm9aM3NFNF92b2VXelZPWGtwc1p1MGZFRw?oc=5",
-     "l": "neu",
-     "dt": "11-25"
     }
    ]
   },
   "068270": {
-   "score": 38,
+   "score": 12,
    "issues": [
     "자사주",
     "급락",
@@ -402,14 +434,6 @@
     },
     {
      "k": "뉴스",
-     "t": "셀트리온, 후보물질 도입 이어 AI 발굴까지···신약 개발 전략 다각화",
-     "d": "뉴스웨이",
-     "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05Ylh3R3dPYk5zSjItRmFNelNQX3ZlQTdXbjVGNDU5UWhtbldrdmwtaERwaGI4bEU1bmwxb2QyVE10SFJIY2tXbVVJMWRJZ1oydlVISy1ld19Yb2poSnFQOW04VFd5alFpcGc?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
      "t": "[특징주] 반도체주 줄줄이 급락하는데…삼성바이오·셀트리온 3~4%대 강세",
      "d": "아주경제",
      "u": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4wREI3UW93bVFCS2FSRENJZ0V3SzdYUjcteGxpQnZlWU43WG5oU3p1b05sSi1BVmRBdEVYWHVTUHNnSExHM05rdTM1WmVWcklfcmQzLURjWVZPZ9IBWEFVX3lxTE1ObnBoSTJmLUFtYmNwMVk0anJGcHMtT0dtby1EeWJHNzFuMURyWEpMVV9nanZJMTBkcHdRbDNZaUNzYmticjJVc0JIQnNJMDFWT0RlY19qLWw?oc=5",
@@ -423,6 +447,14 @@
      "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yWjNYbnVGU05jU254VWVhc29uT2x0ci05ZS0tZkt2dHctbEF2WlozaW5nSDZJMDluT3I4bjdCS0FGR1ZxNFNEanFPcnhSeDRJY0E?oc=5",
      "l": "pos",
      "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "급락장 속 ‘고수’는 삼전·닉스 팔고 셀트리온·삼성SDS 담았다 [주식 초고수는 지금]",
+     "d": "서울경제",
+     "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kdTVVOGE5OXFfamhiOW03TTU2X25VSjU5UktZVHNKbFBiM09qd3JaZ0dmUVRxS2xPOWNJQzlWdG9ocFdIeDdFRFdXYjh2NnAyR2fSAVNBVV95cUxPRVZ0UExLRHVfT3pQaWFFU0g2OTFjWXI1QUU2azg2ZlhYakZLNHdqZDVSY0llaTEwSjVsMlV6VkxLLU45akphN2NFWHJDRmlYeGZvcw?oc=5",
+     "l": "neg",
+     "dt": "11-23"
     }
    ]
   },
@@ -456,6 +488,14 @@
     },
     {
      "k": "뉴스",
+     "t": "LG생활건강 25만9000원…뷰티 부문 3분기 적자 폭 축소",
+     "d": "잡포스트",
+     "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE54QTduemdMR255QU5wRVd4QVF5SV9HQUtaZVkyMFZ3M0NrTlhFU3MtZjV6UlNUdjNHMXJEZHJfWHhfRmh5c05oT3V3a3praGFZNDA1OHFCQkNXYWxjbXhZazNGQUJfekJBY3dRajFRdGdMQdIBckFVX3lxTE54QTduemdMR255QU5wRVd4QVF5SV9HQUtaZVkyMFZ3M0NrTlhFU3MtZjV6UlNUdjNHMXJEZHJfWHhfRmh5c05oT3V3a3praGFZNDA1OHFCQkNXYWxjbXhZazNGQUJfekJBY3dRajFRdGdMQQ?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "LG생활건강, 엘라스틴 앞세워 프리미엄 헤어케어 시장 공략 강화",
      "d": "Korea IT Times",
      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JT2JKMGFyTExQeS1JQWZUaGNLT0dhNzNSazA0MlVobW5BdkdWLXY2aVhjczByYU9icGZ4cjNONzJEbExkeDJRTFJxMm52RWFoNnloM3VxQXBjcWp3Ql9hdV91ZFdob0FLUnZJa05qM28?oc=5",
@@ -477,19 +517,11 @@
      "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RQzRTZVIxeUlNeEp0NU44cE1FSHRsdHhobktkLVpzZm91eWJ5cnQ3Y1FXQVB0YmpxMEVtTGxaeU5QWFNScFY0aDllRXFDX0dlSkZKc21idWVqc0xW?oc=5",
      "l": "neu",
      "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "[종합] 블랙프라이데이 앞둔 K-뷰티…'아마존·스킨케어·기능성'이 승부 가른다",
-     "d": "뷰티경제",
-     "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9iN0dHZFhaYVppdjBWRlRlZjVUTm5nTmVGWFpoczdjeG54cW5JOGtKQUxMT1ZQMDBuRDItN2F1U1JxdVZ5NUFyN2pEMzIxMnFkclFRaDZoam12aFJQRGVnZU4yOUs4WFZ5Wnc?oc=5",
-     "l": "neu",
-     "dt": "11-25"
     }
    ]
   },
   "003230": {
-   "score": 25,
+   "score": 0,
    "issues": [
     "급락",
     "증설"
@@ -537,19 +569,83 @@
     },
     {
      "k": "뉴스",
+     "t": "[거래소 기관] 아모레퍼시픽·삼양식품 '왕성한 식욕'... K뷰티·K푸드 다시 뜨나",
+     "d": "핀포인트뉴스",
+     "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rSWJHbVRnSnlXMXhTUTVYX0prOFJkVzNRUGRJSkVGZ1NFUHk2UlYtUWNvSEI0NkZvNWtycmdXMEtmY3pxQ1ozYXJVeWF2cXMtSWQtWXpwbmZDc2N6ajhWRTBOWl93cXpoV1pqZnRjVGRobmVNUUxB0gF3QVVfeXFMT2tJYkdtVGdKeVcxeFNRNVhfSms4UmRXM1FQZElKRUZnU0VQeTZSVi1RY29IQjQ2Rm81a3JyZ1cwS2ZjenFDWjNhclV5YXZxcy1JZC1ZenBuZkNzY3pqOFZFME5aX3dxemhXWmpmdGNUZGhuZU1RTEE?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "라면 이제 없어서 못 판다…농심·삼양·오뚜기 증설 경쟁 : 기업·산업",
      "d": "재경일보",
      "u": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pbUpJMlBsUGFMZHNROEhQT2pDcVlLTW9qVUllb0hlc3JjZWNkVzF4WDdXckFLZVdkMXVWbE5Qb19RcU1JRlFBa1lNTQ?oc=5",
      "l": "pos",
      "dt": "11-23"
+    }
+   ]
+  },
+  "128940": {
+   "score": -50,
+   "issues": [
+    "횡령·배임"
+   ],
+   "news": [
+    {
+     "k": "공시",
+     "t": "기업설명회(IR)개최(안내공시)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116802492",
+     "l": "neu",
+     "dt": "11-16"
+    },
+    {
+     "k": "공시",
+     "t": "기업설명회(IR)개최(안내공시)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116802490",
+     "l": "neu",
+     "dt": "11-16"
+    },
+    {
+     "k": "공시",
+     "t": "분기보고서 (2026.09)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001605",
+     "l": "neu",
+     "dt": "11-13"
     },
     {
      "k": "뉴스",
-     "t": "K-라면 수출 10개월 만에 작년 기록 추월…3사, 증설 속도전 속 수익성 시험대",
-     "d": "아주경제",
-     "u": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xX09SZFNTXzdFR1lHQXlHQ3N2RVRQdjZUWlUya1lsYnJYU3MxNzRhSDhhTV9DR1AxM2x5TE1YR3FYOVNIbG1aX2NTNkduYzMzSVFFaW5wUmZaZ9IBWEFVX3lxTE9mUkdTc1lJNmYxeUx5QURvVF80cDlpWnFjUHlKLW94dkE3ZTVYcXhzSHVsbHdBOGI1UU82ODNNRXJSYUdpWnlsVjB0RnRzR2hFT2dQYlItb1Q?oc=5",
-     "l": "pos",
-     "dt": "11-22"
+     "t": "임종윤의 DXVX, 한미사이언스 대표·감사위원장 배임 혐의 고소",
+     "d": "팜이데일리",
+     "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCUXBIZ0xpZmxTNVN5UElrMVJNSVN0dG96a2NxbENzcUFFbWp5NFdRMEY2Q3ZtTEduX2Y5RHhVY0NxZDIzUS1YdHFfcHdyWXRrTERvNGNBYl9TS3pwTnkxZXNhel94anpOdHl6OUh3?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "복지부, 보건산업 유공 86명 포상…한미약품 최인영 목련장",
+     "d": "메디포뉴스",
+     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fbEdOd0I2SWo3RGpnUVlrX3BYU2x0UVpObW9ETFRmQ0JlVEdzWmI3UlhZN19ROEFlb01TNnBlSVptMkpNXzZsMThYQVNvQUhNQlJNc0xqTVMxWTY1WUdpT18xTGQ?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "[부음] 임호택(한미약품 혁신성장부문 의약혁신센터장 상무)씨 부친상",
+     "d": "이투데이",
+     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE53R2pXdUdkcDNmbVVDSllmUGFzdHVtNE03ejZJbnlWaHFsWWQyZmFRZFpTRS1WVHNSX3B5SlJUZFEyNXpWVzR1YkI1TEgwaE1seDIycU9URTVmQnBSeWhTbFFNNm9tcG9yWUh2WWFsMlJ6OXMx?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "'토종 비만약' 한미약품 '에페', 위고비·마운자로 양강체제 흔든다",
+     "d": "인사이트코리아",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBaSFhTSU93LWwxanNkcXR5SXVpeTJpZ2RoeC1LcmwzN1hlMjJwNHFvRlBaOWhtVVlfQUJpLV85aDEyY0oyeFZyam1LT2F5UzV6SUFuTUIta3VfdTFpWjFRV0hvMUs3emFJcWFfc0tES05GRTTSAXdBVV95cUxOQnl2RXJnVkljZTF1eUR3UC01ZzN3NnptbjBFUGNzV0gyRTRHRWtwTXVrVlhYSGJOS0JyU0lFVGJEbEs0RTZvOFp2SV9qLXBNUDl1ZmNudEhXelN5YXdUbWh5NG42OFNYSjlwbmVNYXViZmxzeVp5MA?oc=5",
+     "l": "neu",
+     "dt": "11-25"
     }
    ]
   },
@@ -585,6 +681,22 @@
     },
     {
      "k": "뉴스",
+     "t": "공정위, CJ프레시웨이 '기부금 리베이트' 의혹 제재 착수…현대그린푸드·아워홈·삼성웰스토리도 조사",
+     "d": "이슈인팩트",
+     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5YUGcyQXZidVpKTWE4Wlp3SHBrWDZCajByaTVOTk83Wmd1ZVFZVlVTWVlUSWlnaGJEZGJRRG9TWVNJV0lPTU4wYTdBN2ZDTWpKNzJVdF9wN3hjZ2pXSEFEdjhmWUQtUEtqYWVIUg?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "공정위 부당 고객 유인 제재 절차…CJ프레시웨이 \"사실무근\"",
+     "d": "뉴스토마토",
+     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kZUxJUW1fWFl6MUJLZ1FnS2pHQnZJd3piN2R3Wm5pR1lWY2hrM2o3WWlPQkgtbHhvQTBxakRHVHZObEgxTG5PUC00UG96bUN2WHJMT0RLcTFIbHVFcnp6WA?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "식자재 납품 위해 기부·상품권 제공 혐의…공정위, CJ프레시웨이 제재 착수",
      "d": "경기일보",
      "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlQkZLTWlOVHJqZUt2QWFpbzE3WDAxMlRwTGF4Mm95aFdRbnFUZWx6eGVYTVBTM0dSSW1HRUprX0hOczh5eDlaVEt3OGZzdWN6VHJEWHVFZVJ2ZDg?oc=5",
@@ -598,84 +710,6 @@
      "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LYWY3Y1ZHTlkwaXQ1QW5XRGlIWUZLdUFpVkZ0aFJlaHpYYk56S3RmU1p0Z1BrZ1Z3ck91U21QU2d3SG9WMlhZTXlBYzlPRkJ4cTA3bWNn?oc=5",
      "l": "neg",
      "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "CJ프레시웨이, 복지시설 ‘기부금·상품권’ 수백억 제공 의혹…공정위 제재 착수",
-     "d": "뉴스로드",
-     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2M3hoUldmLWdZOVZuZ2xPb2NoUEhsak5Eb0lUVVpEVEtyTXFNWE9INTg1djdQcjV3UDc0cnJhMzJTUDAtcEd3emVyWGluWnBJNDFndUprdFEzTDlEZUhCeWllck82QzR1dWlN0gFvQVVfeXFMTW5FVnVkWVJCb01RdVhkRk9JSUxJSmNMQ1FPQTFfeHZsM2lNNERCb3NJZ3pKRFlJR1FPTUFpTXZmX291eVdGajdlLW1NRUx0SHJxamVVX05HVVg2c3RKYzBMdmJpR1JwWjZNMmZFM0hj?oc=5",
-     "l": "neg",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "CJ프레시웨이, 공정위 ‘부당 고객유인’ 혐의 반박…과징금 최대 200억원 거론",
-     "d": "매일일보",
-     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5pUUw5SXp3NW4zd3pOaWdkb3JsQWlTcFhYOGFyX1VhNm5KTTJ3bXpNQzJMNDB6ZGpwYkI2VUJBYjNDcjlsVm9CUlk0Vk1OUzZQbDRfcloxUmo4ZFZ6QnJXVDFHWWM?oc=5",
-     "l": "neg",
-     "dt": "11-25"
-    }
-   ]
-  },
-  "128940": {
-   "score": 0,
-   "issues": [],
-   "news": [
-    {
-     "k": "공시",
-     "t": "기업설명회(IR)개최(안내공시)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116802492",
-     "l": "neu",
-     "dt": "11-16"
-    },
-    {
-     "k": "공시",
-     "t": "기업설명회(IR)개최(안내공시)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116802490",
-     "l": "neu",
-     "dt": "11-16"
-    },
-    {
-     "k": "공시",
-     "t": "분기보고서 (2026.09)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001605",
-     "l": "neu",
-     "dt": "11-13"
-    },
-    {
-     "k": "뉴스",
-     "t": "한미사이언스 아데시, 이중제형 ‘미라클 퍼플 앰플’ 출시",
-     "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBZWnBScTZHeE5qMDBaU2luc1JwOTN6aEMwTzNsNEp4eklPTWtQQlllRHZzOFVqVmwzOUo4NFdfQ09fdWVkOVpnMnRKYWEwTHJFRHNtUmQ2d0x5M2VWOWlGYm1ib0g0NlRVQjBGaEpEcElGemfSAXdBVV95cUxQWWQyd1dCdDlUUXpONC1OYk82Mkk1d04tbnlwMzAzdl9TOHlTdFlxREg5YXlLUzhhZ1Eyc2RGdU8xN1g0S2w1b0E3VW91MVBuZE95Ym0yb0ZXemZveUl6Z1pLeE1wUnVHWTRNYllOcWJ0TnZHR3ZnTQ?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "[부고] 한미약품 임호택 상무이사 부친상",
-     "d": "위클리오늘",
-     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9hVFZoalpxOWo2SFhUMm1TWlNHcnppeEF2dWxuUUhpU2ZxSXd5U0tNeFFWYlQ2UWFQN0lXeF9xa0dQMC1sU1QtUm84S3c3TlFiSzRNV3VrdWc4Rll5R1BleHBiSWp2eEdqbTZVWnJjSQ?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "[부고]임호택 씨(한미약품 혁신성장부문 의약혁신센터장) 부친상",
-     "d": "현대경제신문",
-     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8tWWJJNHdqT19vWmhNMG1ZV2gtVnZ5Z0ZZYXFienJTMklSQW5CNkZlcjIzY3V1NXZPRGZRbWhWMVo4cHJqLV95Mmg5YmNHWGlTcGVxY0dJZWhnSEUzXzBPYVZqSDJoMnVSd0dJ0gFrQVVfeXFMTy1ZYkk0d2pPX29aaE0wbVlXaC1WdnlnRllhcWJ6clMySVJBbkI2RmVyMjNjdXU1dk9EZlFtaFYxWjhwcmotX3kyaDliY0dYaVNwZXFjR0llaGdIRTNfME9hVmpIMmgydVJ3R0k?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "[부고] 임호택(한미약품 의약혁신센터장, 상무)씨 부친상",
-     "d": "더바이오",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5mbnliVFREVEQybTBOYnpaUWgzOG1OYmpucmhzdEo2MG1uMUZGNHdCaTAxdUlWbmRQM0xKNUdfdlFMdFFWRlF1ZDdBdFI0UHhJT1k5VGNlaDA5QnMxMl9uUTYyd0tCdURrS09yV9IBcEFVX3lxTE4xZ0JFZHZBdFEwbzdBS3FaOWNCSlRxdlFFdUtPNUJqX1JfRUVMM0oyN1ZORDN5Y2dSS1BNN2sxYm44YVFtMnAyUDNZeEN2Q3FpcU4yVHpvVk1nWUdmYTlRYzFlV2Zzc2Y3VExBR0hWWV8?oc=5",
-     "l": "neu",
-     "dt": "11-25"
     }
    ]
   },
@@ -683,63 +717,6 @@
    "score": 0,
    "issues": [],
    "news": []
-  },
-  "003490": {
-   "score": 0,
-   "issues": [
-    "횡령·배임",
-    "실적 개선"
-   ],
-   "news": [
-    {
-     "k": "공시",
-     "t": "기업설명회(IR)개최(안내공시)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118800330",
-     "l": "neu",
-     "dt": "11-18"
-    },
-    {
-     "k": "공시",
-     "t": "분기보고서 (2026.09)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001034",
-     "l": "neu",
-     "dt": "11-13"
-    },
-    {
-     "k": "뉴스",
-     "t": "대한항공 통합 LCC 본사, 주주 영향 제한적…서울이냐 부산이냐",
-     "d": "아주경제",
-     "u": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1icVZWZ3M1TjNOTUMtSTlkZVJMNkFFS2pUdXZjcU1MMTNhRDdUN2J2LUhibVlsdWgyUmR2UHVoWU96SHFGbjBHT1dyWEt5WkphUm4zeE9pdGRXQdIBWEFVX3lxTE1sYVRGVGp4cC1ocjFQa0l2TUpqYVBVXzUxWWJ4ZEg2UVFZaXJlbHZKc1Y5eWU5XzE0c2hHc0E5eW0tOFZhanh0UmtjQlFjQkVGa3hfSU0xMDI?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "대한항공 \"통합 LCC 순시너지 1778억, 전 세계 항공산업계 지지 든든\" - 머니투데이",
-     "d": "머니투데이",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVN095c3ZGV0c1Z3BzY2w0VGFkMEU1aWs4Y19jMVNVbHpObE1mUklpOHhtMzhnWklndkVWcFRUVk04Zk8teDZualRHaHRrTEFCRG1xM005bU5DQVN4NUZVTEpOZjUxOFRoTEQ3SdIBckFVX3lxTE10OUREZmg3R1JMdTY1YjU4RDN3SXBwRlBfQTl0WGctZWVja291RGloRG5tcW8zMkdyRzlUaF9rZmQ0U3VRV2NIUWlyQzRyWG9fQUkwZDdxdExTVTBlNzhySmY1bXRWaWdBQlFvTE80WXlwQQ?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "통합 대한항공 출범 앞두고…한진, 배임 의혹 쟁점은",
-     "d": "스마트투데이",
-     "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhb1RIbHg1eEpOUUdBSHFORXdHZmU2UnFlUllVUWFUWGhwUWhCa2NBMHRiSFdXanZoVGxIcUt5eldvRHpzNHNuN1VTMWdnMkQ0OV9BcHgzcWI3ZDhpTGdJ?oc=5",
-     "l": "neg",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "대한항공, 사상 최대 매출과 아시아나항공 인수 계획 발표: 003490 상승세 이어갈까?",
-     "d": "Traders Union",
-     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV0x6cTNCcG9OcDhIM0lUWTEwS1dWR255Wk9QcVZOSGY2NlVnaURxSUhDZXVrVExOeE44THRpQ0hzMFFkTVdhSXM0blFrWVpDNnJnU0pFUzdheExDMlNkM1JVTlhLamFZbTZxY042amVwMHN3SnZHMXh5cXUyV3B4VDN3SzQ0bWRUYzktWDhiN3VXUQ?oc=5",
-     "l": "pos",
-     "dt": "11-24"
-    }
-   ]
   },
   "069080": {
    "score": 0,
@@ -787,6 +764,63 @@
     }
    ]
   },
+  "003490": {
+   "score": 0,
+   "issues": [
+    "횡령·배임",
+    "실적 개선"
+   ],
+   "news": [
+    {
+     "k": "공시",
+     "t": "기업설명회(IR)개최(안내공시)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118800330",
+     "l": "neu",
+     "dt": "11-18"
+    },
+    {
+     "k": "공시",
+     "t": "분기보고서 (2026.09)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001034",
+     "l": "neu",
+     "dt": "11-13"
+    },
+    {
+     "k": "뉴스",
+     "t": "델타항공 아태 부사장 조원태 회장 믿는다…대한항공 하늘길 동맹 굳건",
+     "d": "아주경제",
+     "u": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBfUmljMXJaQnQ2b0F0OTZVcXU3MUl3UTI1VGFULTcyQUtmekZUV3NfczNiNk1mMEZmb0kzNEtTQnZfMVg4WFZtTmN1WV8yMzhqT1V4T19wRi1SQdIBWEFVX3lxTFBJS3RIdk9zbUFFOUxlbUdYWVVFaHJtSUh2RWFIQUFaM1J0eG16QjI1SDdadjdPMjZZY1pEMjlwS3FtTWc3M2h1SFlqRkZtNy0zQWZHYUIwMkM?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "[현장] 오문권 대한항공 재무본부장 “내년 통합사 배당정책 새로 마련”",
+     "d": "www.fetv.co.kr",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HOWpSWFJvTmtxdWFHOFl1X0FsVHRxYjBybUl3dWNqZGhjSXVpQnVHVUNmbHY5eWV3WjFaUGxnVVZ5d1VQTVBCSFFKNTRKblpnTWU4NExVTURNbDRMQnJRTXR2dnZjNkVk?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "통합 대한항공 출범 앞두고…한진, 배임 의혹 쟁점은",
+     "d": "스마트투데이",
+     "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBhb1RIbHg1eEpOUUdBSHFORXdHZmU2UnFlUllVUWFUWGhwUWhCa2NBMHRiSFdXanZoVGxIcUt5eldvRHpzNHNuN1VTMWdnMkQ0OV9BcHgzcWI3ZDhpTGdJ?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "대한항공, 사상 최대 매출과 아시아나항공 인수 계획 발표: 003490 상승세 이어갈까?",
+     "d": "Traders Union",
+     "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV0x6cTNCcG9OcDhIM0lUWTEwS1dWR255Wk9QcVZOSGY2NlVnaURxSUhDZXVrVExOeE44THRpQ0hzMFFkTVdhSXM0blFrWVpDNnJnU0pFUzdheExDMlNkM1JVTlhLamFZbTZxY042amVwMHN3SnZHMXh5cXUyV3B4VDN3SzQ0bWRUYzktWDhiN3VXUQ?oc=5",
+     "l": "pos",
+     "dt": "11-24"
+    }
+   ]
+  },
   "086450": {
    "score": 0,
    "issues": [],
@@ -817,6 +851,14 @@
     },
     {
      "k": "뉴스",
+     "t": "'더마 코스메틱 열풍' 이끈 동국제약, ECM 시장까지 뛰어든다",
+     "d": "뉴데일리 경제",
+     "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJTW94UHNVSTBaYUJnVkpEQzZyRUl5T3hRNVJscEtiNzdzU3htRGhfOGxRUi1tclFpNnpPanlRbS1VLWVyRWRIS0Z1SjkzU1ZFMTNwcGJIeVN2NVM2Yzl2b3cxNWs5TDN4RGhHRGhLc2tzTHNzYjJWSE4wa9IBgAFBVV95cUxPQk0yUlFKMk5FdDhGaWZyakhjc1ZqbldYR1lTYVRLVUNsOXNCV2NTYWl3VFlVVjYwMm1iT3pIQ3hocUg1MV9sU0hkcXRpZzVlbFl2cHNKOU51ZnBxN0tDT0xMa1JWTG12enJoUHBHSnVjNFYtUUduNXZTbzNJcGtaWA?oc=5",
+     "l": "neu",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
      "t": "동국제약, 시지메드텍과 인체조직 스킨부스터 출시 협약",
      "d": "Chosunbiz",
      "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQlFJU0N4enlTdE5xVVNzV19Yam84MDBnRURVczhEN0lhbjd6RURwQ2ZpRW56a25TTzdUMExKb08yQmV2OFZaSGptSzRXOTRoOGxPTGRVUVZseHJQZGluUnFNTERxeTFmdU1vTjN6QTZzNEdJSGZiTHBya0lPdnluQVJwSlRnVnfSAZsBQVVfeXFMTTRoMWlmSnc1WWZkWTh1Z2paUDZXdW5qWFYtcGgtU0Vzd0VYX0lPQkRsM0dkRGxVUldvZDN0ODFSYVlrdzZGZ09RWnFFZDFTdjNqcmdCQjZld0Y1dGtwNGQ1NGd5YmJJdW5SUXd5VUJ1QlZzWk5GcXFQcno0WUJrOS0zN1NqT0JxdFpCZ0lZRTR1WnpiSzRZVmxxRzg?oc=5",
@@ -825,25 +867,17 @@
     },
     {
      "k": "뉴스",
-     "t": "동국제약, 시지메드텍과 인체조직 ECM 스킨부스터 출시 업무협약 체결",
-     "d": "코스인코리아닷컴",
-     "u": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EaGVUQU1jRzkzdDl6VFdQVklCWjJpWUhudWRkVEFPYzNSSEl6ZU13LWlKY1dfeVBmNDg5cWJmbTB5UDhvVXhqRFU0Z1JndzVsdkdIbnRDbE9jQm0xTDRDaDk5OA?oc=5",
+     "t": "동국제약, 시지메드텍과 인체조직 ECM 스킨부스터 출시 협약",
+     "d": "청년의사",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBYN1VwMmpWMVNXc09vRmd5LVBhSjIwSHh6dndKamc2enNJSzdTNHZuLWxFcXpOT2MxUVZ0RUItNTMzOThPZHhFUUtHQzlBU0Y5VEVoMXRVbUxmN285U29Qa1FvUG1iRkVjMlFsVlVLRGVGbmPSAXNBVV95cUxQWDdVcDJqVjFTV3NPb0ZneS1QYUoyMEh4enZ3SmpnNnpzSUs3UzR2bi1sRXF6Tk9jMVFWdEVCLTUzMzk4T2R4RVFLR0M5QVNGOVRFaDF0VW1MZjdvOVNvUGtRb1BtYkZFYzJRbFZVS0RlRm5j?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
     {
      "k": "뉴스",
-     "t": "동국제약-시지메드텍, 인체조직 ‘스킨부스터’ 출시 추진",
-     "d": "덴탈투데이",
-     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBYXk2OGdIZ19LVk1CZEpibzctc0ZDbmFzVjRiXzNzMC1QcHlzZHcxQXpka3JLMU9RaDRHQ0VLMnVqSUw4NzRwQmRxNmdxQW1Pc194MVpSYlVjaGp3dWR5YTVqLXFyZ0RY?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "동국제약, ECM 스킨부스터 시장 진출…시지메드텍과 맞손",
-     "d": "서울경제TV",
-     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95clQxWnRGbEVnemE1eEdvbU5QTk5iaE90ZGZzSExxbWc1UENESE9rYmpvQzBoajg5WVd2Q1Y2NFJ5bmNmZDhkME9oQk9sZzdIcEpUcElVZ0lYTnNWcnh2eXp3bDY?oc=5",
+     "t": "동국제약, 시지메드텍과 인체조직 ECM 제품 사업화 협력",
+     "d": "한국섬유신문",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBfNTNpLTktWUlzS0lKUUhzMkRIdkNCck1QZHk1eTNiTUhORG14NUpqNVFJVVhyNG51cUE3Y2xnNGk3RFRlamtkdGUyWE5GQlU5aTc3TERWX0tqTjRKTjd0MjY4UkJSZVpk?oc=5",
      "l": "neu",
      "dt": "11-25"
     }
@@ -935,25 +969,25 @@
     },
     {
      "k": "뉴스",
-     "t": "CJ ENM 스튜디오스, 웹툰 제작사 ‘만화가족’ 분할 후 지분 매각",
-     "d": "일요신문",
-     "u": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4xVlNSSXBIX2JBbTNCNXliWGlsaU1DUm9MV3owN0FrSDk4QVA4Q1FjU2Y4X0pwQ2hLYS1lWm5tNzJySGs0bGhVVENXZS1JcWxzS19LdXA2djdqU3NhMUJOcUttbVpEZw?oc=5",
+     "t": "LG헬로비전, 26일 0시 CJ ENM 4개 채널 송출 종료",
+     "d": "지디넷코리아",
+     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Cendjbmx4cmx3N3hGcTlhZzJDVk01bm5ZaEdOd0FwOXlxbVp1cG5KY1FzSWNCTlVaRFowT1RTQkttRUZ2VU9ibVJYcW00b1d1YWVEUjRB?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
     {
      "k": "뉴스",
-     "t": "CJ ENM Takes AI Advertising Beyond Traditional Product Placement",
-     "d": "매드타임스",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GU0Q4ZTBobHFFRkxGbVNxZ0ZJQ0IwVm1DOGtwNDBtX0czV091T0FjSWE2NGlfMWlIdlRHT0t2TktkRE1NRGh1eWlDdTg5Z0FkLTlXN0RDdTJudk1xcjZ1VDlTWmNPQnJyVkF4bA?oc=5",
+     "t": "LG헬로 가입자, 내일부터 투니버스 못 본다…법원, CJ ENM 가처분 기각",
+     "d": "이데일리",
+     "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOS0Z0OHUxRXNwZjdUaFQxWEtOOGpNRTdZZDdOUzZBZkJSTThybWVCNS1QT21XbUR2S0EzcFZ3Q1Q0eHQ4b1RpQnlIVXBCWjZCTzhuYlNZblRqdGdOYVVrZ1B4UmpTeHVMQzFkNEdVSUdHUDRYSk5GbXplY0JXczlCUg?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
     {
      "k": "뉴스",
-     "t": "판교 스타트업 투자 협의체 출범…CJ ENM 등 11개사 참여",
-     "d": "인천일보",
-     "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rTEN5bkotVHpYeGpMczdQX3VqQ1M1SXhpR015bTY1RzVnNkNpNEtGVnliMXBLSnRwVVc2eWdXNmR1aFFvX3JSeGF4U1lWWV9qNWxBR1dFUWtJZ0p1bk9BRTB0bXllU0JzUUVLWXBmT04?oc=5",
+     "t": "법원, CJ ENM `송출 종료 금지` 가처분 기각…LG헬로서 4개 채널 종료",
+     "d": "디지털데일리",
+     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02a3A1Q3ZRRmpHeHdZSjh5ZDhWdUJ4NGF3ZnMzUDJQM1ZlekZOUGprQVZFM3RDbXZDTkpJbmp3eUwyaEYtY3RlbDV5X2lmNjllWEhoZ0RXMXlacmM3ZXdmWU5feXQ?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
@@ -989,9 +1023,9 @@
     },
     {
      "k": "뉴스",
-     "t": "키움증권, HK이노엔과 퇴직연금 팝업스토어 ′크크펜션′ 운영",
-     "d": "메가경제",
-     "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zZGZmQnlDZmVJU3BXWTYtbC1jbXRtRG5kUTNWZ0hYVjR0WmI5RkRvN2FxYmxDZXVfVWFXZ29sQm5YN0VQVVRObjZldk4ySzlsNl9VdDZZclNpTERnUGVvOEZoYlk4SjNxcG1LNWRycHlzUdIBckFVX3lxTE9zZGZmQnlDZmVJU3BXWTYtbC1jbXRtRG5kUTNWZ0hYVjR0WmI5RkRvN2FxYmxDZXVfVWFXZ29sQm5YN0VQVVRObjZldk4ySzlsNl9VdDZZclNpTERnUGVvOEZoYlk4SjNxcG1LNWRycHlzUQ?oc=5",
+     "t": "키움증권, HK이노엔 컨디션과 '크크펜션' 팝업스토어 오픈",
+     "d": "뉴스락",
+     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Sa3ozam1tRFZsUW4zekdFQWc2eVpBWDRZOUdHWGt1LVB5dDhaLWp5eUF3UUtyZ3pkeHVzdnhpT3dPOV9VaTRfdkZpQkdKVWk2TGtySTk5YUtFMVMxTUtqYW9DbFE2Qi1yWXByVg?oc=5",
      "l": "neu",
      "dt": "11-25"
     },
@@ -1005,9 +1039,9 @@
     },
     {
      "k": "뉴스",
-     "t": "키움증권, 컨디션과 퇴직연금 팝업…음료 마시며 IRP 절세 체험",
-     "d": "중앙이코노미뉴스",
-     "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FUHdxMzQ3U0tuWVRJbTkySWgxY1lfWU01Vy1fQ2ViYTg3SmJIc0o3cnNTU0d4am4zeFJidTV4ekU1Ujh0WkRVeGhOZnI2VmZyUGFEaXpIdjJlSEhxRFc0c1A3UVhDajFBWUZ0endIZi1rUQ?oc=5",
+     "t": "HK이노엔, 키움증권과 손잡고 퇴직연금 연계 팝업스토어 ‘크크펜션’ 운영",
+     "d": "직썰",
+     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1iZDVGOGlPNHNDTkZMTk52UGlVNU5RZm9adHFqOXlWNHdCVFc3S19Ua3hrSkNraFFXRUF3T1RUXzFFZnlGajA1d3licW1nQ200eDJxbnZ5Yjl5X3RqN1dKVE1CVU00NGRFNGh4QdIBbEFVX3lxTE1iZDVGOGlPNHNDTkZMTk52UGlVNU5RZm9adHFqOXlWNHdCVFc3S19Ua3hrSkNraFFXRUF3T1RUXzFFZnlGajA1d3licW1nQ200eDJxbnZ5Yjl5X3RqN1dKVE1CVU00NGRFNGh4QQ?oc=5",
      "l": "neu",
      "dt": "11-25"
     }
@@ -1200,14 +1234,6 @@
     },
     {
      "k": "뉴스",
-     "t": "이수그룹, 류현진재단과 유소년 야구 인재 육성 지원",
-     "d": "뉴스핌",
-     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uRFBMTzU5Z050YnRtcTU4Nkd3VTBzRUVxUzExNUhSWF9rTXdQSno0bXE0M3E3YWFVbFJpR1g5a3VMLXFVODE4SFkyZ20tdmF4V01kNVVLU2FYSzZX?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
      "t": "이수스페셜티케미컬, 27일 국내 기관 대상 NDR",
      "d": "비건뉴스",
      "u": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1lelVPRlRFYTFhWWNVUzFYMEJIcWhnZ3NNYTdpWWNNVmw4czYwWERzNnpXa1hvUEpjZjZtTjh3VHVKa0Q5SUIyZk1kODhtUVRtUGlmd05yVjhiVnBBQWY2dXRRN0Vtdw?oc=5",
@@ -1229,6 +1255,81 @@
      "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wZGJoM3NSbkxTcU9UYnVPRGc3XzFia0FDbEZhSVFVdkVYY3QzdnB4NnRvMmFNeThJUHRjMURQeWREaFFfNlBJVWxha1RZVFFkeU9Qc201c0VjWE5KckFxREFNcC1WNWpJb2dsWEJRbkpUdE5zcEJz0gF3QVVfeXFMT3BkYmgzc1JuTFNxT1RidU9EZzdfMWJrQUNsRmFJUVV2RVhjdDN2cHg2dG8yYU15OElQdGMxRFB5ZERoUV82UElVbGFrVFlUUWR5T1BzbTVzRWNYTkpyQXFEQU1wLVY1aklvZ2xYQlFuSlR0TnNwQnM?oc=5",
      "l": "neu",
      "dt": "11-24"
+    },
+    {
+     "k": "뉴스",
+     "t": "[마감분석] 이수스페셜티케미컬, 19.83% 급등하며 8만 2,200원 마감 : 기업주식정보",
+     "d": "재경일보",
+     "u": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9Tclp2SXI5VWRlb2ZMbzI4alp3SGY3dG51N2ZxSUdVNGNNd2lHb0E1MGpaM0Z4ZlZkOWRIUVd6WXE4aFp4d1NjeGZZRQ?oc=5",
+     "l": "neu",
+     "dt": "11-24"
+    }
+   ]
+  },
+  "111770": {
+   "score": -100,
+   "issues": [
+    "유상증자",
+    "수주",
+    "자사주",
+    "실적 부진"
+   ],
+   "news": [
+    {
+     "k": "공시",
+     "t": "유상증자결정(종속회사의주요경영사항)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800520",
+     "l": "neg",
+     "dt": "11-17"
+    },
+    {
+     "k": "공시",
+     "t": "유상증자결정(종속회사의주요경영사항)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800516",
+     "l": "neg",
+     "dt": "11-17"
+    },
+    {
+     "k": "공시",
+     "t": "분기보고서 (2026.09)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001758",
+     "l": "neu",
+     "dt": "11-16"
+    },
+    {
+     "k": "뉴스",
+     "t": "닫혔던 글로벌 패션 수주 문 열린다…영원무역·미스토홀딩스 동반 강세에 투심 '들썩'",
+     "d": "핀포인트뉴스",
+     "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5IZllsanRrWmdwbzY4WkRCRm5ONVdYeUhqWWZLZk96bENWOGFydFlVSjFaR014cFVwUk1vWnZRd3JNbHluYU5hMFI1U1BCRXB4bE8tTkFsN19FTlUtSzZhOU5BeXFGVWVlWGt5SGRmOVpVdFVQbkJR0gF3QVVfeXFMTkhmWWxqdGtaZ3BvNjhaREJGbk41V1h5SGpZZktmT3psQ1Y4YXJ0WVVKMVpHTXhwVXBSTW9adlF3ck1seW5hTmEwUjVTUEJFcHhsTy1OQWw3X0VOVS1LNmE5TkF5cUZVZWVYa3lIZGY5WlV0VVBuQlE?oc=5",
+     "l": "pos",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "“환율 직격탄 맞고 스캇 여전히 적자 늪…영원무역, 역성장 터널에 ‘실적 보릿고개’ 진입”",
+     "d": "뉴스퀘스트",
+     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51SW9RYk5WV2pVVE4xN21FbDgtbm9xajZ6RjhLSlJZOFdMQ00zeUprM0t3dHk3bFBBb3hVanMxWEtFSGkxWlhaSkJtR1BETV9LaTdOU1FJZ3VhZ0xBZFMzUUZlbmo2SkJldDZvNVdnVQ?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "유진투자증권 \"영원무역, 환율 하락과 기저 부담…목표가 하향\"",
+     "d": "글로벌이코노믹",
+     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNVBjVFFkTFNFYk1LeWh2cmZWTWlnU0dlM3dtbkhad2RKQnNPWFBxSHVSaHZpTUhaSVd5NWQ5bXVOelItMmhEQW4zaTFWc0d5RG1yTmJSc2c0dFVsTmd0cFdiei1tT3dLc1NBVjQ1SEF2N0xKWVRXX3psdkcycGhnS0tYemdOWWVG?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "증시 한파 속 패션주 저평가 심각…‘자사주 소각’이 주가 하락 최후 방어선",
+     "d": "Fashion Insight",
+     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCcnEyekFOSHlhZXB6NUUyNXJ1M2xHbDlud2hzWE8tUmdiM3l0RUN3NGNDLUUybkVaeF9uOFRUenZXTWFqOVkxVVFiZjQ5S2pnY1c1Q3V3?oc=5",
+     "l": "pos",
+     "dt": "11-23"
     }
    ]
   },
@@ -1283,73 +1384,6 @@
     }
    ]
   },
-  "111770": {
-   "score": -100,
-   "issues": [
-    "유상증자",
-    "수주",
-    "자사주",
-    "실적 부진"
-   ],
-   "news": [
-    {
-     "k": "공시",
-     "t": "유상증자결정(종속회사의주요경영사항)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800520",
-     "l": "neg",
-     "dt": "11-17"
-    },
-    {
-     "k": "공시",
-     "t": "유상증자결정(종속회사의주요경영사항)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800516",
-     "l": "neg",
-     "dt": "11-17"
-    },
-    {
-     "k": "공시",
-     "t": "분기보고서 (2026.09)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001758",
-     "l": "neu",
-     "dt": "11-16"
-    },
-    {
-     "k": "뉴스",
-     "t": "닫혔던 글로벌 패션 수주 문 열린다…영원무역·미스토홀딩스 동반 강세에 투심 '들썩'",
-     "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42MkhYbVJPZjZYOVNUdUhGUzZfRkxUVUgzMC1ic2FvbWZxelhmcnBFSTdzRExZemwxWW12VGx2N21LNmlzMkc0aWpkbFpIVDVqWENtbzYwMDJ2VWVjdmozSkkxNi1KeXdIRzJ1VEx3dWE5QnPSAXdBVV95cUxOSGZZbGp0a1pncG82OFpEQkZuTjVXWHlIallmS2ZPemxDVjhhcnRZVUoxWkdNeHBVcFJNb1p2UXdyTWx5bmFOYTBSNVNQQkVweGxPLU5BbDdfRU5VLUs2YTlOQXlxRlVlZVhreUhkZjlaVXRVUG5CUQ?oc=5",
-     "l": "pos",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "“환율 직격탄 맞고 스캇 여전히 적자 늪…영원무역, 역성장 터널에 ‘실적 보릿고개’ 진입”",
-     "d": "뉴스퀘스트",
-     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51SW9RYk5WV2pVVE4xN21FbDgtbm9xajZ6RjhLSlJZOFdMQ00zeUprM0t3dHk3bFBBb3hVanMxWEtFSGkxWlhaSkJtR1BETV9LaTdOU1FJZ3VhZ0xBZFMzUUZlbmo2SkJldDZvNVdnVQ?oc=5",
-     "l": "neg",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "유진투자증권 \"영원무역, 환율 하락과 기저 부담…목표가 하향\"",
-     "d": "글로벌이코노믹",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNVBjVFFkTFNFYk1LeWh2cmZWTWlnU0dlM3dtbkhad2RKQnNPWFBxSHVSaHZpTUhaSVd5NWQ5bXVOelItMmhEQW4zaTFWc0d5RG1yTmJSc2c0dFVsTmd0cFdiei1tT3dLc1NBVjQ1SEF2N0xKWVRXX3psdkcycGhnS0tYemdOWWVG?oc=5",
-     "l": "neg",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
-     "t": "증시 한파 속 패션주 저평가 심각…‘자사주 소각’이 주가 하락 최후 방어선",
-     "d": "Fashion Insight",
-     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCcnEyekFOSHlhZXB6NUUyNXJ1M2xHbDlud2hzWE8tUmdiM3l0RUN3NGNDLUUybkVaeF9uOFRUenZXTWFqOVkxVVFiZjQ5S2pnY1c1Q3V3?oc=5",
-     "l": "pos",
-     "dt": "11-23"
-    }
-   ]
-  },
   "251970": {
    "score": 50,
    "issues": [
@@ -1366,19 +1400,19 @@
     },
     {
      "k": "뉴스",
-     "t": "화장품 : 비반도체 대안, ODM 3사와 펌텍코리아 주목.",
-     "d": "네이버 프리미엄콘텐츠",
-     "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNMjFGLTN3YmlaRElfMlRFd203ZkxkMW9ETEFlSGlTTjVFbEpTX09jWWR5c2tRNW5IbjRDUEUyR3c4MlN0UHg4UG0zc05tQXM3TFd2TEZ1SmlybHFRQVJyVTQ5YkcxUU1HRG1PR09Ed3doWk9OblAzUWlUWXhfeE56VzVxUQ?oc=5",
-     "l": "neu",
-     "dt": "11-25"
-    },
-    {
-     "k": "뉴스",
      "t": "[리포트 브리핑]펌텍코리아, '맘껏 호황을 누리다' 목표가 100,000원 - 하나증권",
      "d": "뉴스핌",
      "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GMTZUM3dpUVItUFF5M1NKWHJOQnFHclZiYllpcnBZR2Z0cU9UeUM5TWNmeUM4Y3BKMEFyUHkyYWs0X0Frc1JkVWFGNHVUZFhwTFpVX1Z2MDRtOE9z?oc=5",
      "l": "neu",
      "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "펌텍코리아, 25~27일 3분기 실적 IR 진행",
+     "d": "비건뉴스",
+     "u": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lMDhySmxUelZ6c211ekthVnh0a0tzWHJxbVNQVjlPNmRNSWRjQ3I3ZzFSZ1BUUDRYNWdnMU1qSDdYRU9OXzg5cEZ0ZEcxdEhJbHkteWZjRnl4YzBIckctUG9BRE53UQ?oc=5",
+     "l": "neu",
+     "dt": "11-24"
     },
     {
      "k": "뉴스",
