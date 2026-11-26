@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-26 17:35",
+  "generated_at": "2026-11-26 18:10",
   "analysis_date": "2026-11-26",
   "method": "키워드 규칙 기반 (공시 가중 1.5배, 점수 = 가중치 합 x 25, 범위 -100~100)",
   "sources": [
@@ -98,7 +98,7 @@
      "k": "뉴스",
      "t": "[코스닥 외국인] 주성엔지니어링 스피어 삼현 대한광통신 사고 에코프로 HPSP 로보티즈 팔았다",
      "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE50MUF5Uk9vS1RYeWQ3eUtBdkNlaWNscW13b095RDYwMlhfaXM4SmRfZUh4Y1l5azR2MHI0cC1YYktORS1fZ3pIbHhNYWE1eTU0STVZOUEwbkVWUldsZ1NwNS1sU3hJX0g2YWZqUGFEazRRam_SAXdBVV95cUxPYnBVOTktdW42bVM5TTB4R3VHa0N4Z3I0c3o2RWp1eE1DRDIzbFJleXZPU0V1VnZ5MU1TYVVTcTc1RktNYzhHejJsaHZfN1VxM1VoQkZKSlNSYV80T3F1bG5EZ2pWMjJRN3RXYTVaWEU0Y2Z6N1RoRQ?oc=5",
+     "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9icFU5OS11bjZtUzlNMHhHdUdrQ3hncjRzejZFanV4TUNEMjNsUmV5dk9TRXVWdnkxTVNhVVNxNzVGS01jOEd6Mmxodl83VXEzVWhCRkpKU1JhXzRPcXVsbkRnalYyMlE3dFdhNVpYRTRjZno3VGhF0gF3QVVfeXFMT2JwVTk5LXVuNm1TOU0weEd1R2tDeGdyNHN6NkVqdXhNQ0QyM2xSZXl2T1NFdVZ2eTFNU2FVU3E3NUZLTWM4R3oybGh2XzdVcTNVaEJGSkpTUmFfNE9xdWxuRGdqVjIyUTd0V2E1WlhFNGNmejdUaEU?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
@@ -248,8 +248,7 @@
    "score": -100,
    "issues": [
     "제재",
-    "목표가 하향",
-    "실적 부진"
+    "목표가 하향"
    ],
    "news": [
     {
@@ -286,6 +285,14 @@
     },
     {
      "k": "뉴스",
+     "t": "공정위 \"CJ프레시웨이, 복지시설 식자재 납품하려 금품 제공\"…제재 착수 - 머니투데이",
+     "d": "머니투데이",
+     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOZWh3Si1WMk9ERTlMM0tNdmJsZDhESUpydXp0cnZsT3k1Sm9vTUNtU3RfVHh3ZkNPVGR4WDRmVFgyOEU0RkN4TzZwdzV5aF9jamRCbUhkcW5UdFh2eDNlb0xfa3cyN0k0V2hj0gFwQVVfeXFMTXdNUUdjNFUzZHdsSDRqYnFyX3M4M2Zob3g2S2xrMWFGTUdXZXBUaWdlYklQeERoODE4SlplaVNGRFhYUHA1V2NUTlcyaV9kb3FiczFBZDBTMVRUQWNnaXRZcDA5M1BkQVd6ZV9sZWY4dA?oc=5",
+     "l": "neg",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
      "t": "‘기부금 리베이트’ 빅4 식자재 유통업체 ‘긴장’...CJ프레시웨이 제재 수위는?",
      "d": "세정일보",
      "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5aalMtYmxIalJfaXdDR01HRWJCdkNabVdlWC1VMTlrTXVwWTJURV90dzN6VXNWazdKUXpxTGdDdHJSOFBQajF1Y3liTkgyRnJRSndBUWNYYU1QRTVZQ3F2b3BQZ2JLdlJXSnlIVg?oc=5",
@@ -297,14 +304,6 @@
      "t": "대신증권 \"CJ 목표주가 하향, 의무공개매수제도 도입 지연으로 순자산가치 할인율 높여\"",
      "d": "비즈니스포스트",
      "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SUHFrZHA4eWo0QmdLN25OM09nT0M4RmJCSDFFT090OGtNaTY5VTRpTDgzazIyWUFQcEpHc1pkb2E3Slg3Wkw3VHAtb3hKVmtUMDExenA4ZmJBelpPazhxc09yVDJ2TjJieHg1SnZXd04zRDQ?oc=5",
-     "l": "neg",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "CJ, 3분기 영업이익 기대치 하회...성장 위한 비용 구간",
-     "d": "알파경제",
-     "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuSzl4N2lTcjBYYjlWX1RPZXJ1YzhIZEJ5a0ljYW9vZHVxQUN6dlVPWWYzalZsS2o4NnRTRlFOTnRkLU1zVFNfXzcxY01hMWlKek4waVFLVW1MMXVFN1BvXzhCZThuWm5Zb0ZJak1R?oc=5",
      "l": "neg",
      "dt": "11-26"
     }
@@ -471,18 +470,18 @@
     },
     {
      "k": "뉴스",
-     "t": "CJ제일제당·동원F&B ‘어묵 포장’ 소송… 메로나·크린랲 판결로 본 모방의 기준",
-     "d": "Chosunbiz",
-     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWmdkTXhmcVZocnZUT21wYWV2V0RvSTJsQ1JZcVZmRkhNOXhNYzFZX0JMaTJCWk9QYmQ5M2RIWkxGckI0bVpMMG1NaWRXeDRtcGpjdnVhR045cndSblRhNTVZaHA5d0tOc2ZMOWZLMmhHcGpDUDJveTBvRzJhRkxvVnkyZmhES19FU1HSAZ4BQVVfeXFMT1dBNUtuOEdtaG1TT0xNRDZNcGZkRThLNnJfTHB0YzJiYWs4QmNWRDV1ajZTZlBoZ3pmMS1ycnF6SmZUM1dreXY5MnpqRE5HSTNXYWNJR25lcHl5UTBsNzA0VzRzOVFUUzRsa1ZPNXA3RGs3QnViMzV2dzFNc1VWTmpYVk91VUowUGZIdUg1dGxWTlI0SnF2REYyNF9Za2c?oc=5",
-     "l": "neg",
+     "t": "CJ제일제당, 햇반 용기 업사이클링 교육 ‘햇반 똑딱 프로젝트’ 진행",
+     "d": "내외뉴스통신",
+     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12Uk82TlhOckU1d3JtazAxY3o0Rk1DZk9waGV5UFNtdzdZcDhwNkpVRUlvV3ZDRm00ME92SWc1ZHM4N2RZdmJUODJpWXU1NW5SVEhCOElyWVRPcWRQNWxNb3ZKMUYzYXh1dFF3SNIBcEFVX3lxTE1kVGU0OXhKSi1DTy14eEtjTUgwRWk3LU9rd2loZnhmUUpMQTFlZVV1WmFDa090bTdJd3VHa3VKOXN1WUtzM2V1X2lBbHdFUVZEUm5jZ2pYcXNiNzRWQTZvQjdGdzlpYXhMNkk1MU1nTnQ?oc=5",
+     "l": "neu",
      "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "CJ제일제당, 초등학생 대상 햇반 용기 재활용 교육…시계 제작 체험",
-     "d": "지디넷코리아",
-     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QRVVkNnU2MHM1ZWVKUDN2bjdIRXJMWmV0UFdiMVJ6cWY2aUwyRDhEZGVSQjllbGJNbENneW9WaU5Rd0k5Z1gxRTBlVWtIN3dGRmVjYkJ3?oc=5",
-     "l": "neu",
+     "t": "CJ제일제당·동원F&B ‘어묵 포장’ 소송… 메로나·크린랲 판결로 본 모방의 기준",
+     "d": "Chosunbiz",
+     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWmdkTXhmcVZocnZUT21wYWV2V0RvSTJsQ1JZcVZmRkhNOXhNYzFZX0JMaTJCWk9QYmQ5M2RIWkxGckI0bVpMMG1NaWRXeDRtcGpjdnVhR045cndSblRhNTVZaHA5d0tOc2ZMOWZLMmhHcGpDUDJveTBvRzJhRkxvVnkyZmhES19FU1HSAZ4BQVVfeXFMT1dBNUtuOEdtaG1TT0xNRDZNcGZkRThLNnJfTHB0YzJiYWs4QmNWRDV1ajZTZlBoZ3pmMS1ycnF6SmZUM1dreXY5MnpqRE5HSTNXYWNJR25lcHl5UTBsNzA0VzRzOVFUUzRsa1ZPNXA3RGs3QnViMzV2dzFNc1VWTmpYVk91VUowUGZIdUg1dGxWTlI0SnF2REYyNF9Za2c?oc=5",
+     "l": "neg",
      "dt": "11-26"
     },
     {
@@ -528,17 +527,17 @@
     },
     {
      "k": "뉴스",
-     "t": "유한양행, 40년 경영승계 전통 뒤흔든 3가지 파격 인사",
-     "d": "데일리팜",
-     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SYk5HY295TFlqLXhvU0o1cjc0elhsQmhpaTFKVlpBNWZfYUE0M0cxV3hUekk5U1F0RkpmenhJS0VPbzloUHJoZDY0LTgwTFhvXzhscmNR?oc=5",
+     "t": "[유한양행 새 판 짜기] 100년 역사 속 바뀐 인사…키는 '성과주의'",
+     "d": "블로터",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjOTRIbGltTkd5SHY1dW5jem1yYlVnenVZWG9nQjczcVZYZzM0N055dTlGRkZFdTZtb29yWV9QRy1tVzlDMWJSbGpJYXhHQ2ZwcTB1czJHamFnOV9ERUg0WnVHTTVsOWt10gFsQVVfeXFMT21ncF9DaFBJMVhLS1NKcE1kVDUwSEgzSHU4ZnZRTGgwbjd6S2hqY2ltVWw4dTc4WFY2dmpXaElncFM2dEw1YWxKTDFoT3pKMlB6c00wRGF4cUZvcEVoNFRINjFja3RsODJmRUxs?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "유한양행, 김열홍·강대식 투톱 선택…‘신약부터 생산까지’ 미래 봤다",
-     "d": "인사이트코리아",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9KMko3d2E0ZENRZExtaDBNd0VnYU1WVmxPcEdjUVNvaEFCRVBRcEpHaUV4Wnp4RFdWX1lLcXlRb2pJbVE1Tl9MQndYZGZOSzV2TEk1TGNocmNkX0xvdkYwblRQVWJqeVVxdDlsZWNxYWlMVWPSAXdBVV95cUxQR2FGUUYzdWhQNXRfOTVWNDh3cGFDUm5lYTU5cl9EdngzSVhMd1NxNFBUZHJwUEJEQkIxT01OMkhJM2lmRE03Z05PekRBRTdRcUplWTNnU053XzFpSlJjT3pOSXZWNk1LeUllZ01pNFBRM0ZWQUpKNA?oc=5",
+     "t": "유한양행, 40년 경영승계 전통 뒤흔든 3가지 파격 인사",
+     "d": "데일리팜",
+     "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SYk5HY295TFlqLXhvU0o1cjc0elhsQmhpaTFKVlpBNWZfYUE0M0cxV3hUekk5U1F0RkpmenhJS0VPbzloUHJoZDY0LTgwTFhvXzhscmNR?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
@@ -625,11 +624,8 @@
    ]
   },
   "003230": {
-   "score": -100,
-   "issues": [
-    "급락",
-    "실적 부진"
-   ],
+   "score": 0,
+   "issues": [],
    "news": [
     {
      "k": "공시",
@@ -649,35 +645,35 @@
     },
     {
      "k": "뉴스",
-     "t": "[코스피 지수선물 옵션] 삼성전자·SK하이닉스 선물 급락...반도체 매도 압력 속 알테오젠·삼양식품 선전",
-     "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA3UTZrWjdRa1Jwb3V0Qmw4bFBITHJSd0VVcUthM2dFRzdGTC0xQnJvOTBEOUw1Y290a180b0hQYWxKa2NKUS1GeHF4WFB3eHZieGpOT0UwTnczTFpWR1l5WEUzSnhZMVhGWDRVeXhfUWotQWtWQ3Y40gF3QVVfeXFMUDdRNmtaN1FrUnBvdXRCbDhsUEhMclJ3RVVxS2EzZ0VHN0ZMLTFCcm85MEQ5TDVjb3RrXzRvSFBhbEprY0pRLUZ4cXhYUHd4dmJ4ak5PRTBOdzNMWlZHWXlYRTNKeFkxWEZYNFV5eF9Rai1Ba1ZDdjg?oc=5",
-     "l": "neg",
-     "dt": "11-25"
+     "t": "삼양식품 중남미서 불닭 판로 넓히는데, 현지 터줏대감 일본 회사의 '수십년 장벽' 더 높아진다",
+     "d": "비즈니스포스트",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9uR01kWmZ1UERiMG9DTkJfTm95QlpkM2xOZ3cweEd4MUg3M3l6UGpLVi1BaF9COUdJcnd1X0NYOUhnUGlIN29xTF9hSnlQaXI4YlZudkszSURzQmc1dFdLemUxV3BVdnZBOHdRUDFvdVhjSjg?oc=5",
+     "l": "neu",
+     "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "하루 만에 5000피 반납…반도체 쇼크에 코스피 6% 급락",
-     "d": "매일경제",
-     "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1NQ0paT0w3b2tlY29pcWc4U3FBd2VDU2ZCdmltRl9uR2syTl9ST2c3aW5VVU1ZSzdwRl9ZTlRpVWFPOHdqTGc?oc=5",
-     "l": "neg",
-     "dt": "11-25"
+     "t": "“불닭 수출 질주에도 환율 직격탄 맞은 삼양식품…원가·운임 상승 압박 커진다”",
+     "d": "뉴스퀘스트",
+     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4wclpmYmlJWURIUWpaZUY0Y0JROEJ6SjBnTzFfUHVqQlNRcDFQSDJUWUlrOHhoQzlFdXR5SDExTFRYTDBPdHlqMER4M3Q4T2tBdmJ5aFpodk12a0NVMEZaM2ZyR1A2SjRmSXl0OUFMdw?oc=5",
+     "l": "neu",
+     "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "공정위 조사·실적 부진·노동자 사망…함영준의 오뚜기, 여전히 ‘갓뚜기’인가",
-     "d": "https://www.ppss.kr/",
-     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB2c29mUi1rQTlaWHB4Q3JybVNTZTVzVUtpQXNOaTZEaTJ5QURvSzRxNVp6dGdrSmVpLWgyWl8yYm05WkxzeEFicW9DOG5Bc25qblFNanNVQk4yQk5NWkV1VVV5WXg?oc=5",
-     "l": "neg",
-     "dt": "11-25"
+     "t": "美 15% 관세에 갈리는 셈법…K뷰티는 국내 생산, K푸드는 각자도생",
+     "d": "뉴스핌",
+     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fbHF6WDgwTm5QUzNXaVpxTkczM1dnanpaR09OcVFvdDBkNmVVdTNFMXNIdVpSTmdsVmtYLVQxYUY1dXhfVjhmYnBXV0hELVZZTUFpVUE5aHBiTWJC?oc=5",
+     "l": "neu",
+     "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "올리면 담합, 버티면 적자···족쇄에 갇힌 식품가 ‘비명’",
-     "d": "이뉴스투데이",
-     "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0eWhrZHlQYmZsY2dqNzJrVFJHd29MYmFrU24xNWRYc0tmbXBCcEdtSVpIYVBMeW4yZUpmOVIwSGtLczRqbFA2NTZrT1BmLXlkTnhZbjRRR2M3ZjlTZWxsTUxhV2pjMHFVWG5Gb3BiR0poZ0Vl0gF0QVVfeXFMUDR5aGtkeVBiZmxjZ2o3MmtUUkd3b0xiYWtTbjE1ZFhzS2ZtcEJwR21JWkhhUEx5bjJlSmY5UjBIa0tzNGpsUDY1NmtPUGYteWROeFluNFFHYzdmOVNlbGxNTGFXamMwcVVYbkZvcGJHSmhnRWU?oc=5",
-     "l": "neg",
-     "dt": "11-25"
+     "t": "[리포트 브리핑]삼양식품, '북미 시장 진입과 생산능력 확장에 주목' 목표가 1,790,000원 - BNK투자증권",
+     "d": "뉴스핌",
+     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1fTTd4eGNKNGZwYkFWTDQ1d1Z3ZEpIZElYM3V4TXRFaVpYOXpYNThTVnFJbjE1NXY0czY4M1I5a2F1RGM4cldFbE1MR0lRd2NJSGtReUFHeWxaMjlV?oc=5",
+     "l": "neu",
+     "dt": "11-26"
     }
    ]
   },
@@ -733,33 +729,33 @@
     },
     {
      "k": "뉴스",
+     "t": "배틀그라운드 모바일, 국제 e스포츠 대회 '2026 PMGC' 개막",
+     "d": "노컷뉴스",
+     "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAzekNnRHlZcGh6UW1vS2t6bkJLTU5zd1A1alh5WU5oalY3WTFTTENtZXZfall3cVBZZTlxM2Q3UTRaaFpwR0tzLVd3ZG0zT21wcHc?oc=5",
+     "l": "neu",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
+     "t": "[위클리오늘] 온라인 게임_넷마블, 크래프톤 ‘(11.26)",
+     "d": "위클리오늘",
+     "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IdzNNV3NPc3BGY2FfVEk2cUZXRUZWUzM2empDY1Y5THJlM2V1T3Fab0taSExya3p2SUdxamFfcjJKNGZLSmxlZURoelZndHRUb1lnYmdLZDBGWG0tVThvTEVBSVg5anhEdUVFTVZ3?oc=5",
+     "l": "neu",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
+     "t": "배그 모바일 세계 최강 가린다…39개팀 이스탄불 격돌",
+     "d": "매일일보",
+     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xTGRfMXlQalVGZ2hXbWhFZ1kwUWRkN3lqVlZlYXhueldDTno0UDhVTDNkbU5iOHZNTThkUGhSNnc3b0dHOFRJZmw5aVY3VHo2aE5vanI1SnBsUi1RWXBaSDhyZ1E?oc=5",
+     "l": "neu",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
      "t": "벤틀리 타고 전장으로...크래프톤, 배그 모바일 컬래버 차량 3종 추가",
      "d": "우먼타임스",
      "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92bG9ub29HV0s3b1hlUGF1dWoySjBLWi0wTHU1X0RWekFTYVhuU3ozTDViRURXYVlfQ25VMjdrSFdzTzREY2R3d2w2MndqSVRIR1d4UTV3aTdRV2hwMWhyc09Wd0NqNUNKT0gxXzNvaVXSAXRBVV95cUxQTzd2ZUhqT3NQc1hyaHBQUV9FMVNBMnU4c0xZZ3pmWHJnSG1pdHRYYVZaajlFT2dTTmhHdWRuVExNNzNONTZHd2VzcE9MQkwyRGFzakN3SUowb2Z1OVI5OXMxclgyRVpfczN3SEQ0TGJjTnhLag?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "'배그 모바일' 세계 1위 가린다…크래프톤, 2026 PMGC 개막",
-     "d": "시사포커스",
-     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5IcEtvT2lKaDV5eGZUME5DbW5jNlA2U1prSGFIQWJ6d2hEUmM0eXBhSXgwRkZmM1dpX2x0OTNTaDB6SjV1ZGJWQ2NpZVVlVWYwdWVlMElNODVsVURfc3VXVkdtS2lKY083ajNkSFlJOA?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "배틀그라운드 모바일, 자동차 브랜드 ‘벤틀리’와 컬래버 실시",
-     "d": "PNN",
-     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZc3FmaE5nLWJZckh3MHRMWmVqak1HOU9ueURpLTNwWUFtXzk0X1dOM1JLSllmWmtuU2Zhb0lpTDZRMFd4TXFkakxiVzAyUEhKLWlCS3FsOVhYOXN0THhEeWtROHA4cmw3?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "크래프톤, 자체 개발 30B급 LLM ‘라온-1 미니’ 정식 공개",
-     "d": "워크투데이",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5EQS1CMDhlWXhTeUJrOVlabzMtYUJnV0tLSnhoTGtuVC13LTdjVl95UzZueGJEcjQwb0wta1JZY000clhDVDR4Q01tM3RDVWhTNDBVQWRPaU5UV2xvYUdxS2NtUXNFMFdjYWl3bA?oc=5",
      "l": "neu",
      "dt": "11-26"
     }
@@ -776,6 +772,14 @@
      "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116001318",
      "l": "neu",
      "dt": "11-16"
+    },
+    {
+     "k": "뉴스",
+     "t": "송출 중단 직전 '극적 타결'… LG헬로비전·CJ ENM, 4개 채널 송출 유지",
+     "d": "더퍼블릭",
+     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9aNF9Sak1qbllUODRLU2E3OURrR2J2akM5X25nQW5zcUc4NHJ0c2M1NW1EVUluWVNTTHRPSzFySDlRRlFvTkU1c00yUlhscXBzRmdfQWItSVB5dnNiQUxtUVRVaDFGTkNteXB30gFvQVVfeXFMTnYza05PQUZWUFY2Y3NlTVZTS21QRUVpLWxoY3UzLTNxeHpCMVIxNV9TZ09YdEl3Q3dtbWx4dEMzTWZ5N0FrTE05aTZ4R3ZwZU1yVWtzLW9EMlNyajZBR1laNFduZm5DWU1tTHZYenpF?oc=5",
+     "l": "neu",
+     "dt": "11-26"
     },
     {
      "k": "뉴스",
@@ -798,14 +802,6 @@
      "t": "극적으로 '블랙아웃' 피했다…CJ ENM·LG헬로 '막판 합의' 배경은",
      "d": "뉴스1",
      "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYZVRhU1NKZHlNaE9vbld5aThSUEFBMG8xWmdzVERDWmZsRzVTb2o2ZXBCMTJXcFpGSkFVNXg0eDd5ZmRsN0t1Nm92NmlsNmJ2VXJQVVB2cTNsM3pLSWE2bA?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "LG헬로비전·CJ ENM, 콘텐츠 사용료 합의…4개 채널 송출 유지",
-     "d": "매일일보",
-     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nYWhnOGxrN3ZQQ3VQUHlmenB3S1dRV3RLVVU1VGdiMmE3RlFWcm9Db05NZUZoUWxXMkMzaDlZejlLSlVvc3BWLXVCVm1mTXRqZUt5MFFHbFYtemNMYWJPazh5NzI?oc=5",
      "l": "neu",
      "dt": "11-26"
     }
@@ -1017,14 +1013,6 @@
     },
     {
      "k": "뉴스",
-     "t": "한국콜마, ‘일·생활 균형 우수기업’ 선정… 인재 잡아 사상 최대 실적까지 견인",
-     "d": "S저널",
-     "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zX2ZfMV9LVFhvR0pEWXFsU2xlbFJTNjdBbkZrYWoyMlBsMVlfb1Qwc1BZNTBacmpsZ2VoWkRtSmVGU1MwZjB0b2I5cHoxdjNWZHZrZWhNYUVkYUlpMXhpbVFNX3pjT1FJdGg2NEN3?oc=5",
-     "l": "pos",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
      "t": "K뷰티 호황에 증설 한창인데… 한국콜마, 노조 출범에 ‘속앓이’",
      "d": "Chosunbiz",
      "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdDFVWDc2LXRtY2xZM01BMHZrTm5pQm9lbG5JUDZDNUJqZ1g3ZHZTUU4tbXk0SEY4N2t6UUUxTTZRMXVrU0lHWkoxdUwzV0V5bnJodTFsVWRPbjB0dXplcXVxUWZUcHZBVlU3LTRHSjNBSDh0WDhNWDZVdVZJdkxJRy00ZTV2TjdBUURXb0xESW12Z2PSAacBQVVfeXFMUHd6d0VRbzVabGpnQS1xVXllZm9CMFVlejlIbmxFM1owX2ZpMFJTS0t6NW9NUDloZUh6REFDWjJ4dWhvODU4V0VsT2hBQXMxSDRtVWpEcnFUM1ZiSmQxc0FpdUptVktmUGRyVWo4a083WFRXYkhrekdVSkRfUkViLVFPTTA3WXpYWDhfZmRRRld3MUxqOWN4ZHJKVWNFaDl6VDdLS0RxRUk?oc=5",
@@ -1036,6 +1024,14 @@
      "t": "한국콜마, 첫 노조와 한 달째 대치…사상 최대 실적 뒤 ‘ESG 리스크’ 발목 잡나",
      "d": "마이데일리",
      "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5xLU5kM2U5Tm93M1cyOV9MN3JsT0lPaktnY29jZjRpQ1BhSWhoeVRxeXM3QThTUmNPM3N6aDdMTlkwUk92UkJVVWJ3N0NDT0xCSF9HS0M1Z25Jcll6NG9DaQ?oc=5",
+     "l": "pos",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "[리포트 브리핑]한국콜마, '수요는 충분, 27년 Capa 증설 기대' 목표가 155,000원 - 키움증권",
+     "d": "뉴스핌",
+     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ncmg2LXhadzkwS3RTdnBjWjctZ0doM2JPRFN5MG1IMXM4WUZEbEJhanNTaHJhWVZDS0twTG4yeUdLZzQ3RWNLbV9JaWFQR0s5MVRkaFlubEZ6aGE3?oc=5",
      "l": "pos",
      "dt": "11-25"
     }
@@ -1235,25 +1231,25 @@
     },
     {
      "k": "뉴스",
-     "t": "한미약품, 비만치료 넘어 근육 회복까지···차세대 파이프라인 공개",
-     "d": "메디칼업저버",
-     "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9QS0xBNjlUSVhRZDRoQUZSR19ja0J2WThxTDVBamFpRFJlbGhFU3VhZmxmeDVoVVJhQUdZbklndGlBc29PMjN4TXlPdmxKdWFFd2ZMa0VvampyQXMtR2hwNExVWGtxNURRV05Z?oc=5",
+     "t": "한미약품, ﻿차세대 비만 신약 등 6건 연구 발표",
+     "d": "포인트데일리",
+     "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEMWZzRlJWSVRpNUpNLTlGdHJKZ3dweDdiYk5fd0t6cDNkWGJUTkdFY2ZZRDJlZC0wS3NqWnFvYXhwcXJqa0trYmJmT3dsZkFKRDlhazhxTllBVU1vRTV4bzRZVWlpOXVsUjRmMGtDRXbSAXRBVV95cUxNS1B2R0JJdm9ncFlvME9qdEdscjBIZUxVZ3pXa2VQQzBzTndlSnlGRXFGc3R6ZDNpMVdPazIwRV85d0NLd2NXdzcwLTFhMHFaVmxOZHdJU1F3Y19FcnpiQ1JYWkIzUGJMbDV1NjlMLXJoZi1vUQ?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "'비만 신약의 현재와 미래' 한미약품, 美 비만학회 출격",
-     "d": "의협신문",
-     "u": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXY2JfM1VYeENiUjZOWTNobm9JTldFMU1tMnBlQ0lHaDNXdnhDVzNYYmNFNHFVRmUwdjJaUHdmTVNGaEs0U05vRklwb3YxM0d1ZFc2SWcyUGtwdUJvVThXQUhxZEtRazhqTVp5X1pGZUNndw?oc=5",
+     "t": "[위클리오늘] 산업일반 소식_한미약품, 온코닉테라퓨틱스(11.26)",
+     "d": "위클리오늘",
+     "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5KazdQWUhYUlZDUkpPLVhGTlpqc0daMjhHckp6dTlYV193eDJZT0ZSVTB4RnM5VkN4QXpYVWExaG5VOVdSM3J5S043RjlLRmlGUXF5YkRUeGdSanZxNGVRZE1yY3RYczQ2X2RrZlVYQQ?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "한미약품 | 비만 삼중작용제 임상 2상 종료 임박, 2027년 기술이전 성과의 다음 단계",
-     "d": "네이버 프리미엄콘텐츠",
-     "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX1VKcUphNy1sbEdOaThZQzI1bG5keU9sSjAzdW91WjZCWUYzc2dqZ3FzRUd1emU0Q0tMTWVOdEQ5b3RBdWZMa0JXME91blRad25NYzJsWVVWWkt3ZzlzM1JVNHRabHdldHRvOWlOU2FJQ3QzeVJkMkp1c1F5OFItS09kc0R6Qnhs?oc=5",
+     "t": "한미약품, 美 비만학회서 선보인 차세대 신약 연구는",
+     "d": "의학신문",
+     "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wbWd1d0dRMG93YmdwMTFkVTNtLUlXVVpBUlpKcTZJQmlGNWhqS05EUDZleWRtNnFOT3VyVG9pcXYtUnlmekhNQzQ5ajI3Q1JtYmk5OE5iZEZUa2dPdjFWMUZwQnNPcmFkTkE?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
@@ -1264,6 +1260,55 @@
      "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCUXBIZ0xpZmxTNVN5UElrMVJNSVN0dG96a2NxbENzcUFFbWp5NFdRMEY2Q3ZtTEduX2Y5RHhVY0NxZDIzUS1YdHFfcHdyWXRrTERvNGNBYl9TS3pwTnkxZXNhel94anpOdHl6OUh3?oc=5",
      "l": "neg",
      "dt": "11-25"
+    }
+   ]
+  },
+  "041510": {
+   "score": -100,
+   "issues": [
+    "관리종목",
+    "시장조치"
+   ],
+   "news": [
+    {
+     "k": "공시",
+     "t": "분기보고서 (2026.09)",
+     "d": "",
+     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001370",
+     "l": "neu",
+     "dt": "11-13"
+    },
+    {
+     "k": "뉴스",
+     "t": "중국 시장 기대감이 올린 엔터업종 '실적 눈높이', 하이브·에스엠·JYP엔터 주가 상승세 이어질까",
+     "d": "비즈니스포스트",
+     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE81M1A3RmgzTzV5RmdvZV9GUXVGeWhKLXR3MnZSX3lNWVZYZkR5T0VlQ2J5UDk4VEV2NHNIT1ZsOXg1LXo1LVpFVUhUWTItcmVOU2Rkdm00cXNHTG1TOXY3dnZGdGRFajdsSE8yS0RmZWhvNVE?oc=5",
+     "l": "neu",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
+     "t": "강호동 20억 투자하고 이사까지 올랐던 SM C&C…주가 72% 추락에 관리종목 지정",
+     "d": "livesnews.com",
+     "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mbUFZb2hjYnpxNlVYUk5GdFNSLW5STFkyZFptZ0p3TElLWXBDV211MFFnV2dIeE5xQmF6WkF5NUIzalZyanR6M3B5OU8xSnVFUjg3aXY2Z2dKTHhhUmpxUldR?oc=5",
+     "l": "neg",
+     "dt": "11-26"
+    },
+    {
+     "k": "뉴스",
+     "t": "강호동 20억원 투자했는데… 동전주 SM C&C, 끝내 관리종목 추락",
+     "d": "뉴스W",
+     "u": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0dnJGVzhzRmIxTkVSYURKLS1IaG9kLUs3a1I3U0FiNmQxa2JTUVJmVktDb0lQYzhwelVXbjJ0clRnZ0tmbTROMmJXUm1BcENfRjl2UnNVUV9EUHY3b3dFSm0zcExBVzdL0gFsQVVfeXFMT3Ita2wwZ1M1RTNYTE9xczl1YW1GUUNUa3F1bTVkV1dNeUY4bjc2b0tpdnhsOWU1QTdJLV9zTTNnMHp6RUNDVWllLU1EZUdhMUwxUWdvZHI1ZG55OWtLeFg4UUFrMFVYTHFMX0VU?oc=5",
+     "l": "neg",
+     "dt": "11-25"
+    },
+    {
+     "k": "뉴스",
+     "t": "[공시] 레인보우로보틱스·에스엠·자이언트스텝 '공매도 금지', 깨끗한나라·동양2우B '투자주의' 등...49건",
+     "d": "뉴스티앤티",
+     "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kSUczZFhmZWV5WE5NUlNIVld5bGdIaGFtczRHaUJwYUlzVEJGRDRDZFRVMERaUGxOSWsza280d3ZYR1ZJUzc4aEp2REVpa016bS1MeFpUU2F5bDZNQ3ZKZlB4SHdWYU55V0E?oc=5",
+     "l": "neg",
+     "dt": "11-23"
     }
    ]
   },
@@ -1332,10 +1377,8 @@
    ]
   },
   "122870": {
-   "score": -25,
-   "issues": [
-    "급락"
-   ],
+   "score": 0,
+   "issues": [],
    "news": [
     {
      "k": "공시",
@@ -1371,11 +1414,11 @@
     },
     {
      "k": "뉴스",
-     "t": "코스피 3% 급락 속 엔터주 동반 약세… 4대 메이저 중 가장 리스크가 큰 곳은?",
-     "d": "뉴스버즈",
-     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9kNkgwajRBOTFwZkpKcE1XeGpNbDg0cTRGMlI2WDF6SDlwSHFRM0NqQ0w3WUVmck5ZcUw1MnFmcHpsX2tVb1JzTjRxOEppU1J2MTE2RzNxajNHNnNpVk9EQ29VbldiZzZ6VE5Nbg?oc=5",
-     "l": "neg",
-     "dt": "11-23"
+     "t": "중국발 훈풍에도 온도차…엔터·콘텐츠주 엇갈린 이유는 [엔터코노미]",
+     "d": "MTN 머니투데이방송",
+     "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwQzRUaUFnWVhXUXQxTkVWMWYtc0puMlVSS25Td2g5amhGMkQyU0U1c3FZR3dmdGhzTEJUVUY5a2NhTnRoSEZVZEIyWE1OUGlvektfeXhIem5zb0JwQ2Zj?oc=5",
+     "l": "neu",
+     "dt": "11-24"
     }
    ]
   },
@@ -1403,17 +1446,17 @@
     },
     {
      "k": "뉴스",
-     "t": "민주노총 전북본부장 이민경 연임…89.13% 득표",
-     "d": "연합뉴스",
-     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqV2FiTDVUYXZOc3RjaTRTQktVbUx6YTAxa0JwQlJVaTBwUWhHSmJ3QXVMTGtsV09VR2ZJd0tDQ01nd2FSTERoZGZNV09kUzZ5alMzMW9Mdkd4VmdNcTNLedIBYEFVX3lxTFBqV2FiTDVUYXZOc3RjaTRTQktVbUx6YTAxa0JwQlJVaTBwUWhHSmJ3QXVMTGtsV09VR2ZJd0tDQ01nd2FSTERoZGZNV09kUzZ5alMzMW9Mdkd4VmdNcTNLeQ?oc=5",
+     "t": "[장중수급포착] 롯데에너지머티리얼즈, 기관 9일 연속 순매수행진... 주가 +3.95%",
+     "d": "뉴스핌",
+     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE83WnpqaUZDbm1LMWFGdUdEaDlvMGlpVU9tOUJRMXNiZHB5NDFkazRhaTN2b0Q0a1AycjFNdm1fTER3MHlLMjdiVl9KTE5fd05QNXJiQXR2a0JDenA4?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
     {
      "k": "뉴스",
-     "t": "[장중수급포착] 롯데에너지머티리얼즈, 기관 9일 연속 순매수행진... 주가 +3.95%",
-     "d": "뉴스핌",
-     "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE83WnpqaUZDbm1LMWFGdUdEaDlvMGlpVU9tOUJRMXNiZHB5NDFkazRhaTN2b0Q0a1AycjFNdm1fTER3MHlLMjdiVl9KTE5fd05QNXJiQXR2a0JDenA4?oc=5",
+     "t": "특징주, 롯데에너지머티리얼즈-2차전지(전고체) 테마 상승세에 10.11% ↑",
+     "d": "매일경제 마켓",
+     "u": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBBRzNRTHV2UzI1alNLNnMxNWtCRy1pTkxOWjg0UlJWaW1HdGZuSGw5SWJSQ0hjLXRWRGRkX3JmMmo4NVpadDNWc0YxbmsxU1JxclE?oc=5",
      "l": "neu",
      "dt": "11-26"
     },
@@ -1551,54 +1594,6 @@
      "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tRkFLN0d3bHNyT1hzRnlwallQY3hhRDJQRXFacnM1bDRfNkR1TjFzaUtqUlhmZC1JY1dRYzY5LTI5VTZISzNKWjZPUmo3dXZkOGtEZE1IX0hVQzRuek40ME5qaGpWWVZrc0RkcVJ0cnhLQdIBckFVX3lxTE1tRkFLN0d3bHNyT1hzRnlwallQY3hhRDJQRXFacnM1bDRfNkR1TjFzaUtqUlhmZC1JY1dRYzY5LTI5VTZISzNKWjZPUmo3dXZkOGtEZE1IX0hVQzRuek40ME5qaGpWWVZrc0RkcVJ0cnhLQQ?oc=5",
      "l": "neu",
      "dt": "11-25"
-    }
-   ]
-  },
-  "035900": {
-   "score": -25,
-   "issues": [
-    "급락"
-   ],
-   "news": [
-    {
-     "k": "공시",
-     "t": "분기보고서 (2026.09)",
-     "d": "",
-     "u": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113001566",
-     "l": "neu",
-     "dt": "11-13"
-    },
-    {
-     "k": "뉴스",
-     "t": "한중 해빙바람에 뜬 엔터4사…급락장 버티는 배경은 - 머니투데이",
-     "d": "머니투데이",
-     "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IZWc1UUJLRDQ3c3hKZlhMbmN3SndTelBMSHZ0UE8wRWRHWjB2SzhLcERjalhETWwzN1k5ZkhaN3pqSm5CbENtMkxZS2tFREl3SnVxdldaYm1fbWw4Y0o4cDU4eUV5WVRBSFRjLUhWdExYS0NscXfSAXtBVV95cUxNTE1FT1ZoSzg5ZmR5MjU5MWNVaGtWb0JyUVRyQVMyUkJ1YTIxRGVXYlF1Z1k1NTBKUUUwYkt0MnIyOER2YlJBRldLZEZhVXYtbm02ajVsWUZOcDBCNFZPTUJvbW1ZX0I4YzJLTlRLLUVTQVFSLXlrSEEwelE?oc=5",
-     "l": "neg",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "한화투자증권 \"내년 실적 전망 상단 뚫은 엔터주…하이브·JYP 주가 탄력 가능성\"",
-     "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84cEgxNS1Ta1dJbDd0TnF4R1ZoOThpSDN6MzlNbUxFTGhXeDkwZW45Mzd6MlRBWFFSN3VuZE0tdDU2cE84cVJHQktiNVBzeWNuZldPa2IzOTVDa1JMdWpFdC1sVW40U3B5cW51enJlQ0JUZm8?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "미리캐피탈매니지먼트, JYP Ent. 지분 7.87%로 확대",
-     "d": "데이터투자",
-     "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wa1NtSjNsTnQ1dFNRbDROOUFYSk1kQmhOb3RkNUZQOVA5R0RjelkzSlJ1ZVlSQmlsbWwxLVNzUTN3VzZYTWNMbGVZZm5FTHY1bXQ2T3MyWk5nR1JxaG5rVHYzcmg3Z2RPOTlUQTNBbVpNdXc?oc=5",
-     "l": "neu",
-     "dt": "11-26"
-    },
-    {
-     "k": "뉴스",
-     "t": "미래에셋증권·JYP Ent. 폭등쇼…코리아 밸류업 지수 관련주에 무슨 이슈 있나",
-     "d": "핀포인트뉴스",
-     "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBzQkNyYXg0dllHaWUyc0RKMi13Q19feDJXaER2dnRYZ29ySFZWZWFLNUoxSnBsWGpGSFY5WXNwcFA1a1BoYWhKUkxkLVhidnhVTlA1WGZwSFN3YnYyN2ZpUkhpN2R6SXg3THliRGcybVFiUkJNdkpZ0gF3QVVfeXFMUHNCQ3JheDR2WUdpZTJzREoyLXdDX194MldoRHZ2dFhnb3JIVlZlYUs1SjFKcGxYakZIVjlZc3BwUDVrUGhhaEpSTGQtWGJ2eFVOUDVYZnBIU3didjI3ZmlSSGk3ZHpJeDdMeWJEZzJtUWJSQk12Slk?oc=5",
-     "l": "neu",
-     "dt": "11-26"
     }
    ]
   }

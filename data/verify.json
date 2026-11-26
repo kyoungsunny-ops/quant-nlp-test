@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-11-26 17:39",
+  "generated_at": "2026-11-26 18:11",
   "n_signals": 7,
   "n_records": 210,
   "first_date": "2026-11-23",
@@ -23,7 +23,21 @@
    "KOSPI": "^KS11",
    "KOSDAQ": "^KQ11"
   },
-  "records_shown": 210
+  "records_shown": 210,
+  "data_quality": {
+   "requested": 75,
+   "received": 75,
+   "missing": [],
+   "stale_count": 0,
+   "stale": [],
+   "reference_date": "2026-11-26",
+   "today_close_ok": true,
+   "latest_missing": [],
+   "total": 210,
+   "evaluated": 210,
+   "skipped_no_price": 0,
+   "skipped_no_date": 0
+  }
  },
  "summary": {
   "overall": {
@@ -143,7 +157,7 @@
     "rows": [
      {
       "label": "상승전환",
-      "records": 56,
+      "records": 55,
       "stats": {
        "1": {
         "n": 49,
@@ -169,7 +183,7 @@
      },
      {
       "label": "5일선 위(유지)",
-      "records": 129,
+      "records": 130,
       "stats": {
        "1": {
         "n": 76,
@@ -481,113 +495,13 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "035900",
-   "ticker": "035900.KQ",
-   "name": "JYP Ent.",
-   "market": "KOSDAQ",
-   "rank": 30,
-   "score": 54.56,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": -25,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "0126Z0",
-   "ticker": "0126Z0.KS",
-   "name": "삼성에피스홀딩스",
+   "code": "323410",
+   "ticker": "323410.KS",
+   "name": "카카오뱅크",
    "market": "KOSPI",
-   "rank": 29,
-   "score": 54.57,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": 88,
-   "nlp_group": "일치",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "218410",
-   "ticker": "218410.KQ",
-   "name": "RFHIC",
-   "market": "KOSDAQ",
-   "rank": 28,
-   "score": 54.85,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "020150",
-   "ticker": "020150.KS",
-   "name": "롯데에너지머티리얼즈",
-   "market": "KOSPI",
-   "rank": 27,
-   "score": 55.26,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 25,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "와이지엔터테인먼트",
-   "market": "KOSDAQ",
-   "rank": 26,
-   "score": 55.38,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": -25,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "030000",
-   "ticker": "030000.KS",
-   "name": "제일기획",
-   "market": "KOSPI",
-   "rank": 25,
-   "score": 55.47,
-   "grade": "C",
+   "rank": 1,
+   "score": 63.05,
+   "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": 100,
    "nlp_group": "일치",
@@ -601,32 +515,32 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "128940",
-   "ticker": "128940.KS",
-   "name": "한미약품",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "글로벌텍스프리",
+   "market": "KOSDAQ",
+   "rank": 2,
+   "score": 61.93,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "457190",
+   "ticker": "457190.KS",
+   "name": "이수스페셜티케미컬",
    "market": "KOSPI",
-   "rank": 24,
-   "score": 56.36,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": -50,
-   "nlp_group": "엇갈림",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "195940",
-   "ticker": "195940.KQ",
-   "name": "HK이노엔",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 56.51,
+   "rank": 3,
+   "score": 61.8,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 0,
@@ -641,55 +555,15 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "024850",
-   "ticker": "024850.KQ",
-   "name": "HLB이노베이션",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "디케이티",
    "market": "KOSDAQ",
-   "rank": 22,
-   "score": 56.69,
+   "rank": 4,
+   "score": 61.8,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "018290",
-   "ticker": "018290.KQ",
-   "name": "브이티",
-   "market": "KOSDAQ",
-   "rank": 21,
-   "score": 57.12,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "161890",
-   "ticker": "161890.KS",
-   "name": "한국콜마",
-   "market": "KOSPI",
-   "rank": 20,
-   "score": 57.48,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 100,
+   "nlp_score": 50,
    "nlp_group": "일치",
    "entry_rule": "next_open",
    "entry": null,
@@ -701,52 +575,12 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "099320",
-   "ticker": "099320.KQ",
-   "name": "쎄트렉아이",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 57.49,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 100,
-   "nlp_group": "일치",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "032500",
-   "ticker": "032500.KQ",
-   "name": "케이엠더블유",
-   "market": "KOSDAQ",
-   "rank": 18,
-   "score": 58.02,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "카카오게임즈",
-   "market": "KOSDAQ",
-   "rank": 17,
-   "score": 58.4,
+   "code": "00104K",
+   "ticker": "00104K.KS",
+   "name": "CJ4우(전환)",
+   "market": "KOSPI",
+   "rank": 5,
+   "score": 61.04,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 0,
@@ -761,172 +595,12 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "035760",
-   "ticker": "035760.KQ",
-   "name": "CJ ENM",
-   "market": "KOSDAQ",
-   "rank": 16,
-   "score": 58.61,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "259960",
-   "ticker": "259960.KS",
-   "name": "크래프톤",
+   "code": "001040",
+   "ticker": "001040.KS",
+   "name": "CJ",
    "market": "KOSPI",
-   "rank": 15,
-   "score": 58.8,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "001045",
-   "ticker": "001045.KS",
-   "name": "CJ우",
-   "market": "KOSPI",
-   "rank": 14,
-   "score": 58.98,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "003230",
-   "ticker": "003230.KS",
-   "name": "삼양식품",
-   "market": "KOSPI",
-   "rank": 13,
-   "score": 59.08,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": -100,
-   "nlp_group": "엇갈림",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "090430",
-   "ticker": "090430.KS",
-   "name": "아모레퍼시픽",
-   "market": "KOSPI",
-   "rank": 12,
-   "score": 59.59,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 25,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "000100",
-   "ticker": "000100.KS",
-   "name": "유한양행",
-   "market": "KOSPI",
-   "rank": 11,
-   "score": 59.62,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "097950",
-   "ticker": "097950.KS",
-   "name": "CJ제일제당",
-   "market": "KOSPI",
-   "rank": 10,
-   "score": 59.74,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 25,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "아모레퍼시픽홀딩스",
-   "market": "KOSPI",
-   "rank": 9,
-   "score": 60.58,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 0,
-   "nlp_group": "중립",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "008930",
-   "ticker": "008930.KS",
-   "name": "한미사이언스",
-   "market": "KOSPI",
-   "rank": 8,
-   "score": 60.83,
+   "rank": 6,
+   "score": 61.0,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": -100,
@@ -946,7 +620,7 @@
    "name": "아모레퍼시픽우",
    "market": "KOSPI",
    "rank": 7,
-   "score": 60.92,
+   "score": 60.84,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": -25,
@@ -961,12 +635,12 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "001040",
-   "ticker": "001040.KS",
-   "name": "CJ",
+   "code": "008930",
+   "ticker": "008930.KS",
+   "name": "한미사이언스",
    "market": "KOSPI",
-   "rank": 6,
-   "score": 61.05,
+   "rank": 8,
+   "score": 60.77,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": -100,
@@ -981,12 +655,12 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "00104K",
-   "ticker": "00104K.KS",
-   "name": "CJ4우(전환)",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "아모레퍼시픽홀딩스",
    "market": "KOSPI",
-   "rank": 5,
-   "score": 61.09,
+   "rank": 9,
+   "score": 60.49,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 0,
@@ -1001,32 +675,132 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "디케이티",
+   "code": "097950",
+   "ticker": "097950.KS",
+   "name": "CJ제일제당",
+   "market": "KOSPI",
+   "rank": 10,
+   "score": 59.65,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 25,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "000100",
+   "ticker": "000100.KS",
+   "name": "유한양행",
+   "market": "KOSPI",
+   "rank": 11,
+   "score": 59.59,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "090430",
+   "ticker": "090430.KS",
+   "name": "아모레퍼시픽",
+   "market": "KOSPI",
+   "rank": 12,
+   "score": 59.5,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 25,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "003230",
+   "ticker": "003230.KS",
+   "name": "삼양식품",
+   "market": "KOSPI",
+   "rank": 13,
+   "score": 58.99,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "001045",
+   "ticker": "001045.KS",
+   "name": "CJ우",
+   "market": "KOSPI",
+   "rank": 14,
+   "score": 58.84,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "259960",
+   "ticker": "259960.KS",
+   "name": "크래프톤",
+   "market": "KOSPI",
+   "rank": 15,
+   "score": 58.75,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "035760",
+   "ticker": "035760.KQ",
+   "name": "CJ ENM",
    "market": "KOSDAQ",
-   "rank": 4,
-   "score": 61.85,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": 50,
-   "nlp_group": "일치",
-   "entry_rule": "next_open",
-   "entry": null,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "2100",
-   "code": "457190",
-   "ticker": "457190.KS",
-   "name": "이수스페셜티케미컬",
-   "market": "KOSPI",
-   "rank": 3,
-   "score": 61.86,
+   "rank": 16,
+   "score": 58.51,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 0,
@@ -1041,12 +815,12 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "글로벌텍스프리",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "카카오게임즈",
    "market": "KOSDAQ",
-   "rank": 2,
-   "score": 61.96,
+   "rank": 17,
+   "score": 58.3,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 0,
@@ -1061,13 +835,33 @@
   {
    "date": "2026-11-26",
    "slot": "2100",
-   "code": "323410",
-   "ticker": "323410.KS",
-   "name": "카카오뱅크",
-   "market": "KOSPI",
-   "rank": 1,
-   "score": 63.16,
-   "grade": "B",
+   "code": "032500",
+   "ticker": "032500.KQ",
+   "name": "케이엠더블유",
+   "market": "KOSDAQ",
+   "rank": 18,
+   "score": 57.91,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "099320",
+   "ticker": "099320.KQ",
+   "name": "쎄트렉아이",
+   "market": "KOSDAQ",
+   "rank": 19,
+   "score": 57.42,
+   "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": 100,
    "nlp_group": "일치",
@@ -1080,219 +874,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "277810",
-   "ticker": "277810.KQ",
-   "name": "레인보우로보틱스",
-   "market": "KOSDAQ",
-   "rank": 30,
-   "score": 53.93,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 467000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "와이지엔터테인먼트",
-   "market": "KOSDAQ",
-   "rank": 29,
-   "score": 54.25,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 48550.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "121600",
-   "ticker": "121600.KQ",
-   "name": "나노신소재",
-   "market": "KOSDAQ",
-   "rank": 28,
-   "score": 54.4,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 65700.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "디케이티",
-   "market": "KOSDAQ",
-   "rank": 27,
-   "score": 54.41,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 33600.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "466100",
-   "ticker": "466100.KQ",
-   "name": "클로봇",
-   "market": "KOSDAQ",
-   "rank": 26,
-   "score": 54.66,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 18210.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "125490",
-   "ticker": "125490.KQ",
-   "name": "한라캐스트",
-   "market": "KOSDAQ",
-   "rank": 25,
-   "score": 54.96,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 11460.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "218410",
-   "ticker": "218410.KQ",
-   "name": "RFHIC",
-   "market": "KOSDAQ",
-   "rank": 24,
-   "score": 55.05,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 60000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "388720",
-   "ticker": "388720.KQ",
-   "name": "유일로보틱스",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 55.22,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 61100.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "000100",
-   "ticker": "000100.KS",
-   "name": "유한양행",
-   "market": "KOSPI",
-   "rank": 22,
-   "score": 55.34,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 82100.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
+   "slot": "2100",
    "code": "161890",
    "ticker": "161890.KS",
    "name": "한국콜마",
    "market": "KOSPI",
-   "rank": 21,
-   "score": 55.56,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 131200.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "00104K",
-   "ticker": "00104K.KS",
-   "name": "CJ4우(전환)",
-   "market": "KOSPI",
    "rank": 20,
-   "score": 55.59,
+   "score": 57.33,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 124600.0,
+   "nlp_score": 100,
+   "nlp_group": "일치",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1300,119 +894,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "328130",
-   "ticker": "328130.KQ",
-   "name": "루닛",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 56.33,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 16760.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "259960",
-   "ticker": "259960.KS",
-   "name": "크래프톤",
-   "market": "KOSPI",
-   "rank": 18,
-   "score": 56.37,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 210000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "128940",
-   "ticker": "128940.KS",
-   "name": "한미약품",
-   "market": "KOSPI",
-   "rank": 17,
-   "score": 56.5,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 466500.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "020150",
-   "ticker": "020150.KS",
-   "name": "롯데에너지머티리얼즈",
-   "market": "KOSPI",
-   "rank": 16,
-   "score": 56.56,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 40900.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "326030",
-   "ticker": "326030.KS",
-   "name": "SK바이오팜",
-   "market": "KOSPI",
-   "rank": 15,
-   "score": 56.6,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 90500.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
+   "slot": "2100",
    "code": "018290",
    "ticker": "018290.KQ",
    "name": "브이티",
    "market": "KOSDAQ",
-   "rank": 14,
-   "score": 56.79,
+   "rank": 21,
+   "score": 57.05,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 11800.0,
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1420,39 +914,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "003230",
-   "ticker": "003230.KS",
-   "name": "삼양식품",
-   "market": "KOSPI",
-   "rank": 13,
-   "score": 56.85,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 1315000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "340570",
-   "ticker": "340570.KQ",
-   "name": "티앤엘",
+   "slot": "2100",
+   "code": "024850",
+   "ticker": "024850.KQ",
+   "name": "HLB이노베이션",
    "market": "KOSDAQ",
-   "rank": 12,
-   "score": 57.07,
+   "rank": 22,
+   "score": 56.62,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 29350.0,
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1460,79 +934,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "097950",
-   "ticker": "097950.KS",
-   "name": "CJ제일제당",
-   "market": "KOSPI",
-   "rank": 11,
-   "score": 57.79,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 190000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "001040",
-   "ticker": "001040.KS",
-   "name": "CJ",
-   "market": "KOSPI",
-   "rank": 10,
-   "score": 57.84,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 125000.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "090430",
-   "ticker": "090430.KS",
-   "name": "아모레퍼시픽",
-   "market": "KOSPI",
-   "rank": 9,
-   "score": 58.73,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 146100.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "카카오게임즈",
+   "slot": "2100",
+   "code": "195940",
+   "ticker": "195940.KQ",
+   "name": "HK이노엔",
    "market": "KOSDAQ",
-   "rank": 8,
-   "score": 58.85,
+   "rank": 23,
+   "score": 56.39,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 13040.0,
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1540,19 +954,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "457190",
-   "ticker": "457190.KS",
-   "name": "이수스페셜티케미컬",
+   "slot": "2100",
+   "code": "128940",
+   "ticker": "128940.KS",
+   "name": "한미약품",
    "market": "KOSPI",
-   "rank": 7,
-   "score": 59.05,
+   "rank": 24,
+   "score": 56.3,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 79700.0,
+   "nlp_score": -50,
+   "nlp_group": "엇갈림",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1560,19 +974,59 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "036710",
-   "ticker": "036710.KQ",
-   "name": "심텍홀딩스",
+   "slot": "2100",
+   "code": "041510",
+   "ticker": "041510.KQ",
+   "name": "에스엠",
    "market": "KOSDAQ",
-   "rank": 6,
-   "score": 59.44,
+   "rank": 25,
+   "score": 55.8,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": -100,
+   "nlp_group": "엇갈림",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "030000",
+   "ticker": "030000.KS",
+   "name": "제일기획",
+   "market": "KOSPI",
+   "rank": 26,
+   "score": 55.32,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": 100,
+   "nlp_group": "일치",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "와이지엔터테인먼트",
+   "market": "KOSDAQ",
+   "rank": 27,
+   "score": 55.24,
    "grade": "C",
    "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 6300.0,
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1580,19 +1034,19 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "아모레퍼시픽홀딩스",
+   "slot": "2100",
+   "code": "020150",
+   "ticker": "020150.KS",
+   "name": "롯데에너지머티리얼즈",
    "market": "KOSPI",
-   "rank": 5,
-   "score": 59.45,
+   "rank": 28,
+   "score": 55.2,
    "grade": "C",
    "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 29050.0,
+   "nlp_score": 25,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1600,39 +1054,59 @@
   },
   {
    "date": "2026-11-26",
-   "slot": "1200",
-   "code": "008930",
-   "ticker": "008930.KS",
-   "name": "한미사이언스",
-   "market": "KOSPI",
-   "rank": 4,
-   "score": 60.19,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 55200.0,
-   "ret": {},
-   "excess": {},
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-26",
-   "slot": "1200",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "글로벌텍스프리",
+   "slot": "2100",
+   "code": "218410",
+   "ticker": "218410.KQ",
+   "name": "RFHIC",
    "market": "KOSDAQ",
-   "rank": 3,
-   "score": 60.9,
-   "grade": "C",
+   "rank": 29,
+   "score": 54.78,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": 0,
+   "nlp_group": "중립",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "2100",
+   "code": "0126Z0",
+   "ticker": "0126Z0.KS",
+   "name": "삼성에피스홀딩스",
+   "market": "KOSPI",
+   "rank": 30,
+   "score": 54.45,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": 88,
+   "nlp_group": "일치",
+   "entry_rule": "next_open",
+   "entry": null,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "090435",
+   "ticker": "090435.KS",
+   "name": "아모레퍼시픽우",
+   "market": "KOSPI",
+   "rank": 1,
+   "score": 62.97,
+   "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 6460.0,
+   "entry": 40700.0,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1661,18 +1135,558 @@
   {
    "date": "2026-11-26",
    "slot": "1200",
-   "code": "090435",
-   "ticker": "090435.KS",
-   "name": "아모레퍼시픽우",
-   "market": "KOSPI",
-   "rank": 1,
-   "score": 62.97,
-   "grade": "B",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "글로벌텍스프리",
+   "market": "KOSDAQ",
+   "rank": 3,
+   "score": 60.9,
+   "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 40700.0,
+   "entry": 6460.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "008930",
+   "ticker": "008930.KS",
+   "name": "한미사이언스",
+   "market": "KOSPI",
+   "rank": 4,
+   "score": 60.19,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 55200.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "아모레퍼시픽홀딩스",
+   "market": "KOSPI",
+   "rank": 5,
+   "score": 59.45,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 29050.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "036710",
+   "ticker": "036710.KQ",
+   "name": "심텍홀딩스",
+   "market": "KOSDAQ",
+   "rank": 6,
+   "score": 59.44,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 6300.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "457190",
+   "ticker": "457190.KS",
+   "name": "이수스페셜티케미컬",
+   "market": "KOSPI",
+   "rank": 7,
+   "score": 59.05,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 79700.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "카카오게임즈",
+   "market": "KOSDAQ",
+   "rank": 8,
+   "score": 58.85,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 13040.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "090430",
+   "ticker": "090430.KS",
+   "name": "아모레퍼시픽",
+   "market": "KOSPI",
+   "rank": 9,
+   "score": 58.73,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 146100.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "001040",
+   "ticker": "001040.KS",
+   "name": "CJ",
+   "market": "KOSPI",
+   "rank": 10,
+   "score": 57.84,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 125000.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "097950",
+   "ticker": "097950.KS",
+   "name": "CJ제일제당",
+   "market": "KOSPI",
+   "rank": 11,
+   "score": 57.79,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 190000.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "340570",
+   "ticker": "340570.KQ",
+   "name": "티앤엘",
+   "market": "KOSDAQ",
+   "rank": 12,
+   "score": 57.07,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 29350.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "003230",
+   "ticker": "003230.KS",
+   "name": "삼양식품",
+   "market": "KOSPI",
+   "rank": 13,
+   "score": 56.85,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 1315000.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "018290",
+   "ticker": "018290.KQ",
+   "name": "브이티",
+   "market": "KOSDAQ",
+   "rank": 14,
+   "score": 56.79,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 11800.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "326030",
+   "ticker": "326030.KS",
+   "name": "SK바이오팜",
+   "market": "KOSPI",
+   "rank": 15,
+   "score": 56.6,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 90500.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "020150",
+   "ticker": "020150.KS",
+   "name": "롯데에너지머티리얼즈",
+   "market": "KOSPI",
+   "rank": 16,
+   "score": 56.56,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 40900.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "128940",
+   "ticker": "128940.KS",
+   "name": "한미약품",
+   "market": "KOSPI",
+   "rank": 17,
+   "score": 56.5,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 466500.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "259960",
+   "ticker": "259960.KS",
+   "name": "크래프톤",
+   "market": "KOSPI",
+   "rank": 18,
+   "score": 56.37,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 210000.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "328130",
+   "ticker": "328130.KQ",
+   "name": "루닛",
+   "market": "KOSDAQ",
+   "rank": 19,
+   "score": 56.33,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 16760.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "00104K",
+   "ticker": "00104K.KS",
+   "name": "CJ4우(전환)",
+   "market": "KOSPI",
+   "rank": 20,
+   "score": 55.59,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 124600.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "161890",
+   "ticker": "161890.KS",
+   "name": "한국콜마",
+   "market": "KOSPI",
+   "rank": 21,
+   "score": 55.56,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 131200.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "000100",
+   "ticker": "000100.KS",
+   "name": "유한양행",
+   "market": "KOSPI",
+   "rank": 22,
+   "score": 55.34,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 82100.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "388720",
+   "ticker": "388720.KQ",
+   "name": "유일로보틱스",
+   "market": "KOSDAQ",
+   "rank": 23,
+   "score": 55.22,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 61100.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "218410",
+   "ticker": "218410.KQ",
+   "name": "RFHIC",
+   "market": "KOSDAQ",
+   "rank": 24,
+   "score": 55.05,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 60000.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "125490",
+   "ticker": "125490.KQ",
+   "name": "한라캐스트",
+   "market": "KOSDAQ",
+   "rank": 25,
+   "score": 54.96,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 11460.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "466100",
+   "ticker": "466100.KQ",
+   "name": "클로봇",
+   "market": "KOSDAQ",
+   "rank": 26,
+   "score": 54.66,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 18210.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "디케이티",
+   "market": "KOSDAQ",
+   "rank": 27,
+   "score": 54.41,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 33600.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "121600",
+   "ticker": "121600.KQ",
+   "name": "나노신소재",
+   "market": "KOSDAQ",
+   "rank": 28,
+   "score": 54.4,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 65700.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "와이지엔터테인먼트",
+   "market": "KOSDAQ",
+   "rank": 29,
+   "score": 54.25,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 48550.0,
+   "ret": {},
+   "excess": {},
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-26",
+   "slot": "1200",
+   "code": "277810",
+   "ticker": "277810.KQ",
+   "name": "레인보우로보틱스",
+   "market": "KOSDAQ",
+   "rank": 30,
+   "score": 53.93,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 467000.0,
    "ret": {},
    "excess": {},
    "outcome": "pending",
@@ -1681,671 +1695,23 @@
   {
    "date": "2026-11-25",
    "slot": "2100",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "와이지엔터테인먼트",
-   "market": "KOSDAQ",
-   "rank": 30,
-   "score": 56.82,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 46950.0,
-   "ret": {
-    "1": 3.16
-   },
-   "excess": {
-    "1": 3.58
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "092730",
-   "ticker": "092730.KQ",
-   "name": "네오팜",
-   "market": "KOSDAQ",
-   "rank": 29,
-   "score": 56.95,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 23300.0,
-   "ret": {
-    "1": -0.04
-   },
-   "excess": {
-    "1": 0.38
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "271560",
-   "ticker": "271560.KS",
-   "name": "오리온",
+   "code": "323410",
+   "ticker": "323410.KS",
+   "name": "카카오뱅크",
    "market": "KOSPI",
-   "rank": 28,
-   "score": 57.06,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 120000.0,
-   "ret": {
-    "1": -0.92
-   },
-   "excess": {
-    "1": -0.2
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "251970",
-   "ticker": "251970.KQ",
-   "name": "펌텍코리아",
-   "market": "KOSDAQ",
-   "rank": 27,
-   "score": 57.2,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 79900.0,
-   "ret": {
-    "1": -1.0
-   },
-   "excess": {
-    "1": -0.58
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "211050",
-   "ticker": "211050.KQ",
-   "name": "인카금융서비스",
-   "market": "KOSDAQ",
-   "rank": 26,
-   "score": 57.24,
-   "grade": "C",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 10600.0,
-   "ret": {
-    "1": -2.89
-   },
-   "excess": {
-    "1": -2.47
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "111770",
-   "ticker": "111770.KS",
-   "name": "영원무역",
-   "market": "KOSPI",
-   "rank": 25,
-   "score": 57.35,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 71500.0,
-   "ret": {
-    "1": -0.11
-   },
-   "excess": {
-    "1": 0.6
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "457190",
-   "ticker": "457190.KS",
-   "name": "이수스페셜티케미컬",
-   "market": "KOSPI",
-   "rank": 24,
-   "score": 58.16,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 80200.0,
-   "ret": {
-    "1": -0.87
-   },
-   "excess": {
-    "1": -0.16
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "018290",
-   "ticker": "018290.KQ",
-   "name": "브이티",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 58.25,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 11310.0,
-   "ret": {
-    "1": 4.08
-   },
-   "excess": {
-    "1": 4.5
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "디케이티",
-   "market": "KOSDAQ",
-   "rank": 22,
-   "score": 58.52,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 33250.0,
-   "ret": {
-    "1": 0.8
-   },
-   "excess": {
-    "1": 1.22
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "068760",
-   "ticker": "068760.KQ",
-   "name": "셀트리온제약",
-   "market": "KOSDAQ",
-   "rank": 21,
-   "score": 58.58,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 41000.0,
-   "ret": {
-    "1": -0.37
-   },
-   "excess": {
-    "1": 0.05
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "195940",
-   "ticker": "195940.KQ",
-   "name": "HK이노엔",
-   "market": "KOSDAQ",
-   "rank": 20,
-   "score": 58.95,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 39350.0,
-   "ret": {
-    "1": 0.26
-   },
-   "excess": {
-    "1": 0.68
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "035760",
-   "ticker": "035760.KQ",
-   "name": "CJ ENM",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 59.06,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 53200.0,
-   "ret": {
-    "1": 2.38
-   },
-   "excess": {
-    "1": 2.8
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "글로벌텍스프리",
-   "market": "KOSDAQ",
-   "rank": 18,
-   "score": 59.1,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 6020.0,
-   "ret": {
-    "1": 7.06
-   },
-   "excess": {
-    "1": 7.48
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "376300",
-   "ticker": "376300.KQ",
-   "name": "디어유",
-   "market": "KOSDAQ",
-   "rank": 17,
-   "score": 59.28,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 21600.0,
-   "ret": {
-    "1": 0.21
-   },
-   "excess": {
-    "1": 0.63
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "086450",
-   "ticker": "086450.KQ",
-   "name": "동국제약",
-   "market": "KOSDAQ",
-   "rank": 16,
-   "score": 59.51,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 25100.0,
-   "ret": {
-    "1": 1.54
-   },
-   "excess": {
-    "1": 1.96
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "069080",
-   "ticker": "069080.KQ",
-   "name": "웹젠",
-   "market": "KOSDAQ",
-   "rank": 15,
-   "score": 59.63,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 12300.0,
-   "ret": {
-    "1": -1.23
-   },
-   "excess": {
-    "1": -0.81
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "003490",
-   "ticker": "003490.KS",
-   "name": "대한항공",
-   "market": "KOSPI",
-   "rank": 14,
-   "score": 59.65,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 31200.0,
-   "ret": {
-    "1": -5.06
-   },
-   "excess": {
-    "1": -4.34
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "00104K",
-   "ticker": "00104K.KS",
-   "name": "CJ4우(전환)",
-   "market": "KOSPI",
-   "rank": 13,
-   "score": 59.83,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 119300.0,
-   "ret": {
-    "1": 4.19
-   },
-   "excess": {
-    "1": 4.91
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "003230",
-   "ticker": "003230.KS",
-   "name": "삼양식품",
-   "market": "KOSPI",
-   "rank": 12,
-   "score": 59.83,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 1296000.0,
-   "ret": {
-    "1": 1.22
-   },
-   "excess": {
-    "1": 1.93
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "128940",
-   "ticker": "128940.KS",
-   "name": "한미약품",
-   "market": "KOSPI",
-   "rank": 11,
-   "score": 59.92,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 466500.0,
-   "ret": {
-    "1": -0.25
-   },
-   "excess": {
-    "1": 0.46
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "001040",
-   "ticker": "001040.KS",
-   "name": "CJ",
-   "market": "KOSPI",
-   "rank": 10,
-   "score": 59.94,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 120400.0,
-   "ret": {
-    "1": 3.57
-   },
-   "excess": {
-    "1": 4.28
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "051900",
-   "ticker": "051900.KS",
-   "name": "LG생활건강",
-   "market": "KOSPI",
-   "rank": 9,
-   "score": 60.93,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 255500.0,
-   "ret": {
-    "1": -2.6
-   },
-   "excess": {
-    "1": -1.88
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "068270",
-   "ticker": "068270.KS",
-   "name": "셀트리온",
-   "market": "KOSPI",
-   "rank": 8,
-   "score": 61.49,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 215500.0,
-   "ret": {
-    "1": -0.25
-   },
-   "excess": {
-    "1": 0.46
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "카카오게임즈",
-   "market": "KOSDAQ",
-   "rank": 7,
-   "score": 62.17,
+   "rank": 1,
+   "score": 65.6,
    "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "next_open",
-   "entry": 13280.0,
+   "entry": 21850.0,
    "ret": {
-    "1": -2.06
+    "1": 0.89
    },
    "excess": {
-    "1": -1.64
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "아모레퍼시픽홀딩스",
-   "market": "KOSPI",
-   "rank": 6,
-   "score": 62.84,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 29000.0,
-   "ret": {
-    "1": -0.08
-   },
-   "excess": {
-    "1": 0.64
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "097950",
-   "ticker": "097950.KS",
-   "name": "CJ제일제당",
-   "market": "KOSPI",
-   "rank": 5,
-   "score": 63.23,
-   "grade": "B",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 188000.0,
-   "ret": {
-    "1": 0.81
-   },
-   "excess": {
-    "1": 1.53
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "000100",
-   "ticker": "000100.KS",
-   "name": "유한양행",
-   "market": "KOSPI",
-   "rank": 4,
-   "score": 64.1,
-   "grade": "B",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 82300.0,
-   "ret": {
-    "1": -0.49
-   },
-   "excess": {
-    "1": 0.22
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "2100",
-   "code": "090430",
-   "ticker": "090430.KS",
-   "name": "아모레퍼시픽",
-   "market": "KOSPI",
-   "rank": 3,
-   "score": 64.57,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 147600.0,
-   "ret": {
-    "1": -1.27
-   },
-   "excess": {
-    "1": -0.55
+    "1": 1.61
    },
    "outcome": "pending",
    "mae": null
@@ -2377,572 +1743,476 @@
   {
    "date": "2026-11-25",
    "slot": "2100",
-   "code": "323410",
-   "ticker": "323410.KS",
-   "name": "카카오뱅크",
+   "code": "090430",
+   "ticker": "090430.KS",
+   "name": "아모레퍼시픽",
    "market": "KOSPI",
-   "rank": 1,
-   "score": 65.6,
+   "rank": 3,
+   "score": 64.57,
    "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "next_open",
-   "entry": 21850.0,
+   "entry": 147600.0,
    "ret": {
-    "1": 0.89
+    "1": -1.27
    },
    "excess": {
-    "1": 1.61
+    "1": -0.55
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "099320",
-   "ticker": "099320.KQ",
-   "name": "쎄트렉아이",
-   "market": "KOSDAQ",
-   "rank": 30,
-   "score": 56.48,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 67300.0,
-   "ret": {
-    "1": 7.18
-   },
-   "excess": {
-    "1": 6.4
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
+   "slot": "2100",
    "code": "000100",
    "ticker": "000100.KS",
    "name": "유한양행",
    "market": "KOSPI",
-   "rank": 29,
-   "score": 56.51,
-   "grade": "C",
+   "rank": 4,
+   "score": 64.1,
+   "grade": "B",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 83500.0,
+   "entry_rule": "next_open",
+   "entry": 82300.0,
    "ret": {
-    "1": -1.93
+    "1": -0.49
    },
    "excess": {
-    "1": -2.22
+    "1": 0.22
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "디케이티",
-   "market": "KOSDAQ",
-   "rank": 28,
-   "score": 56.84,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 32800.0,
-   "ret": {
-    "1": 2.19
-   },
-   "excess": {
-    "1": 1.41
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "125490",
-   "ticker": "125490.KQ",
-   "name": "한라캐스트",
-   "market": "KOSDAQ",
-   "rank": 27,
-   "score": 56.99,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 11360.0,
-   "ret": {
-    "1": 0.63
-   },
-   "excess": {
-    "1": -0.15
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "271560",
-   "ticker": "271560.KS",
-   "name": "오리온",
+   "slot": "2100",
+   "code": "097950",
+   "ticker": "097950.KS",
+   "name": "CJ제일제당",
    "market": "KOSPI",
-   "rank": 26,
-   "score": 57.06,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 119900.0,
-   "ret": {
-    "1": -0.83
-   },
-   "excess": {
-    "1": -1.13
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "145020",
-   "ticker": "145020.KQ",
-   "name": "휴젤",
-   "market": "KOSDAQ",
-   "rank": 25,
-   "score": 57.06,
-   "grade": "C",
+   "rank": 5,
+   "score": 63.23,
+   "grade": "B",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 211500.0,
+   "entry_rule": "next_open",
+   "entry": 188000.0,
    "ret": {
-    "1": -1.9
+    "1": 0.81
    },
    "excess": {
-    "1": -2.68
+    "1": 1.53
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "340570",
-   "ticker": "340570.KQ",
-   "name": "티앤엘",
-   "market": "KOSDAQ",
-   "rank": 24,
-   "score": 57.12,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 27950.0,
-   "ret": {
-    "1": 4.76
-   },
-   "excess": {
-    "1": 3.98
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "251970",
-   "ticker": "251970.KQ",
-   "name": "펌텍코리아",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 57.41,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 79800.0,
-   "ret": {
-    "1": -0.88
-   },
-   "excess": {
-    "1": -1.66
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "259960",
-   "ticker": "259960.KS",
-   "name": "크래프톤",
+   "slot": "2100",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "아모레퍼시픽홀딩스",
    "market": "KOSPI",
-   "rank": 22,
-   "score": 57.84,
-   "grade": "C",
+   "rank": 6,
+   "score": 62.84,
+   "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 205500.0,
+   "entry_rule": "next_open",
+   "entry": 29000.0,
    "ret": {
-    "1": 1.94
+    "1": -0.08
    },
    "excess": {
-    "1": 1.65
+    "1": 0.64
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "376300",
-   "ticker": "376300.KQ",
-   "name": "디어유",
+   "slot": "2100",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "카카오게임즈",
    "market": "KOSDAQ",
-   "rank": 21,
-   "score": 58.02,
-   "grade": "C",
-   "ma5_status": "하락전환",
+   "rank": 7,
+   "score": 62.17,
+   "grade": "B",
+   "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 21700.0,
+   "entry_rule": "next_open",
+   "entry": 13280.0,
+   "ret": {
+    "1": -2.06
+   },
+   "excess": {
+    "1": -1.64
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "068270",
+   "ticker": "068270.KS",
+   "name": "셀트리온",
+   "market": "KOSPI",
+   "rank": 8,
+   "score": 61.49,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 215500.0,
    "ret": {
     "1": -0.25
    },
    "excess": {
-    "1": -1.03
+    "1": 0.46
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "003230",
-   "ticker": "003230.KS",
-   "name": "삼양식품",
+   "slot": "2100",
+   "code": "051900",
+   "ticker": "051900.KS",
+   "name": "LG생활건강",
    "market": "KOSPI",
-   "rank": 20,
-   "score": 58.29,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 1309000.0,
-   "ret": {
-    "1": 0.21
-   },
-   "excess": {
-    "1": -0.08
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "00104K",
-   "ticker": "00104K.KS",
-   "name": "CJ4우(전환)",
-   "market": "KOSPI",
-   "rank": 19,
-   "score": 58.41,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 120300.0,
-   "ret": {
-    "1": 3.32
-   },
-   "excess": {
-    "1": 3.03
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "글로벌텍스프리",
-   "market": "KOSDAQ",
-   "rank": 18,
-   "score": 58.49,
+   "rank": 9,
+   "score": 60.93,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 6010.0,
+   "entry_rule": "next_open",
+   "entry": 255500.0,
    "ret": {
-    "1": 7.24
+    "1": -2.6
    },
    "excess": {
-    "1": 6.46
+    "1": -1.88
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "069080",
-   "ticker": "069080.KQ",
-   "name": "웹젠",
-   "market": "KOSDAQ",
-   "rank": 17,
-   "score": 58.81,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 12310.0,
-   "ret": {
-    "1": -1.31
-   },
-   "excess": {
-    "1": -2.09
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "003490",
-   "ticker": "003490.KS",
-   "name": "대한항공",
-   "market": "KOSPI",
-   "rank": 16,
-   "score": 59.22,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 31650.0,
-   "ret": {
-    "1": -6.41
-   },
-   "excess": {
-    "1": -6.7
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
+   "slot": "2100",
    "code": "001040",
    "ticker": "001040.KS",
    "name": "CJ",
    "market": "KOSPI",
-   "rank": 15,
-   "score": 59.34,
+   "rank": 10,
+   "score": 59.94,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
+   "entry_rule": "next_open",
    "entry": 120400.0,
    "ret": {
     "1": 3.57
    },
    "excess": {
-    "1": 3.28
+    "1": 4.28
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "195940",
-   "ticker": "195940.KQ",
-   "name": "HK이노엔",
-   "market": "KOSDAQ",
-   "rank": 14,
-   "score": 59.49,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 39350.0,
-   "ret": {
-    "1": 0.26
-   },
-   "excess": {
-    "1": -0.52
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "092730",
-   "ticker": "092730.KQ",
-   "name": "네오팜",
-   "market": "KOSDAQ",
-   "rank": 13,
-   "score": 60.16,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 23350.0,
-   "ret": {
-    "1": -0.25
-   },
-   "excess": {
-    "1": -1.03
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "051900",
-   "ticker": "051900.KS",
-   "name": "LG생활건강",
-   "market": "KOSPI",
-   "rank": 12,
-   "score": 60.16,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 260000.0,
-   "ret": {
-    "1": -4.29
-   },
-   "excess": {
-    "1": -4.58
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
+   "slot": "2100",
    "code": "128940",
    "ticker": "128940.KS",
    "name": "한미약품",
    "market": "KOSPI",
    "rank": 11,
-   "score": 60.35,
+   "score": 59.92,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
+   "entry_rule": "next_open",
    "entry": 466500.0,
    "ret": {
     "1": -0.25
    },
    "excess": {
-    "1": -0.54
+    "1": 0.46
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "068270",
-   "ticker": "068270.KS",
-   "name": "셀트리온",
+   "slot": "2100",
+   "code": "003230",
+   "ticker": "003230.KS",
+   "name": "삼양식품",
    "market": "KOSPI",
-   "rank": 10,
-   "score": 60.55,
+   "rank": 12,
+   "score": 59.83,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 217000.0,
+   "entry_rule": "next_open",
+   "entry": 1296000.0,
    "ret": {
-    "1": -0.94
+    "1": 1.22
    },
    "excess": {
-    "1": -1.23
+    "1": 1.93
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "카카오게임즈",
+   "slot": "2100",
+   "code": "00104K",
+   "ticker": "00104K.KS",
+   "name": "CJ4우(전환)",
+   "market": "KOSPI",
+   "rank": 13,
+   "score": 59.83,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 119300.0,
+   "ret": {
+    "1": 4.19
+   },
+   "excess": {
+    "1": 4.91
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "003490",
+   "ticker": "003490.KS",
+   "name": "대한항공",
+   "market": "KOSPI",
+   "rank": 14,
+   "score": 59.65,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 31200.0,
+   "ret": {
+    "1": -5.06
+   },
+   "excess": {
+    "1": -4.34
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "069080",
+   "ticker": "069080.KQ",
+   "name": "웹젠",
    "market": "KOSDAQ",
-   "rank": 9,
-   "score": 61.19,
+   "rank": 15,
+   "score": 59.63,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 12300.0,
+   "ret": {
+    "1": -1.23
+   },
+   "excess": {
+    "1": -0.81
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "086450",
+   "ticker": "086450.KQ",
+   "name": "동국제약",
+   "market": "KOSDAQ",
+   "rank": 16,
+   "score": 59.51,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 25100.0,
+   "ret": {
+    "1": 1.54
+   },
+   "excess": {
+    "1": 1.96
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "376300",
+   "ticker": "376300.KQ",
+   "name": "디어유",
+   "market": "KOSDAQ",
+   "rank": 17,
+   "score": 59.28,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 13410.0,
+   "entry_rule": "next_open",
+   "entry": 21600.0,
    "ret": {
-    "1": -3.01
+    "1": 0.21
    },
    "excess": {
-    "1": -3.79
+    "1": 0.63
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
+   "slot": "2100",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "글로벌텍스프리",
+   "market": "KOSDAQ",
+   "rank": 18,
+   "score": 59.1,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 6020.0,
+   "ret": {
+    "1": 7.06
+   },
+   "excess": {
+    "1": 7.48
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
    "code": "035760",
    "ticker": "035760.KQ",
    "name": "CJ ENM",
    "market": "KOSDAQ",
-   "rank": 8,
-   "score": 61.44,
+   "rank": 19,
+   "score": 59.06,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 53400.0,
+   "entry_rule": "next_open",
+   "entry": 53200.0,
    "ret": {
-    "1": 2.0
+    "1": 2.38
+   },
+   "excess": {
+    "1": 2.8
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "195940",
+   "ticker": "195940.KQ",
+   "name": "HK이노엔",
+   "market": "KOSDAQ",
+   "rank": 20,
+   "score": 58.95,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 39350.0,
+   "ret": {
+    "1": 0.26
+   },
+   "excess": {
+    "1": 0.68
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "068760",
+   "ticker": "068760.KQ",
+   "name": "셀트리온제약",
+   "market": "KOSDAQ",
+   "rank": 21,
+   "score": 58.58,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 41000.0,
+   "ret": {
+    "1": -0.37
+   },
+   "excess": {
+    "1": 0.05
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "디케이티",
+   "market": "KOSDAQ",
+   "rank": 22,
+   "score": 58.52,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 33250.0,
+   "ret": {
+    "1": 0.8
    },
    "excess": {
     "1": 1.22
@@ -2952,96 +2222,192 @@
   },
   {
    "date": "2026-11-25",
-   "slot": "1200",
-   "code": "086450",
-   "ticker": "086450.KQ",
-   "name": "동국제약",
+   "slot": "2100",
+   "code": "018290",
+   "ticker": "018290.KQ",
+   "name": "브이티",
    "market": "KOSDAQ",
-   "rank": 7,
-   "score": 61.79,
+   "rank": 23,
+   "score": 58.25,
    "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 25400.0,
-   "ret": {
-    "1": 0.34
-   },
-   "excess": {
-    "1": -0.44
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "041510",
-   "ticker": "041510.KQ",
-   "name": "에스엠",
-   "market": "KOSDAQ",
-   "rank": 6,
-   "score": 61.86,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 96300.0,
-   "ret": {
-    "1": 3.8
-   },
-   "excess": {
-    "1": 3.02
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "아모레퍼시픽홀딩스",
-   "market": "KOSPI",
-   "rank": 5,
-   "score": 62.82,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 29350.0,
-   "ret": {
-    "1": -1.27
-   },
-   "excess": {
-    "1": -1.56
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-25",
-   "slot": "1200",
-   "code": "097950",
-   "ticker": "097950.KS",
-   "name": "CJ제일제당",
-   "market": "KOSPI",
-   "rank": 4,
-   "score": 62.92,
-   "grade": "B",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 191100.0,
+   "entry_rule": "next_open",
+   "entry": 11310.0,
    "ret": {
-    "1": -0.83
+    "1": 4.08
    },
    "excess": {
-    "1": -1.12
+    "1": 4.5
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "457190",
+   "ticker": "457190.KS",
+   "name": "이수스페셜티케미컬",
+   "market": "KOSPI",
+   "rank": 24,
+   "score": 58.16,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 80200.0,
+   "ret": {
+    "1": -0.87
+   },
+   "excess": {
+    "1": -0.16
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "111770",
+   "ticker": "111770.KS",
+   "name": "영원무역",
+   "market": "KOSPI",
+   "rank": 25,
+   "score": 57.35,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 71500.0,
+   "ret": {
+    "1": -0.11
+   },
+   "excess": {
+    "1": 0.6
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "211050",
+   "ticker": "211050.KQ",
+   "name": "인카금융서비스",
+   "market": "KOSDAQ",
+   "rank": 26,
+   "score": 57.24,
+   "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 10600.0,
+   "ret": {
+    "1": -2.89
+   },
+   "excess": {
+    "1": -2.47
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "251970",
+   "ticker": "251970.KQ",
+   "name": "펌텍코리아",
+   "market": "KOSDAQ",
+   "rank": 27,
+   "score": 57.2,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 79900.0,
+   "ret": {
+    "1": -1.0
+   },
+   "excess": {
+    "1": -0.58
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "271560",
+   "ticker": "271560.KS",
+   "name": "오리온",
+   "market": "KOSPI",
+   "rank": 28,
+   "score": 57.06,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 120000.0,
+   "ret": {
+    "1": -0.92
+   },
+   "excess": {
+    "1": -0.2
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "092730",
+   "ticker": "092730.KQ",
+   "name": "네오팜",
+   "market": "KOSDAQ",
+   "rank": 29,
+   "score": 56.95,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 23300.0,
+   "ret": {
+    "1": -0.04
+   },
+   "excess": {
+    "1": 0.38
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "2100",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "와이지엔터테인먼트",
+   "market": "KOSDAQ",
+   "rank": 30,
+   "score": 56.82,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 46950.0,
+   "ret": {
+    "1": 3.16
+   },
+   "excess": {
+    "1": 3.58
    },
    "outcome": "pending",
    "mae": null
@@ -3049,23 +2415,23 @@
   {
    "date": "2026-11-25",
    "slot": "1200",
-   "code": "323410",
-   "ticker": "323410.KS",
-   "name": "카카오뱅크",
+   "code": "090435",
+   "ticker": "090435.KS",
+   "name": "아모레퍼시픽우",
    "market": "KOSPI",
-   "rank": 3,
-   "score": 63.83,
+   "rank": 1,
+   "score": 65.55,
    "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 22000.0,
+   "entry": 41200.0,
    "ret": {
-    "1": 0.2
+    "1": -1.46
    },
    "excess": {
-    "1": -0.09
+    "1": -1.76
    },
    "outcome": "pending",
    "mae": null
@@ -3097,671 +2463,671 @@
   {
    "date": "2026-11-25",
    "slot": "1200",
-   "code": "090435",
-   "ticker": "090435.KS",
-   "name": "아모레퍼시픽우",
+   "code": "323410",
+   "ticker": "323410.KS",
+   "name": "카카오뱅크",
    "market": "KOSPI",
-   "rank": 1,
-   "score": 65.55,
+   "rank": 3,
+   "score": 63.83,
    "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 41200.0,
+   "entry": 22000.0,
    "ret": {
-    "1": -1.46
-   },
-   "excess": {
-    "1": -1.76
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "048410",
-   "ticker": "048410.KQ",
-   "name": "현대바이오",
-   "market": "KOSDAQ",
-   "rank": 30,
-   "score": 51.7,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 6350.0,
-   "ret": {
-    "1": -4.34
-   },
-   "excess": {
-    "1": -3.8
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "056080",
-   "ticker": "056080.KQ",
-   "name": "유진로봇",
-   "market": "KOSDAQ",
-   "rank": 29,
-   "score": 51.72,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 9290.0,
-   "ret": {
-    "1": -4.45
-   },
-   "excess": {
-    "1": -3.9
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "012750",
-   "ticker": "012750.KS",
-   "name": "에스원",
-   "market": "KOSPI",
-   "rank": 28,
-   "score": 51.73,
-   "grade": "D",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 101900.0,
-   "ret": {
-    "1": 1.42
-   },
-   "excess": {
-    "1": 3.74
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "086790",
-   "ticker": "086790.KS",
-   "name": "하나금융지주",
-   "market": "KOSPI",
-   "rank": 27,
-   "score": 52.12,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 123200.0,
-   "ret": {
-    "1": -2.12
-   },
-   "excess": {
     "1": 0.2
    },
+   "excess": {
+    "1": -0.09
+   },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "012330",
-   "ticker": "012330.KS",
-   "name": "현대모비스",
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "097950",
+   "ticker": "097950.KS",
+   "name": "CJ제일제당",
    "market": "KOSPI",
-   "rank": 26,
-   "score": 52.17,
-   "grade": "D",
+   "rank": 4,
+   "score": 62.92,
+   "grade": "B",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 347500.0,
+   "entry_rule": "same_close",
+   "entry": 191100.0,
    "ret": {
-    "1": 0.33
+    "1": -0.83
    },
    "excess": {
-    "1": 2.64
+    "1": -1.12
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "053800",
-   "ticker": "053800.KQ",
-   "name": "안랩",
-   "market": "KOSDAQ",
-   "rank": 25,
-   "score": 53.04,
-   "grade": "D",
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "아모레퍼시픽홀딩스",
+   "market": "KOSPI",
+   "rank": 5,
+   "score": 62.82,
+   "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 125600.0,
+   "entry_rule": "same_close",
+   "entry": 29350.0,
    "ret": {
-    "1": 25.47
+    "1": -1.27
    },
    "excess": {
-    "1": 26.01
+    "1": -1.56
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "211050",
-   "ticker": "211050.KQ",
-   "name": "인카금융서비스",
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "041510",
+   "ticker": "041510.KQ",
+   "name": "에스엠",
    "market": "KOSDAQ",
-   "rank": 24,
-   "score": 53.47,
-   "grade": "D",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 10500.0,
-   "ret": {
-    "1": 1.18
-   },
-   "excess": {
-    "1": 1.72
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "161890",
-   "ticker": "161890.KS",
-   "name": "한국콜마",
-   "market": "KOSPI",
-   "rank": 23,
-   "score": 53.53,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 121700.0,
-   "ret": {
-    "1": 5.17
-   },
-   "excess": {
-    "1": 7.49
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "053610",
-   "ticker": "053610.KQ",
-   "name": "프로텍",
-   "market": "KOSDAQ",
-   "rank": 22,
-   "score": 53.8,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 65200.0,
-   "ret": {
-    "1": -3.01
-   },
-   "excess": {
-    "1": -2.47
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "032500",
-   "ticker": "032500.KQ",
-   "name": "케이엠더블유",
-   "market": "KOSDAQ",
-   "rank": 21,
-   "score": 53.93,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 19500.0,
-   "ret": {
-    "1": -3.28
-   },
-   "excess": {
-    "1": -2.73
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "031330",
-   "ticker": "031330.KQ",
-   "name": "에스에이엠티",
-   "market": "KOSDAQ",
-   "rank": 20,
-   "score": 54.05,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 7040.0,
-   "ret": {
-    "1": -2.1
-   },
-   "excess": {
-    "1": -1.55
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "카카오게임즈",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 54.17,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 12330.0,
-   "ret": {
-    "1": 8.51
-   },
-   "excess": {
-    "1": 9.05
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "011200",
-   "ticker": "011200.KS",
-   "name": "HMM",
-   "market": "KOSPI",
-   "rank": 18,
-   "score": 54.34,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 21950.0,
-   "ret": {
-    "1": 0.66
-   },
-   "excess": {
-    "1": 2.98
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "377300",
-   "ticker": "377300.KS",
-   "name": "카카오페이",
-   "market": "KOSPI",
-   "rank": 17,
-   "score": 54.57,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 34250.0,
-   "ret": {
-    "1": 1.79
-   },
-   "excess": {
-    "1": 4.11
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "035900",
-   "ticker": "035900.KQ",
-   "name": "JYP Ent.",
-   "market": "KOSDAQ",
-   "rank": 16,
-   "score": 55.21,
-   "grade": "C",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 46150.0,
-   "ret": {
-    "1": 0.62
-   },
-   "excess": {
-    "1": 1.16
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "340570",
-   "ticker": "340570.KQ",
-   "name": "티앤엘",
-   "market": "KOSDAQ",
-   "rank": 15,
-   "score": 55.69,
+   "rank": 6,
+   "score": 61.86,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 27750.0,
+   "entry_rule": "same_close",
+   "entry": 96300.0,
    "ret": {
-    "1": 0.47
+    "1": 3.8
    },
    "excess": {
-    "1": 1.02
+    "1": 3.02
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "376300",
-   "ticker": "376300.KQ",
-   "name": "디어유",
-   "market": "KOSDAQ",
-   "rank": 14,
-   "score": 56.04,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 21000.0,
-   "ret": {
-    "1": 3.08
-   },
-   "excess": {
-    "1": 3.63
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "035760",
-   "ticker": "035760.KQ",
-   "name": "CJ ENM",
-   "market": "KOSDAQ",
-   "rank": 13,
-   "score": 56.45,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 49300.0,
-   "ret": {
-    "1": 8.07
-   },
-   "excess": {
-    "1": 8.61
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
+   "date": "2026-11-25",
+   "slot": "1200",
    "code": "086450",
    "ticker": "086450.KQ",
    "name": "동국제약",
    "market": "KOSDAQ",
-   "rank": 12,
-   "score": 56.72,
+   "rank": 7,
+   "score": 61.79,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 25400.0,
+   "ret": {
+    "1": 0.34
+   },
+   "excess": {
+    "1": -0.44
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "035760",
+   "ticker": "035760.KQ",
+   "name": "CJ ENM",
+   "market": "KOSDAQ",
+   "rank": 8,
+   "score": 61.44,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 25400.0,
+   "entry_rule": "same_close",
+   "entry": 53400.0,
+   "ret": {
+    "1": 2.0
+   },
+   "excess": {
+    "1": 1.22
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "카카오게임즈",
+   "market": "KOSDAQ",
+   "rank": 9,
+   "score": 61.19,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 13410.0,
+   "ret": {
+    "1": -3.01
+   },
+   "excess": {
+    "1": -3.79
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "068270",
+   "ticker": "068270.KS",
+   "name": "셀트리온",
+   "market": "KOSPI",
+   "rank": 10,
+   "score": 60.55,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 217000.0,
+   "ret": {
+    "1": -0.94
+   },
+   "excess": {
+    "1": -1.23
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "128940",
+   "ticker": "128940.KS",
+   "name": "한미약품",
+   "market": "KOSPI",
+   "rank": 11,
+   "score": 60.35,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 466500.0,
    "ret": {
     "1": -0.25
    },
    "excess": {
-    "1": 0.3
+    "1": -0.54
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "디케이티",
-   "market": "KOSDAQ",
-   "rank": 11,
-   "score": 57.03,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 32300.0,
-   "ret": {
-    "1": 1.3
-   },
-   "excess": {
-    "1": 1.84
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "글로벌텍스프리",
-   "market": "KOSDAQ",
-   "rank": 10,
-   "score": 57.51,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 5900.0,
-   "ret": {
-    "1": 1.61
-   },
-   "excess": {
-    "1": 2.16
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "457190",
-   "ticker": "457190.KS",
-   "name": "이수스페셜티케미컬",
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "051900",
+   "ticker": "051900.KS",
+   "name": "LG생활건강",
    "market": "KOSPI",
-   "rank": 9,
-   "score": 57.52,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 80000.0,
-   "ret": {
-    "1": -2.13
-   },
-   "excess": {
-    "1": 0.19
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "125490",
-   "ticker": "125490.KQ",
-   "name": "한라캐스트",
-   "market": "KOSDAQ",
-   "rank": 8,
-   "score": 57.53,
+   "rank": 12,
+   "score": 60.16,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 11210.0,
+   "entry_rule": "same_close",
+   "entry": 260000.0,
    "ret": {
-    "1": 1.09
+    "1": -4.29
    },
    "excess": {
-    "1": 1.63
+    "1": -4.58
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "와이지엔터테인먼트",
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "092730",
+   "ticker": "092730.KQ",
+   "name": "네오팜",
    "market": "KOSDAQ",
-   "rank": 7,
-   "score": 58.02,
+   "rank": 13,
+   "score": 60.16,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 47450.0,
+   "entry_rule": "same_close",
+   "entry": 23350.0,
    "ret": {
-    "1": -1.09
+    "1": -0.25
    },
    "excess": {
-    "1": -0.55
+    "1": -1.03
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "232140",
-   "ticker": "232140.KQ",
-   "name": "와이씨",
-   "market": "KOSDAQ",
-   "rank": 6,
-   "score": 58.07,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 15700.0,
-   "ret": {
-    "1": -6.87
-   },
-   "excess": {
-    "1": -6.33
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
-   "code": "010170",
-   "ticker": "010170.KQ",
-   "name": "대한광통신",
-   "market": "KOSDAQ",
-   "rank": 5,
-   "score": 58.22,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 14230.0,
-   "ret": {
-    "1": -6.15
-   },
-   "excess": {
-    "1": -5.61
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "2100",
+   "date": "2026-11-25",
+   "slot": "1200",
    "code": "195940",
    "ticker": "195940.KQ",
    "name": "HK이노엔",
    "market": "KOSDAQ",
-   "rank": 4,
-   "score": 58.5,
+   "rank": 14,
+   "score": 59.49,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 38850.0,
+   "entry_rule": "same_close",
+   "entry": 39350.0,
    "ret": {
-    "1": 1.04
+    "1": 0.26
    },
    "excess": {
-    "1": 1.58
+    "1": -0.52
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "001040",
+   "ticker": "001040.KS",
+   "name": "CJ",
+   "market": "KOSPI",
+   "rank": 15,
+   "score": 59.34,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 120400.0,
+   "ret": {
+    "1": 3.57
+   },
+   "excess": {
+    "1": 3.28
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "003490",
+   "ticker": "003490.KS",
+   "name": "대한항공",
+   "market": "KOSPI",
+   "rank": 16,
+   "score": 59.22,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 31650.0,
+   "ret": {
+    "1": -6.41
+   },
+   "excess": {
+    "1": -6.7
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "069080",
+   "ticker": "069080.KQ",
+   "name": "웹젠",
+   "market": "KOSDAQ",
+   "rank": 17,
+   "score": 58.81,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 12310.0,
+   "ret": {
+    "1": -1.31
+   },
+   "excess": {
+    "1": -2.09
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "글로벌텍스프리",
+   "market": "KOSDAQ",
+   "rank": 18,
+   "score": 58.49,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 6010.0,
+   "ret": {
+    "1": 7.24
+   },
+   "excess": {
+    "1": 6.46
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "00104K",
+   "ticker": "00104K.KS",
+   "name": "CJ4우(전환)",
+   "market": "KOSPI",
+   "rank": 19,
+   "score": 58.41,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 120300.0,
+   "ret": {
+    "1": 3.32
+   },
+   "excess": {
+    "1": 3.03
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "003230",
+   "ticker": "003230.KS",
+   "name": "삼양식품",
+   "market": "KOSPI",
+   "rank": 20,
+   "score": 58.29,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 1309000.0,
+   "ret": {
+    "1": 0.21
+   },
+   "excess": {
+    "1": -0.08
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "376300",
+   "ticker": "376300.KQ",
+   "name": "디어유",
+   "market": "KOSDAQ",
+   "rank": 21,
+   "score": 58.02,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 21700.0,
+   "ret": {
+    "1": -0.25
+   },
+   "excess": {
+    "1": -1.03
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "259960",
+   "ticker": "259960.KS",
+   "name": "크래프톤",
+   "market": "KOSPI",
+   "rank": 22,
+   "score": 57.84,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 205500.0,
+   "ret": {
+    "1": 1.94
+   },
+   "excess": {
+    "1": 1.65
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "251970",
+   "ticker": "251970.KQ",
+   "name": "펌텍코리아",
+   "market": "KOSDAQ",
+   "rank": 23,
+   "score": 57.41,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 79800.0,
+   "ret": {
+    "1": -0.88
+   },
+   "excess": {
+    "1": -1.66
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "340570",
+   "ticker": "340570.KQ",
+   "name": "티앤엘",
+   "market": "KOSDAQ",
+   "rank": 24,
+   "score": 57.12,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 27950.0,
+   "ret": {
+    "1": 4.76
+   },
+   "excess": {
+    "1": 3.98
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "145020",
+   "ticker": "145020.KQ",
+   "name": "휴젤",
+   "market": "KOSDAQ",
+   "rank": 25,
+   "score": 57.06,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 211500.0,
+   "ret": {
+    "1": -1.9
+   },
+   "excess": {
+    "1": -2.68
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "271560",
+   "ticker": "271560.KS",
+   "name": "오리온",
+   "market": "KOSPI",
+   "rank": 26,
+   "score": 57.06,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 119900.0,
+   "ret": {
+    "1": -0.83
+   },
+   "excess": {
+    "1": -1.13
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "125490",
+   "ticker": "125490.KQ",
+   "name": "한라캐스트",
+   "market": "KOSDAQ",
+   "rank": 27,
+   "score": 56.99,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 11360.0,
+   "ret": {
+    "1": 0.63
+   },
+   "excess": {
+    "1": -0.15
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "디케이티",
+   "market": "KOSDAQ",
+   "rank": 28,
+   "score": 56.84,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 32800.0,
+   "ret": {
+    "1": 2.19
+   },
+   "excess": {
+    "1": 1.41
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "000100",
+   "ticker": "000100.KS",
+   "name": "유한양행",
+   "market": "KOSPI",
+   "rank": 29,
+   "score": 56.51,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 83500.0,
+   "ret": {
+    "1": -1.93
+   },
+   "excess": {
+    "1": -2.22
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-25",
+   "slot": "1200",
+   "code": "099320",
+   "ticker": "099320.KQ",
+   "name": "쎄트렉아이",
+   "market": "KOSDAQ",
+   "rank": 30,
+   "score": 56.48,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 67300.0,
+   "ret": {
+    "1": 7.18
+   },
+   "excess": {
+    "1": 6.4
    },
    "outcome": "pending",
    "mae": null
@@ -3769,23 +3135,23 @@
   {
    "date": "2026-11-24",
    "slot": "2100",
-   "code": "090435",
-   "ticker": "090435.KS",
-   "name": "아모레퍼시픽우",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "아모레퍼시픽홀딩스",
    "market": "KOSPI",
-   "rank": 3,
-   "score": 60.35,
+   "rank": 1,
+   "score": 61.52,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "next_open",
-   "entry": 39500.0,
+   "entry": 28150.0,
    "ret": {
-    "1": 4.05
+    "1": 4.01
    },
    "excess": {
-    "1": 6.37
+    "1": 6.33
    },
    "outcome": "pending",
    "mae": null
@@ -3817,476 +3183,524 @@
   {
    "date": "2026-11-24",
    "slot": "2100",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "아모레퍼시픽홀딩스",
+   "code": "090435",
+   "ticker": "090435.KS",
+   "name": "아모레퍼시픽우",
    "market": "KOSPI",
-   "rank": 1,
-   "score": 61.52,
+   "rank": 3,
+   "score": 60.35,
    "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "next_open",
-   "entry": 28150.0,
+   "entry": 39500.0,
    "ret": {
-    "1": 4.01
+    "1": 4.05
    },
    "excess": {
-    "1": 6.33
+    "1": 6.37
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "281820",
-   "ticker": "281820.KS",
-   "name": "KCTECH",
-   "market": "KOSPI",
-   "rank": 30,
-   "score": 51.3,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 89000.0,
-   "ret": {
-    "1": -10.81
-   },
-   "excess": {
-    "1": -4.65
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "036710",
-   "ticker": "036710.KQ",
-   "name": "SIMMTECH HOLDINGS",
+   "slot": "2100",
+   "code": "195940",
+   "ticker": "195940.KQ",
+   "name": "HK이노엔",
    "market": "KOSDAQ",
-   "rank": 29,
-   "score": 51.33,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 6550.0,
-   "ret": {
-    "1": -11.7
-   },
-   "excess": {
-    "1": -9.41
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "319400",
-   "ticker": "319400.KQ",
-   "name": "HYUNDAI MOVEX",
-   "market": "KOSDAQ",
-   "rank": 28,
-   "score": 51.5,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 17270.0,
-   "ret": {
-    "1": -4.3
-   },
-   "excess": {
-    "1": -2.01
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "022100",
-   "ticker": "022100.KS",
-   "name": "POSCO DX",
-   "market": "KOSPI",
-   "rank": 27,
-   "score": 51.69,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 21400.0,
-   "ret": {
-    "1": -1.18
-   },
-   "excess": {
-    "1": 4.98
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "012750",
-   "ticker": "012750.KS",
-   "name": "S-1",
-   "market": "KOSPI",
-   "rank": 26,
-   "score": 52.37,
-   "grade": "D",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 101800.0,
-   "ret": {
-    "1": 1.52
-   },
-   "excess": {
-    "1": 7.68
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "376300",
-   "ticker": "376300.KQ",
-   "name": "DEARU",
-   "market": "KOSDAQ",
-   "rank": 25,
-   "score": 52.52,
-   "grade": "D",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 21400.0,
-   "ret": {
-    "1": 1.15
-   },
-   "excess": {
-    "1": 3.44
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "012330",
-   "ticker": "012330.KS",
-   "name": "Mobis",
-   "market": "KOSPI",
-   "rank": 24,
-   "score": 52.64,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 359000.0,
-   "ret": {
-    "1": -2.9
-   },
-   "excess": {
-    "1": 3.27
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "340570",
-   "ticker": "340570.KQ",
-   "name": "T&L",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 53.17,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 28000.0,
-   "ret": {
-    "1": -0.43
-   },
-   "excess": {
-    "1": 1.86
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "377300",
-   "ticker": "377300.KS",
-   "name": "kakaopay",
-   "market": "KOSPI",
-   "rank": 22,
-   "score": 54.15,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 34600.0,
-   "ret": {
-    "1": 0.76
-   },
-   "excess": {
-    "1": 6.92
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "024850",
-   "ticker": "024850.KQ",
-   "name": "HLB innoVation",
-   "market": "KOSDAQ",
-   "rank": 21,
-   "score": 54.21,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 14720.0,
-   "ret": {
-    "1": 1.52
-   },
-   "excess": {
-    "1": 3.81
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "032500",
-   "ticker": "032500.KQ",
-   "name": "KMW",
-   "market": "KOSDAQ",
-   "rank": 20,
-   "score": 54.28,
-   "grade": "D",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 20150.0,
-   "ret": {
-    "1": -6.4
-   },
-   "excess": {
-    "1": -4.12
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "211050",
-   "ticker": "211050.KQ",
-   "name": "Incar Financial Service",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 54.29,
-   "grade": "D",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 10430.0,
-   "ret": {
-    "1": 1.86
-   },
-   "excess": {
-    "1": 4.15
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "Kakao Games",
-   "market": "KOSDAQ",
-   "rank": 18,
-   "score": 54.55,
-   "grade": "D",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 12450.0,
-   "ret": {
-    "1": 7.46
-   },
-   "excess": {
-    "1": 9.75
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "053610",
-   "ticker": "053610.KQ",
-   "name": "PROTEC",
-   "market": "KOSDAQ",
-   "rank": 17,
-   "score": 55.05,
+   "rank": 4,
+   "score": 58.5,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 67500.0,
+   "entry_rule": "next_open",
+   "entry": 38850.0,
    "ret": {
-    "1": -6.32
+    "1": 1.04
    },
    "excess": {
-    "1": -4.04
+    "1": 1.58
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "053800",
-   "ticker": "053800.KQ",
-   "name": "AHNLAB",
+   "slot": "2100",
+   "code": "010170",
+   "ticker": "010170.KQ",
+   "name": "대한광통신",
    "market": "KOSDAQ",
-   "rank": 16,
-   "score": 55.5,
+   "rank": 5,
+   "score": 58.22,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 121500.0,
+   "entry_rule": "next_open",
+   "entry": 14230.0,
    "ret": {
-    "1": 29.71
+    "1": -6.15
    },
    "excess": {
-    "1": 32.0
+    "1": -5.61
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
+   "slot": "2100",
+   "code": "232140",
+   "ticker": "232140.KQ",
+   "name": "와이씨",
+   "market": "KOSDAQ",
+   "rank": 6,
+   "score": 58.07,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 15700.0,
+   "ret": {
+    "1": -6.87
+   },
+   "excess": {
+    "1": -6.33
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "와이지엔터테인먼트",
+   "market": "KOSDAQ",
+   "rank": 7,
+   "score": 58.02,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 47450.0,
+   "ret": {
+    "1": -1.09
+   },
+   "excess": {
+    "1": -0.55
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "125490",
+   "ticker": "125490.KQ",
+   "name": "한라캐스트",
+   "market": "KOSDAQ",
+   "rank": 8,
+   "score": 57.53,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 11210.0,
+   "ret": {
+    "1": 1.09
+   },
+   "excess": {
+    "1": 1.63
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "457190",
+   "ticker": "457190.KS",
+   "name": "이수스페셜티케미컬",
+   "market": "KOSPI",
+   "rank": 9,
+   "score": 57.52,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 80000.0,
+   "ret": {
+    "1": -2.13
+   },
+   "excess": {
+    "1": 0.19
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "글로벌텍스프리",
+   "market": "KOSDAQ",
+   "rank": 10,
+   "score": 57.51,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 5900.0,
+   "ret": {
+    "1": 1.61
+   },
+   "excess": {
+    "1": 2.16
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "디케이티",
+   "market": "KOSDAQ",
+   "rank": 11,
+   "score": 57.03,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 32300.0,
+   "ret": {
+    "1": 1.3
+   },
+   "excess": {
+    "1": 1.84
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
    "code": "086450",
    "ticker": "086450.KQ",
-   "name": "DongKook Pharm",
+   "name": "동국제약",
    "market": "KOSDAQ",
-   "rank": 15,
-   "score": 55.75,
+   "rank": 12,
+   "score": 56.72,
    "grade": "C",
-   "ma5_status": "5일선 아래",
+   "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
+   "entry_rule": "next_open",
    "entry": 25400.0,
    "ret": {
     "1": -0.25
    },
    "excess": {
-    "1": 2.04
+    "1": 0.3
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "041510",
-   "ticker": "041510.KQ",
-   "name": "SME",
+   "slot": "2100",
+   "code": "035760",
+   "ticker": "035760.KQ",
+   "name": "CJ ENM",
+   "market": "KOSDAQ",
+   "rank": 13,
+   "score": 56.45,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 49300.0,
+   "ret": {
+    "1": 8.07
+   },
+   "excess": {
+    "1": 8.61
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "376300",
+   "ticker": "376300.KQ",
+   "name": "디어유",
    "market": "KOSDAQ",
    "rank": 14,
-   "score": 55.9,
+   "score": 56.04,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 21000.0,
+   "ret": {
+    "1": 3.08
+   },
+   "excess": {
+    "1": 3.63
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "340570",
+   "ticker": "340570.KQ",
+   "name": "티앤엘",
+   "market": "KOSDAQ",
+   "rank": 15,
+   "score": 55.69,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 95900.0,
+   "entry_rule": "next_open",
+   "entry": 27750.0,
    "ret": {
-    "1": 0.17
+    "1": 0.47
    },
    "excess": {
-    "1": 2.46
+    "1": 1.02
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "457190",
-   "ticker": "457190.KS",
-   "name": "ISUSPECIALTYCHEMICAL",
-   "market": "KOSPI",
-   "rank": 13,
-   "score": 56.23,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 82200.0,
-   "ret": {
-    "1": -4.75
-   },
-   "excess": {
-    "1": 1.41
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
+   "slot": "2100",
    "code": "035900",
    "ticker": "035900.KQ",
    "name": "JYP Ent.",
    "market": "KOSDAQ",
-   "rank": 12,
-   "score": 56.66,
+   "rank": 16,
+   "score": 55.21,
    "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 46150.0,
+   "ret": {
+    "1": 0.62
+   },
+   "excess": {
+    "1": 1.16
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "377300",
+   "ticker": "377300.KS",
+   "name": "카카오페이",
+   "market": "KOSPI",
+   "rank": 17,
+   "score": 54.57,
+   "grade": "D",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 46700.0,
+   "entry_rule": "next_open",
+   "entry": 34250.0,
    "ret": {
-    "1": -0.57
+    "1": 1.79
+   },
+   "excess": {
+    "1": 4.11
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "011200",
+   "ticker": "011200.KS",
+   "name": "HMM",
+   "market": "KOSPI",
+   "rank": 18,
+   "score": 54.34,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 21950.0,
+   "ret": {
+    "1": 0.66
+   },
+   "excess": {
+    "1": 2.98
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "카카오게임즈",
+   "market": "KOSDAQ",
+   "rank": 19,
+   "score": 54.17,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 12330.0,
+   "ret": {
+    "1": 8.51
+   },
+   "excess": {
+    "1": 9.05
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "031330",
+   "ticker": "031330.KQ",
+   "name": "에스에이엠티",
+   "market": "KOSDAQ",
+   "rank": 20,
+   "score": 54.05,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 7040.0,
+   "ret": {
+    "1": -2.1
+   },
+   "excess": {
+    "1": -1.55
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "032500",
+   "ticker": "032500.KQ",
+   "name": "케이엠더블유",
+   "market": "KOSDAQ",
+   "rank": 21,
+   "score": 53.93,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 19500.0,
+   "ret": {
+    "1": -3.28
+   },
+   "excess": {
+    "1": -2.73
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "053610",
+   "ticker": "053610.KQ",
+   "name": "프로텍",
+   "market": "KOSDAQ",
+   "rank": 22,
+   "score": 53.8,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 65200.0,
+   "ret": {
+    "1": -3.01
+   },
+   "excess": {
+    "1": -2.47
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "161890",
+   "ticker": "161890.KS",
+   "name": "한국콜마",
+   "market": "KOSPI",
+   "rank": 23,
+   "score": 53.53,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 121700.0,
+   "ret": {
+    "1": 5.17
+   },
+   "excess": {
+    "1": 7.49
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "211050",
+   "ticker": "211050.KQ",
+   "name": "인카금융서비스",
+   "market": "KOSDAQ",
+   "rank": 24,
+   "score": 53.47,
+   "grade": "D",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 10500.0,
+   "ret": {
+    "1": 1.18
    },
    "excess": {
     "1": 1.72
@@ -4296,216 +3710,168 @@
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "010170",
-   "ticker": "010170.KQ",
-   "name": "TaihanFiberoptics",
+   "slot": "2100",
+   "code": "053800",
+   "ticker": "053800.KQ",
+   "name": "안랩",
    "market": "KOSDAQ",
-   "rank": 11,
-   "score": 56.83,
-   "grade": "C",
+   "rank": 25,
+   "score": 53.04,
+   "grade": "D",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 14860.0,
+   "entry_rule": "next_open",
+   "entry": 125600.0,
    "ret": {
-    "1": -10.14
+    "1": 25.47
    },
    "excess": {
-    "1": -7.85
+    "1": 26.01
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "Global Tax Free",
-   "market": "KOSDAQ",
-   "rank": 10,
-   "score": 57.01,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 5860.0,
-   "ret": {
-    "1": 2.31
-   },
-   "excess": {
-    "1": 4.6
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "232140",
-   "ticker": "232140.KQ",
-   "name": "YCC",
-   "market": "KOSDAQ",
-   "rank": 9,
-   "score": 57.31,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 16090.0,
-   "ret": {
-    "1": -9.14
-   },
-   "excess": {
-    "1": -6.85
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "090435",
-   "ticker": "090435.KS",
-   "name": "AMOREPACIFIC(1P)",
+   "slot": "2100",
+   "code": "012330",
+   "ticker": "012330.KS",
+   "name": "현대모비스",
    "market": "KOSPI",
-   "rank": 8,
-   "score": 57.84,
-   "grade": "C",
+   "rank": 26,
+   "score": 52.17,
+   "grade": "D",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 39500.0,
+   "entry_rule": "next_open",
+   "entry": 347500.0,
    "ret": {
-    "1": 4.05
+    "1": 0.33
    },
    "excess": {
-    "1": 10.22
+    "1": 2.64
    },
    "outcome": "pending",
    "mae": null
   },
   {
    "date": "2026-11-24",
-   "slot": "1200",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "AMOREPACIFIC Holdings",
+   "slot": "2100",
+   "code": "086790",
+   "ticker": "086790.KS",
+   "name": "하나금융지주",
    "market": "KOSPI",
-   "rank": 7,
-   "score": 57.92,
-   "grade": "C",
+   "rank": 27,
+   "score": 52.12,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 123200.0,
+   "ret": {
+    "1": -2.12
+   },
+   "excess": {
+    "1": 0.2
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "012750",
+   "ticker": "012750.KS",
+   "name": "에스원",
+   "market": "KOSPI",
+   "rank": 28,
+   "score": 51.73,
+   "grade": "D",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 101900.0,
+   "ret": {
+    "1": 1.42
+   },
+   "excess": {
+    "1": 3.74
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "056080",
+   "ticker": "056080.KQ",
+   "name": "유진로봇",
+   "market": "KOSDAQ",
+   "rank": 29,
+   "score": 51.72,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 9290.0,
+   "ret": {
+    "1": -4.45
+   },
+   "excess": {
+    "1": -3.9
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "2100",
+   "code": "048410",
+   "ticker": "048410.KQ",
+   "name": "현대바이오",
+   "market": "KOSDAQ",
+   "rank": 30,
+   "score": 51.7,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 6350.0,
+   "ret": {
+    "1": -4.34
+   },
+   "excess": {
+    "1": -3.8
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "030530",
+   "ticker": "030530.KQ",
+   "name": "WONIK HOLDINGS",
+   "market": "KOSDAQ",
+   "rank": 1,
+   "score": 62.75,
+   "grade": "B",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 28150.0,
+   "entry": 31350.0,
    "ret": {
-    "1": 4.01
+    "1": -11.41
    },
    "excess": {
-    "1": 10.18
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "DKT",
-   "market": "KOSDAQ",
-   "rank": 6,
-   "score": 58.06,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 33150.0,
-   "ret": {
-    "1": -1.31
-   },
-   "excess": {
-    "1": 0.98
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "195940",
-   "ticker": "195940.KQ",
-   "name": "HK inno.N",
-   "market": "KOSDAQ",
-   "rank": 5,
-   "score": 58.57,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 38900.0,
-   "ret": {
-    "1": 0.91
-   },
-   "excess": {
-    "1": 3.2
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "035760",
-   "ticker": "035760.KQ",
-   "name": "CJ ENM",
-   "market": "KOSDAQ",
-   "rank": 4,
-   "score": 58.58,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 49100.0,
-   "ret": {
-    "1": 8.51
-   },
-   "excess": {
-    "1": 10.8
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-24",
-   "slot": "1200",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "YG Entertainment",
-   "market": "KOSDAQ",
-   "rank": 3,
-   "score": 59.29,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "same_close",
-   "entry": 47400.0,
-   "ret": {
-    "1": -0.99
-   },
-   "excess": {
-    "1": 1.3
+    "1": -9.13
    },
    "outcome": "pending",
    "mae": null
@@ -4537,751 +3903,697 @@
   {
    "date": "2026-11-24",
    "slot": "1200",
-   "code": "030530",
-   "ticker": "030530.KQ",
-   "name": "WONIK HOLDINGS",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "YG Entertainment",
    "market": "KOSDAQ",
-   "rank": 1,
-   "score": 62.75,
-   "grade": "B",
-   "ma5_status": "상승전환",
+   "rank": 3,
+   "score": 59.29,
+   "grade": "C",
+   "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "same_close",
-   "entry": 31350.0,
+   "entry": 47400.0,
    "ret": {
-    "1": -11.41
+    "1": -0.99
    },
    "excess": {
-    "1": -9.13
+    "1": 1.3
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "277810",
-   "ticker": "277810.KQ",
-   "name": "Rainbow Robotics",
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "035760",
+   "ticker": "035760.KQ",
+   "name": "CJ ENM",
    "market": "KOSDAQ",
-   "rank": 30,
-   "score": 57.3,
+   "rank": 4,
+   "score": 58.58,
    "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 417000.0,
+   "entry_rule": "same_close",
+   "entry": 49100.0,
    "ret": {
-    "1": 12.94,
-    "3": 11.74
+    "1": 8.51
    },
    "excess": {
-    "1": 11.17,
-    "3": 11.53
+    "1": 10.8
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "161890",
-   "ticker": "161890.KS",
-   "name": "KOLMAR KOREA",
-   "market": "KOSPI",
-   "rank": 29,
-   "score": 57.35,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 114600.0,
-   "ret": {
-    "1": 5.68,
-    "3": 14.24
-   },
-   "excess": {
-    "1": 3.1,
-    "3": 17.7
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "192820",
-   "ticker": "192820.KS",
-   "name": "COSMAX",
-   "market": "KOSPI",
-   "rank": 28,
-   "score": 57.42,
-   "grade": "C",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 274500.0,
-   "ret": {
-    "1": 5.94,
-    "3": 22.34
-   },
-   "excess": {
-    "1": 3.36,
-    "3": 25.8
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "204620",
-   "ticker": "204620.KQ",
-   "name": "Global Tax Free",
-   "market": "KOSDAQ",
-   "rank": 27,
-   "score": 57.47,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 5820.0,
-   "ret": {
-    "1": 0.44,
-    "3": 10.75
-   },
-   "excess": {
-    "1": -1.33,
-    "3": 10.53
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "236200",
-   "ticker": "236200.KQ",
-   "name": "Suprema",
-   "market": "KOSDAQ",
-   "rank": 26,
-   "score": 57.76,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 54300.0,
-   "ret": {
-    "1": -4.49,
-    "3": -3.56
-   },
-   "excess": {
-    "1": -6.25,
-    "3": -3.78
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "145020",
-   "ticker": "145020.KQ",
-   "name": "Hugel",
-   "market": "KOSDAQ",
-   "rank": 25,
-   "score": 57.86,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 201500.0,
-   "ret": {
-    "1": 0.25,
-    "3": 2.98
-   },
-   "excess": {
-    "1": -1.52,
-    "3": 2.76
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "035900",
-   "ticker": "035900.KQ",
-   "name": "JYP Ent.",
-   "market": "KOSDAQ",
-   "rank": 24,
-   "score": 57.89,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 44150.0,
-   "ret": {
-    "1": 5.53,
-    "3": 10.06
-   },
-   "excess": {
-    "1": 3.76,
-    "3": 9.84
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "214450",
-   "ticker": "214450.KQ",
-   "name": "PharmaResearch",
-   "market": "KOSDAQ",
-   "rank": 23,
-   "score": 58.18,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 272000.0,
-   "ret": {
-    "1": -3.01,
-    "3": -0.8
-   },
-   "excess": {
-    "1": -4.78,
-    "3": -1.02
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "051900",
-   "ticker": "051900.KS",
-   "name": "LG H&H",
-   "market": "KOSPI",
-   "rank": 22,
-   "score": 58.2,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 242000.0,
-   "ret": {
-    "1": 3.06,
-    "3": 2.85
-   },
-   "excess": {
-    "1": 0.48,
-    "3": 6.31
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "032500",
-   "ticker": "032500.KQ",
-   "name": "KMW",
-   "market": "KOSDAQ",
-   "rank": 21,
-   "score": 58.86,
-   "grade": "C",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 19620.0,
-   "ret": {
-    "1": 2.45,
-    "3": 7.29
-   },
-   "excess": {
-    "1": 0.68,
-    "3": 7.08
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "099320",
-   "ticker": "099320.KQ",
-   "name": "SI",
-   "market": "KOSDAQ",
-   "rank": 20,
-   "score": 59.34,
-   "grade": "C",
-   "ma5_status": "상승전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 65700.0,
-   "ret": {
-    "1": 1.27,
-    "3": 9.8
-   },
-   "excess": {
-    "1": -0.5,
-    "3": 9.58
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "290550",
-   "ticker": "290550.KQ",
-   "name": "DKT",
-   "market": "KOSDAQ",
-   "rank": 19,
-   "score": 60.15,
-   "grade": "C",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 33900.0,
-   "ret": {
-    "1": -2.46,
-    "3": -1.13
-   },
-   "excess": {
-    "1": -4.23,
-    "3": -1.35
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "232140",
-   "ticker": "232140.KQ",
-   "name": "YCC",
-   "market": "KOSDAQ",
-   "rank": 18,
-   "score": 60.8,
-   "grade": "C",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 15630.0,
-   "ret": {
-    "1": 2.69,
-    "3": -11.57
-   },
-   "excess": {
-    "1": 0.92,
-    "3": -11.79
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "251970",
-   "ticker": "251970.KQ",
-   "name": "PUM-TECH KOREA",
-   "market": "KOSDAQ",
-   "rank": 17,
-   "score": 61.4,
-   "grade": "C",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 73000.0,
-   "ret": {
-    "1": 4.68,
-    "3": 8.38
-   },
-   "excess": {
-    "1": 2.91,
-    "3": 8.17
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "053610",
-   "ticker": "053610.KQ",
-   "name": "PROTEC",
-   "market": "KOSDAQ",
-   "rank": 16,
-   "score": 62.75,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 70300.0,
-   "ret": {
-    "1": -4.23,
-    "3": -10.35
-   },
-   "excess": {
-    "1": -6.0,
-    "3": -10.56
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "211050",
-   "ticker": "211050.KQ",
-   "name": "Incar Financial Service",
-   "market": "KOSDAQ",
-   "rank": 15,
-   "score": 63.04,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 10600.0,
-   "ret": {
-    "1": -1.85,
-    "3": -2.89
-   },
-   "excess": {
-    "1": -3.62,
-    "3": -3.11
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "340570",
-   "ticker": "340570.KQ",
-   "name": "T&L",
-   "market": "KOSDAQ",
-   "rank": 14,
-   "score": 63.12,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 27350.0,
-   "ret": {
-    "1": 2.13,
-    "3": 7.06
-   },
-   "excess": {
-    "1": 0.36,
-    "3": 6.85
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "007810",
-   "ticker": "007810.KS",
-   "name": "KorCirc",
-   "market": "KOSPI",
-   "rank": 13,
-   "score": 63.36,
-   "grade": "B",
-   "ma5_status": "5일선 아래",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 99900.0,
-   "ret": {
-    "1": -8.66,
-    "3": -26.08
-   },
-   "excess": {
-    "1": -11.24,
-    "3": -22.61
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
+   "date": "2026-11-24",
+   "slot": "1200",
    "code": "195940",
    "ticker": "195940.KQ",
    "name": "HK inno.N",
    "market": "KOSDAQ",
-   "rank": 12,
-   "score": 63.8,
-   "grade": "B",
+   "rank": 5,
+   "score": 58.57,
+   "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 38450.0,
+   "entry_rule": "same_close",
+   "entry": 38900.0,
    "ret": {
-    "1": 0.92,
-    "3": 2.61
+    "1": 0.91
    },
    "excess": {
-    "1": -0.85,
-    "3": 2.4
+    "1": 3.2
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "DKT",
+   "market": "KOSDAQ",
+   "rank": 6,
+   "score": 58.06,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 33150.0,
+   "ret": {
+    "1": -1.31
+   },
+   "excess": {
+    "1": 0.98
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "AMOREPACIFIC Holdings",
+   "market": "KOSPI",
+   "rank": 7,
+   "score": 57.92,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 28150.0,
+   "ret": {
+    "1": 4.01
+   },
+   "excess": {
+    "1": 10.18
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "090435",
+   "ticker": "090435.KS",
+   "name": "AMOREPACIFIC(1P)",
+   "market": "KOSPI",
+   "rank": 8,
+   "score": 57.84,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 39500.0,
+   "ret": {
+    "1": 4.05
+   },
+   "excess": {
+    "1": 10.22
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "232140",
+   "ticker": "232140.KQ",
+   "name": "YCC",
+   "market": "KOSDAQ",
+   "rank": 9,
+   "score": 57.31,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 16090.0,
+   "ret": {
+    "1": -9.14
+   },
+   "excess": {
+    "1": -6.85
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "Global Tax Free",
+   "market": "KOSDAQ",
+   "rank": 10,
+   "score": 57.01,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 5860.0,
+   "ret": {
+    "1": 2.31
+   },
+   "excess": {
+    "1": 4.6
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
    "code": "010170",
    "ticker": "010170.KQ",
    "name": "TaihanFiberoptics",
    "market": "KOSDAQ",
    "rank": 11,
-   "score": 63.86,
-   "grade": "B",
+   "score": 56.83,
+   "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 14930.0,
+   "entry_rule": "same_close",
+   "entry": 14860.0,
    "ret": {
-    "1": -0.72,
-    "3": -8.76
+    "1": -10.14
    },
    "excess": {
-    "1": -2.49,
-    "3": -8.97
+    "1": -7.85
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "108490",
-   "ticker": "108490.KQ",
-   "name": "ROBOTIS",
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "035900",
+   "ticker": "035900.KQ",
+   "name": "JYP Ent.",
    "market": "KOSDAQ",
-   "rank": 10,
-   "score": 63.99,
-   "grade": "B",
+   "rank": 12,
+   "score": 56.66,
+   "grade": "C",
    "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 260500.0,
+   "entry_rule": "same_close",
+   "entry": 46700.0,
    "ret": {
-    "1": 12.61,
-    "3": 7.43
+    "1": -0.57
    },
    "excess": {
-    "1": 10.84,
-    "3": 7.21
+    "1": 1.72
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "437730",
-   "ticker": "437730.KQ",
-   "name": "SAMHYUN",
-   "market": "KOSDAQ",
-   "rank": 9,
-   "score": 64.1,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 58000.0,
-   "ret": {
-    "1": 8.37,
-    "3": 3.37
-   },
-   "excess": {
-    "1": 6.6,
-    "3": 3.16
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "122870",
-   "ticker": "122870.KQ",
-   "name": "YG Entertainment",
-   "market": "KOSDAQ",
-   "rank": 8,
-   "score": 64.63,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 45000.0,
-   "ret": {
-    "1": 5.08,
-    "3": 7.64
-   },
-   "excess": {
-    "1": 3.32,
-    "3": 7.42
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "012750",
-   "ticker": "012750.KS",
-   "name": "S-1",
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "457190",
+   "ticker": "457190.KS",
+   "name": "ISUSPECIALTYCHEMICAL",
    "market": "KOSPI",
-   "rank": 7,
-   "score": 65.53,
-   "grade": "B",
-   "ma5_status": "하락전환",
+   "rank": 13,
+   "score": 56.23,
+   "grade": "C",
+   "ma5_status": "상승전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 101100.0,
+   "entry_rule": "same_close",
+   "entry": 82200.0,
    "ret": {
-    "1": 0.44,
-    "3": 0.94
+    "1": -4.75
    },
    "excess": {
-    "1": -2.14,
-    "3": 4.4
+    "1": 1.41
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "293490",
-   "ticker": "293490.KQ",
-   "name": "Kakao Games",
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "041510",
+   "ticker": "041510.KQ",
+   "name": "SME",
    "market": "KOSDAQ",
-   "rank": 6,
-   "score": 65.59,
-   "grade": "B",
+   "rank": 14,
+   "score": 55.9,
+   "grade": "C",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 12740.0,
+   "entry_rule": "same_close",
+   "entry": 95900.0,
    "ret": {
-    "1": -2.53,
-    "3": 2.1
+    "1": 0.17
    },
    "excess": {
-    "1": -4.29,
-    "3": 1.89
+    "1": 2.46
    },
    "outcome": "pending",
    "mae": null
   },
   {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "002790",
-   "ticker": "002790.KS",
-   "name": "AMOREPACIFIC Holdings",
-   "market": "KOSPI",
-   "rank": 5,
-   "score": 66.07,
-   "grade": "B",
-   "ma5_status": "하락전환",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 26900.0,
-   "ret": {
-    "1": 4.4,
-    "3": 7.74
-   },
-   "excess": {
-    "1": 1.82,
-    "3": 11.2
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
-   "code": "090430",
-   "ticker": "090430.KS",
-   "name": "AMOREPACIFIC",
-   "market": "KOSPI",
-   "rank": 4,
-   "score": 66.92,
-   "grade": "B",
-   "ma5_status": "5일선 위",
-   "nlp_score": null,
-   "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 134100.0,
-   "ret": {
-    "1": 4.0,
-    "3": 8.7
-   },
-   "excess": {
-    "1": 1.42,
-    "3": 12.16
-   },
-   "outcome": "pending",
-   "mae": null
-  },
-  {
-   "date": "2026-11-23",
-   "slot": "2100",
+   "date": "2026-11-24",
+   "slot": "1200",
    "code": "086450",
    "ticker": "086450.KQ",
    "name": "DongKook Pharm",
    "market": "KOSDAQ",
-   "rank": 3,
-   "score": 67.36,
-   "grade": "B",
+   "rank": 15,
+   "score": 55.75,
+   "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 25400.0,
+   "ret": {
+    "1": -0.25
+   },
+   "excess": {
+    "1": 2.04
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "053800",
+   "ticker": "053800.KQ",
+   "name": "AHNLAB",
+   "market": "KOSDAQ",
+   "rank": 16,
+   "score": 55.5,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 121500.0,
+   "ret": {
+    "1": 29.71
+   },
+   "excess": {
+    "1": 32.0
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "053610",
+   "ticker": "053610.KQ",
+   "name": "PROTEC",
+   "market": "KOSDAQ",
+   "rank": 17,
+   "score": 55.05,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 67500.0,
+   "ret": {
+    "1": -6.32
+   },
+   "excess": {
+    "1": -4.04
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "Kakao Games",
+   "market": "KOSDAQ",
+   "rank": 18,
+   "score": 54.55,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 12450.0,
+   "ret": {
+    "1": 7.46
+   },
+   "excess": {
+    "1": 9.75
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "211050",
+   "ticker": "211050.KQ",
+   "name": "Incar Financial Service",
+   "market": "KOSDAQ",
+   "rank": 19,
+   "score": 54.29,
+   "grade": "D",
    "ma5_status": "하락전환",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
-   "entry_rule": "next_open",
-   "entry": 24800.0,
+   "entry_rule": "same_close",
+   "entry": 10430.0,
    "ret": {
-    "1": 2.17,
-    "3": 2.77
+    "1": 1.86
    },
    "excess": {
-    "1": 0.4,
-    "3": 2.56
+    "1": 4.15
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "032500",
+   "ticker": "032500.KQ",
+   "name": "KMW",
+   "market": "KOSDAQ",
+   "rank": 20,
+   "score": 54.28,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 20150.0,
+   "ret": {
+    "1": -6.4
+   },
+   "excess": {
+    "1": -4.12
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "024850",
+   "ticker": "024850.KQ",
+   "name": "HLB innoVation",
+   "market": "KOSDAQ",
+   "rank": 21,
+   "score": 54.21,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 14720.0,
+   "ret": {
+    "1": 1.52
+   },
+   "excess": {
+    "1": 3.81
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "377300",
+   "ticker": "377300.KS",
+   "name": "kakaopay",
+   "market": "KOSPI",
+   "rank": 22,
+   "score": 54.15,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 34600.0,
+   "ret": {
+    "1": 0.76
+   },
+   "excess": {
+    "1": 6.92
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "340570",
+   "ticker": "340570.KQ",
+   "name": "T&L",
+   "market": "KOSDAQ",
+   "rank": 23,
+   "score": 53.17,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 28000.0,
+   "ret": {
+    "1": -0.43
+   },
+   "excess": {
+    "1": 1.86
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "012330",
+   "ticker": "012330.KS",
+   "name": "Mobis",
+   "market": "KOSPI",
+   "rank": 24,
+   "score": 52.64,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 359000.0,
+   "ret": {
+    "1": -2.9
+   },
+   "excess": {
+    "1": 3.27
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "376300",
+   "ticker": "376300.KQ",
+   "name": "DEARU",
+   "market": "KOSDAQ",
+   "rank": 25,
+   "score": 52.52,
+   "grade": "D",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 21400.0,
+   "ret": {
+    "1": 1.15
+   },
+   "excess": {
+    "1": 3.44
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "012750",
+   "ticker": "012750.KS",
+   "name": "S-1",
+   "market": "KOSPI",
+   "rank": 26,
+   "score": 52.37,
+   "grade": "D",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 101800.0,
+   "ret": {
+    "1": 1.52
+   },
+   "excess": {
+    "1": 7.68
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "022100",
+   "ticker": "022100.KS",
+   "name": "POSCO DX",
+   "market": "KOSPI",
+   "rank": 27,
+   "score": 51.69,
+   "grade": "D",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 21400.0,
+   "ret": {
+    "1": -1.18
+   },
+   "excess": {
+    "1": 4.98
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "319400",
+   "ticker": "319400.KQ",
+   "name": "HYUNDAI MOVEX",
+   "market": "KOSDAQ",
+   "rank": 28,
+   "score": 51.5,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 17270.0,
+   "ret": {
+    "1": -4.3
+   },
+   "excess": {
+    "1": -2.01
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "036710",
+   "ticker": "036710.KQ",
+   "name": "SIMMTECH HOLDINGS",
+   "market": "KOSDAQ",
+   "rank": 29,
+   "score": 51.33,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 6550.0,
+   "ret": {
+    "1": -11.7
+   },
+   "excess": {
+    "1": -9.41
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-24",
+   "slot": "1200",
+   "code": "281820",
+   "ticker": "281820.KS",
+   "name": "KCTECH",
+   "market": "KOSPI",
+   "rank": 30,
+   "score": 51.3,
+   "grade": "D",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "same_close",
+   "entry": 89000.0,
+   "ret": {
+    "1": -10.81
+   },
+   "excess": {
+    "1": -4.65
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "035760",
+   "ticker": "035760.KQ",
+   "name": "CJ ENM",
+   "market": "KOSDAQ",
+   "rank": 1,
+   "score": 68.3,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 49050.0,
+   "ret": {
+    "1": -0.15,
+    "3": 11.06
+   },
+   "excess": {
+    "1": -1.92,
+    "3": 10.85
    },
    "outcome": "pending",
    "mae": null
@@ -5315,25 +4627,727 @@
   {
    "date": "2026-11-23",
    "slot": "2100",
-   "code": "035760",
-   "ticker": "035760.KQ",
-   "name": "CJ ENM",
+   "code": "086450",
+   "ticker": "086450.KQ",
+   "name": "DongKook Pharm",
    "market": "KOSDAQ",
-   "rank": 1,
-   "score": 68.3,
+   "rank": 3,
+   "score": 67.36,
+   "grade": "B",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 24800.0,
+   "ret": {
+    "1": 2.17,
+    "3": 2.77
+   },
+   "excess": {
+    "1": 0.4,
+    "3": 2.56
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "090430",
+   "ticker": "090430.KS",
+   "name": "AMOREPACIFIC",
+   "market": "KOSPI",
+   "rank": 4,
+   "score": 66.92,
    "grade": "B",
    "ma5_status": "5일선 위",
    "nlp_score": null,
    "nlp_group": "데이터 없음",
    "entry_rule": "next_open",
-   "entry": 49050.0,
+   "entry": 134100.0,
    "ret": {
-    "1": -0.15,
-    "3": 11.06
+    "1": 4.0,
+    "3": 8.7
    },
    "excess": {
-    "1": -1.92,
-    "3": 10.85
+    "1": 1.42,
+    "3": 12.16
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "002790",
+   "ticker": "002790.KS",
+   "name": "AMOREPACIFIC Holdings",
+   "market": "KOSPI",
+   "rank": 5,
+   "score": 66.07,
+   "grade": "B",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 26900.0,
+   "ret": {
+    "1": 4.4,
+    "3": 7.74
+   },
+   "excess": {
+    "1": 1.82,
+    "3": 11.2
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "293490",
+   "ticker": "293490.KQ",
+   "name": "Kakao Games",
+   "market": "KOSDAQ",
+   "rank": 6,
+   "score": 65.59,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 12740.0,
+   "ret": {
+    "1": -2.53,
+    "3": 2.1
+   },
+   "excess": {
+    "1": -4.29,
+    "3": 1.89
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "012750",
+   "ticker": "012750.KS",
+   "name": "S-1",
+   "market": "KOSPI",
+   "rank": 7,
+   "score": 65.53,
+   "grade": "B",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 101100.0,
+   "ret": {
+    "1": 0.44,
+    "3": 0.94
+   },
+   "excess": {
+    "1": -2.14,
+    "3": 4.4
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "122870",
+   "ticker": "122870.KQ",
+   "name": "YG Entertainment",
+   "market": "KOSDAQ",
+   "rank": 8,
+   "score": 64.63,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 45000.0,
+   "ret": {
+    "1": 5.08,
+    "3": 7.64
+   },
+   "excess": {
+    "1": 3.32,
+    "3": 7.42
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "437730",
+   "ticker": "437730.KQ",
+   "name": "SAMHYUN",
+   "market": "KOSDAQ",
+   "rank": 9,
+   "score": 64.1,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 58000.0,
+   "ret": {
+    "1": 8.37,
+    "3": 3.37
+   },
+   "excess": {
+    "1": 6.6,
+    "3": 3.16
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "108490",
+   "ticker": "108490.KQ",
+   "name": "ROBOTIS",
+   "market": "KOSDAQ",
+   "rank": 10,
+   "score": 63.99,
+   "grade": "B",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 260500.0,
+   "ret": {
+    "1": 12.61,
+    "3": 7.43
+   },
+   "excess": {
+    "1": 10.84,
+    "3": 7.21
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "010170",
+   "ticker": "010170.KQ",
+   "name": "TaihanFiberoptics",
+   "market": "KOSDAQ",
+   "rank": 11,
+   "score": 63.86,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 14930.0,
+   "ret": {
+    "1": -0.72,
+    "3": -8.76
+   },
+   "excess": {
+    "1": -2.49,
+    "3": -8.97
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "195940",
+   "ticker": "195940.KQ",
+   "name": "HK inno.N",
+   "market": "KOSDAQ",
+   "rank": 12,
+   "score": 63.8,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 38450.0,
+   "ret": {
+    "1": 0.92,
+    "3": 2.61
+   },
+   "excess": {
+    "1": -0.85,
+    "3": 2.4
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "007810",
+   "ticker": "007810.KS",
+   "name": "KorCirc",
+   "market": "KOSPI",
+   "rank": 13,
+   "score": 63.36,
+   "grade": "B",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 99900.0,
+   "ret": {
+    "1": -8.66,
+    "3": -26.08
+   },
+   "excess": {
+    "1": -11.24,
+    "3": -22.61
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "340570",
+   "ticker": "340570.KQ",
+   "name": "T&L",
+   "market": "KOSDAQ",
+   "rank": 14,
+   "score": 63.12,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 27350.0,
+   "ret": {
+    "1": 2.13,
+    "3": 7.06
+   },
+   "excess": {
+    "1": 0.36,
+    "3": 6.85
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "211050",
+   "ticker": "211050.KQ",
+   "name": "Incar Financial Service",
+   "market": "KOSDAQ",
+   "rank": 15,
+   "score": 63.04,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 10600.0,
+   "ret": {
+    "1": -1.85,
+    "3": -2.89
+   },
+   "excess": {
+    "1": -3.62,
+    "3": -3.11
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "053610",
+   "ticker": "053610.KQ",
+   "name": "PROTEC",
+   "market": "KOSDAQ",
+   "rank": 16,
+   "score": 62.75,
+   "grade": "B",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 70300.0,
+   "ret": {
+    "1": -4.23,
+    "3": -10.35
+   },
+   "excess": {
+    "1": -6.0,
+    "3": -10.56
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "251970",
+   "ticker": "251970.KQ",
+   "name": "PUM-TECH KOREA",
+   "market": "KOSDAQ",
+   "rank": 17,
+   "score": 61.4,
+   "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 73000.0,
+   "ret": {
+    "1": 4.68,
+    "3": 8.38
+   },
+   "excess": {
+    "1": 2.91,
+    "3": 8.17
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "232140",
+   "ticker": "232140.KQ",
+   "name": "YCC",
+   "market": "KOSDAQ",
+   "rank": 18,
+   "score": 60.8,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 15630.0,
+   "ret": {
+    "1": 2.69,
+    "3": -11.57
+   },
+   "excess": {
+    "1": 0.92,
+    "3": -11.79
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "290550",
+   "ticker": "290550.KQ",
+   "name": "DKT",
+   "market": "KOSDAQ",
+   "rank": 19,
+   "score": 60.15,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 33900.0,
+   "ret": {
+    "1": -2.46,
+    "3": -1.13
+   },
+   "excess": {
+    "1": -4.23,
+    "3": -1.35
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "099320",
+   "ticker": "099320.KQ",
+   "name": "SI",
+   "market": "KOSDAQ",
+   "rank": 20,
+   "score": 59.34,
+   "grade": "C",
+   "ma5_status": "상승전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 65700.0,
+   "ret": {
+    "1": 1.27,
+    "3": 9.8
+   },
+   "excess": {
+    "1": -0.5,
+    "3": 9.58
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "032500",
+   "ticker": "032500.KQ",
+   "name": "KMW",
+   "market": "KOSDAQ",
+   "rank": 21,
+   "score": 58.86,
+   "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 19620.0,
+   "ret": {
+    "1": 2.45,
+    "3": 7.29
+   },
+   "excess": {
+    "1": 0.68,
+    "3": 7.08
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "051900",
+   "ticker": "051900.KS",
+   "name": "LG H&H",
+   "market": "KOSPI",
+   "rank": 22,
+   "score": 58.2,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 242000.0,
+   "ret": {
+    "1": 3.06,
+    "3": 2.85
+   },
+   "excess": {
+    "1": 0.48,
+    "3": 6.31
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "214450",
+   "ticker": "214450.KQ",
+   "name": "PharmaResearch",
+   "market": "KOSDAQ",
+   "rank": 23,
+   "score": 58.18,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 272000.0,
+   "ret": {
+    "1": -3.01,
+    "3": -0.8
+   },
+   "excess": {
+    "1": -4.78,
+    "3": -1.02
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "035900",
+   "ticker": "035900.KQ",
+   "name": "JYP Ent.",
+   "market": "KOSDAQ",
+   "rank": 24,
+   "score": 57.89,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 44150.0,
+   "ret": {
+    "1": 5.53,
+    "3": 10.06
+   },
+   "excess": {
+    "1": 3.76,
+    "3": 9.84
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "145020",
+   "ticker": "145020.KQ",
+   "name": "Hugel",
+   "market": "KOSDAQ",
+   "rank": 25,
+   "score": 57.86,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 201500.0,
+   "ret": {
+    "1": 0.25,
+    "3": 2.98
+   },
+   "excess": {
+    "1": -1.52,
+    "3": 2.76
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "236200",
+   "ticker": "236200.KQ",
+   "name": "Suprema",
+   "market": "KOSDAQ",
+   "rank": 26,
+   "score": 57.76,
+   "grade": "C",
+   "ma5_status": "하락전환",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 54300.0,
+   "ret": {
+    "1": -4.49,
+    "3": -3.56
+   },
+   "excess": {
+    "1": -6.25,
+    "3": -3.78
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "204620",
+   "ticker": "204620.KQ",
+   "name": "Global Tax Free",
+   "market": "KOSDAQ",
+   "rank": 27,
+   "score": 57.47,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 5820.0,
+   "ret": {
+    "1": 0.44,
+    "3": 10.75
+   },
+   "excess": {
+    "1": -1.33,
+    "3": 10.53
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "192820",
+   "ticker": "192820.KS",
+   "name": "COSMAX",
+   "market": "KOSPI",
+   "rank": 28,
+   "score": 57.42,
+   "grade": "C",
+   "ma5_status": "5일선 아래",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 274500.0,
+   "ret": {
+    "1": 5.94,
+    "3": 22.34
+   },
+   "excess": {
+    "1": 3.36,
+    "3": 25.8
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "161890",
+   "ticker": "161890.KS",
+   "name": "KOLMAR KOREA",
+   "market": "KOSPI",
+   "rank": 29,
+   "score": 57.35,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 114600.0,
+   "ret": {
+    "1": 5.68,
+    "3": 14.24
+   },
+   "excess": {
+    "1": 3.1,
+    "3": 17.7
+   },
+   "outcome": "pending",
+   "mae": null
+  },
+  {
+   "date": "2026-11-23",
+   "slot": "2100",
+   "code": "277810",
+   "ticker": "277810.KQ",
+   "name": "Rainbow Robotics",
+   "market": "KOSDAQ",
+   "rank": 30,
+   "score": 57.3,
+   "grade": "C",
+   "ma5_status": "5일선 위",
+   "nlp_score": null,
+   "nlp_group": "데이터 없음",
+   "entry_rule": "next_open",
+   "entry": 417000.0,
+   "ret": {
+    "1": 12.94,
+    "3": 11.74
+   },
+   "excess": {
+    "1": 11.17,
+    "3": 11.53
    },
    "outcome": "pending",
    "mae": null
