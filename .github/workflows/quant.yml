@@ -52,6 +52,12 @@ jobs:
           FORCE_RUN: ${{ github.event.inputs.force }}
         run: python nlp_collect.py
 
+      - name: Verify selection performance (실패해도 계속)
+        continue-on-error: true
+        env:
+          FORCE_RUN: ${{ github.event.inputs.force }}
+        run: python verify.py
+
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
