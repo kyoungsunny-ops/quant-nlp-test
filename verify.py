@@ -267,7 +267,34 @@ def per_signal(records):
     return out
 
 
-# ---------------- 5. 실행 ----------------
+# ---------------- 5. 가격 수집 점검 ----------------
+def check_prices(tickers, prices, latest_tickers, label):
+    """가격 수집 결과를 점검해 로그로 남기고 요약(dict)을 돌려준다.
+    - 수신 실패: 요청했는데 yfinance가 아무것도 주지 않은 종목
+    - 오래된 종목: 마지막 가격 날짜가 지수의 최신 거래일보다 앞선 종목 (거래정지·데이터 지연 가능)
+    - 오늘 종가 반영: 지수의 최신 날짜가 오늘(KST) 이상인지"""
+    missing = [t for t in tickers if t not in prices]
+    ref = max(prices[b].index[-1] for b in BENCH.values() if b in prices)
+    stale = [t for t in tickers if t in prices and prices[t].index[-1] < ref]
+    today_ok = ref.date() >= NOW.date()
+    latest_bad = [t for t in latest_tickers if t in missing or t in stale]
+
+    print(f'[가격 점검] 요청 {len(tickers)}개 중 수신 {len(tickers) - len(missing)}개, 실패 {len(missing)}개')
+    if missing:
+        print('  - 수신 실패:', ', '.join(label(t) for t in missing[:30]))
+    print(f'[가격 점검] 지수 기준 최신 거래일 {ref.date()} / 오늘({NOW.date()}) 종가 반영: {"예" if today_ok else "아니오 (지연 가능)"}')
+    if stale:
+        print(f'  - 최신 날짜 가격이 없는 종목 {len(stale)}개 (거래정지 또는 데이터 지연 가능):', ', '.join(label(t) for t in stale[:30]))
+    if latest_bad:
+        print('  - 가장 최근 선정 종목 중 최신 종가가 없는 종목:', ', '.join(label(t) for t in latest_bad))
+    else:
+        print('[가격 점검] 가장 최근 선정 종목은 모두 최신 종가까지 수신')
+    return {'requested': len(tickers), 'received': len(tickers) - len(missing), 'missing': missing[:30],
+            'stale_count': len(stale), 'stale': stale[:30], 'reference_date': str(ref.date()),
+            'today_close_ok': today_ok, 'latest_missing': latest_bad}
+
+
+# ---------------- 6. 실행 ----------------
 def main():
     if NOW.hour < 15 and not FORCE_RUN:
         print('[종료] 오후 3시 이전에는 당일 종가가 확정되지 않아 건너뜁니다 (강제 실행: FORCE_RUN=1)')
@@ -286,22 +313,36 @@ def main():
         print('[오류] 비교 지수 가격을 가져오지 못했습니다. 기존 verify.json을 유지합니다.')
         sys.exit(1)
 
-    records = []
+    names = {s['ticker']: s.get('name') for sig in signals for s in sig['stocks'] if s.get('ticker')}
+    label = lambda t: f'{t}({names.get(t, "")})'
+    latest_date = max(s['date'] for s in signals)
+    latest_tickers = sorted({s['ticker'] for sig in signals if sig['date'] == latest_date
+                             for s in sig['stocks'] if s.get('ticker')})
+    quality = check_prices(tickers, prices, latest_tickers, label)
+
+    records, total, no_price, no_date = [], 0, 0, 0
     for sig in signals:
         for stock in sig['stocks']:
+            total += 1
+            if stock.get('ticker') not in prices:
+                no_price += 1
+                continue
             rec = evaluate(sig, stock, prices)
-            if rec:
-                records.append(rec)
-    print(f'[검증] 평가한 기록 {len(records)}건 (가격 없는 종목 제외)')
+            if rec is None:                          # 가격은 있는데 선정일 가격이 없는 경우
+                no_date += 1
+                continue
+            records.append(rec)
+    quality.update({'total': total, 'evaluated': len(records), 'skipped_no_price': no_price, 'skipped_no_date': no_date})
+    print(f'[검증] 평가한 기록 {len(records)}건 / 전체 {total}건 (가격 없음 {no_price}건, 선정일 가격 없음 {no_date}건 제외)')
 
     records.sort(key=lambda r: (r['date'], r['slot'], -r['rank']), reverse=True)
-    shown = sorted(records[:RECORD_LIMIT], key=lambda r: (r['date'], r['slot'], r['rank']), reverse=True)
+    shown = records[:RECORD_LIMIT]               # 최신 선정부터, 같은 선정 안에서는 1위부터
     payload = {
         'meta': {'generated_at': NOW.strftime('%Y-%m-%d %H:%M'), 'n_signals': len(signals), 'n_records': len(records),
                  'first_date': min(s['date'] for s in signals), 'last_date': max(s['date'] for s in signals),
                  'horizons': list(HORIZONS), 'entry_rules': ENTRY_RULES, 'cost_pct': COST_PCT,
                  'window_days': WINDOW_DAYS, 'nlp_threshold': NLP_THRESHOLD, 'bench': BENCH,
-                 'records_shown': len(shown)},
+                 'records_shown': len(shown), 'data_quality': quality},
         'summary': summarize(records),
         'signals': per_signal(records),
         'records': shown,

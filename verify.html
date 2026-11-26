@@ -27,6 +27,8 @@ ul.rules{margin:6px 0 0;padding-left:18px}
 .hbar button{font:inherit;font-size:12.5px;padding:4px 12px;border:1px solid var(--line);background:transparent;color:var(--sub);border-radius:14px;cursor:pointer}
 .hbar button[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
 .hbar button:focus-visible{outline:2px solid var(--down)}
+.hbar button.empty{opacity:.45}
+.l{text-align:left}
 .scroll{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
@@ -55,6 +57,7 @@ var SOURCES = [
 ];
 var RECORD_SHOW = 100;     // 하단 표에 보여줄 기록 수
 var MIN_SIGNALS = 20;      // 이보다 신호가 적으면 "표본 적음" 경고
+var DEFAULT_MIN_N = 100;   // 처음 화면에서 고르는 평가 기간: 표본이 이만큼 이상인 가장 긴 기간
 
 var DATA = null, state = {h: 5};
 
@@ -68,11 +71,24 @@ function pct(v, d){          // 부호·색이 붙은 % (양수 빨강, 음수 �
 }
 function plain(v, suffix){ return v == null ? dash() : v + (suffix || ""); }
 function slotName(s){ return s === "1200" ? "12시" : "21시"; }
-function table(head, rows){
-  return '<div class="scroll"><table><thead><tr>' + head.map(function(h){ return "<th>" + h + "</th>"; }).join("") +
+function table(head, rows, left){
+  left = left || [];
+  return '<div class="scroll"><table><thead><tr>' + head.map(function(h, i){ return "<th" + (left.indexOf(i) >= 0 ? ' class="l"' : "") + ">" + h + "</th>"; }).join("") +
     "</tr></thead><tbody>" + rows.join("") + "</tbody></table></div>";
 }
-function tr(cells){ return "<tr>" + cells.map(function(c){ return "<td>" + c + "</td>"; }).join("") + "</tr>"; }
+function tr(cells, left){
+  left = left || [];
+  return "<tr>" + cells.map(function(c, i){ return "<td" + (left.indexOf(i) >= 0 ? ' class="l"' : "") + ">" + c + "</td>"; }).join("") + "</tr>";
+}
+
+function defaultHorizon(d){       // 표본이 충분한 가장 긴 기간, 없으면 표본이 있는 가장 짧은 기간
+  var st = d.summary.overall.stats, best = null;
+  d.meta.horizons.forEach(function(h){
+    var s = st[String(h)];
+    if (s && (best === null || s.n >= DEFAULT_MIN_N)) best = h;
+  });
+  return best === null ? d.meta.horizons[0] : best;
+}
 
 function loadJson(name){
   var i = 0;
@@ -91,6 +107,21 @@ function viewNotice(meta){
     (few ? "지금까지 선정 신호가 " + meta.n_signals + "회뿐이라 표본이 적습니다. 숫자는 참고만 하세요. " : "") +
     "같은 종목이 며칠씩 반복 선정되므로 표본은 서로 독립이 아니고, 시장이 오르는 시기와 내리는 시기에 결과가 크게 달라질 수 있습니다." +
     "</div>";
+}
+
+function viewQuality(meta){        // 가격 수집 점검 결과 (verify.py의 check_prices)
+  var q = meta.data_quality;
+  if (!q) return "";
+  var issues = [], failed = q.requested - q.received;
+  if (failed > 0) issues.push("가격 수신 실패 " + failed + "종목: " + q.missing.map(esc).join(", "));
+  if (!q.today_close_ok) issues.push("오늘 종가가 아직 반영되지 않았습니다 (지수 기준 최신 거래일 " + esc(q.reference_date) + ")");
+  if (q.latest_missing.length) issues.push("가장 최근 선정 종목 중 최신 종가가 없는 종목: " + q.latest_missing.map(esc).join(", "));
+  if (q.stale_count > 0) issues.push("최신 날짜 가격이 없는 종목 " + q.stale_count + "개 (거래정지 또는 데이터 지연 가능)");
+  if (q.skipped_no_price + q.skipped_no_date > 0) issues.push("계산에서 제외된 기록 " + (q.skipped_no_price + q.skipped_no_date) + "건 (전체 " + q.total + "건 중)");
+  var head = "가격 " + q.received + "/" + q.requested + "종목 수신 · 지수 기준 최신 거래일 " + esc(q.reference_date) + " · 평가 " + q.evaluated + "/" + q.total + "건";
+  if (!issues.length) return '<div class="panel"><h2>데이터 점검</h2><p class="sub" style="margin:0">정상 · ' + head + "</p></div>";
+  return '<div class="panel"><h2>데이터 점검</h2><p class="sub">' + head + '</p><ul class="rules" style="color:var(--warn)">' +
+    issues.map(function(t){ return "<li>" + t + "</li>"; }).join("") + "</ul></div>";
 }
 
 function viewAssumptions(meta){
@@ -123,10 +154,12 @@ function viewOverall(summary, meta){
   return '<div class="panel"><h2>전체 성과 (선정 후 N거래일)</h2>' + table(["구분"].concat(hs.map(function(h){ return h + "일"; })), rows) + empty + note + "</div>";
 }
 
-function viewHorizonBar(meta){
+function viewHorizonBar(meta, st){
   return '<div class="panel"><div class="hbar"><b>그룹 비교 · 평가 기간</b>' +
-    meta.horizons.map(function(h){ return '<button data-h="' + h + '" aria-pressed="' + (h === state.h) + '">' + h + "거래일</button>"; }).join("") +
-    '</div></div>';
+    meta.horizons.map(function(h){
+      return '<button data-h="' + h + '" class="' + (st[String(h)] ? "" : "empty") + '" aria-pressed="' + (h === state.h) + '">' + h + "거래일</button>";
+    }).join("") +
+    '</div><p class="sub" style="margin:8px 0 0">흐리게 표시된 기간은 아직 그만큼 지난 선정 기록이 없습니다.</p></div>';
 }
 
 function viewGroup(g){
@@ -144,38 +177,41 @@ function viewGroup(g){
 function viewSignals(list, meta){
   var rows = list.map(function(s){
     return tr([esc(s.date) + " " + slotName(s.slot), s.n].concat(meta.horizons.map(function(h){
-      return pct(s.ret[String(h)], 1) + ' <span class="sub">(' + (s.excess[String(h)] == null ? "-" : (s.excess[String(h)] > 0 ? "+" : "") + s.excess[String(h)].toFixed(1)) + ")</span>";
-    })));
+      var r = s.ret[String(h)], x = s.excess[String(h)];
+      if (r == null) return dash();
+      return pct(r, 1) + ' <span class="sub">(' + (x == null ? "-" : (x > 0 ? "+" : "") + x.toFixed(1)) + ")</span>";
+    })), [0]);
   });
   return '<div class="panel"><h2>신호별 평균 성과</h2><p class="sub">괄호는 지수 대비 초과수익입니다.</p>' +
-    table(["선정 시점", "종목"].concat(meta.horizons.map(function(h){ return h + "일"; })), rows) + "</div>";
+    table(["선정 시점", "종목"].concat(meta.horizons.map(function(h){ return h + "일"; })), rows, [0]) + "</div>";
 }
 
 function viewRecords(records){
   var h = String(state.h), label = {target: "목표 도달", stop: "손절 도달", none: "해당 없음", pending: "대기"};
   var rows = records.slice(0, RECORD_SHOW).map(function(r){
     return tr([esc(r.date) + " " + slotName(r.slot), r.rank, esc(r.name) + ' <span class="sub">' + esc(r.code) + "</span>",
-      esc(r.ma5_status), esc(r.nlp_group), pct(r.ret[h]), pct(r.excess[h]), label[r.outcome] || "-", r.mae == null ? dash() : pct(r.mae, 1)]);
+      esc(r.ma5_status), esc(r.nlp_group), pct(r.ret[h]), pct(r.excess[h]), label[r.outcome] || "-", r.mae == null ? dash() : pct(r.mae, 1)], [0, 2]);
   });
   return '<div class="panel"><h2>종목별 기록 (최근 ' + Math.min(RECORD_SHOW, records.length) + "건)</h2>" +
     '<p class="sub">수익률·지수 대비는 위에서 고른 ' + state.h + "거래일 기준이며, 아직 기간이 지나지 않았으면 -로 표시됩니다.</p>" +
-    table(["선정 시점", "순위", "종목", "5일선", "뉴스·공시", state.h + "일 수익률", "지수 대비", "목표·손절", "최대 하락"], rows) + "</div>";
+    table(["선정 시점", "순위", "종목", "5일선", "뉴스·공시", state.h + "일 수익률", "지수 대비", "목표·손절", "최대 하락"], rows, [0, 2]) + "</div>";
 }
 
 // ===== 전체 그리기 =====
 function render(){
   var d = DATA, m = d.meta;
   el("asof").textContent = "선정 기간 " + m.first_date + " ~ " + m.last_date + " · 신호 " + m.n_signals + "회 · 생성 " + m.generated_at + " (KST)";
-  var groups = d.summary.groups.map(viewGroup).join("");
-  var left = groups ? groups : "";
-  el("app").innerHTML = viewNotice(m) + viewAssumptions(m) + viewOverall(d.summary, m) + viewHorizonBar(m) +
+  var hasData = !!d.summary.overall.stats[String(state.h)];
+  var left = hasData ? d.summary.groups.map(viewGroup).join("")
+    : '<div class="panel" style="grid-column:1/-1"><h2>그룹 비교</h2><p class="sub">아직 ' + state.h + "거래일이 지난 선정 기록이 없어 비교할 수 없습니다. 흐리지 않은 다른 기간을 선택해 보세요.</p></div>";
+  el("app").innerHTML = viewNotice(m) + viewQuality(m) + viewAssumptions(m) + viewOverall(d.summary, m) + viewHorizonBar(m, d.summary.overall.stats) +
     '<div id="groups" class="cols">' + left + "</div>" + viewSignals(d.signals, m) + '<div id="records">' + viewRecords(d.records) + "</div>";
   document.querySelectorAll(".hbar button").forEach(function(b){
     b.addEventListener("click", function(){ state.h = +b.dataset.h; render(); });
   });
 }
 
-loadJson("verify.json").then(function(d){ DATA = d; render(); }).catch(function(e){
+loadJson("verify.json").then(function(d){ DATA = d; state.h = defaultHorizon(d); render(); }).catch(function(e){
   el("asof").textContent = "불러오기 실패";
   el("app").innerHTML = '<div class="err"><b>검증 데이터를 불러오지 못했습니다.</b><p class="sub">' + esc(e.message) + "</p>" +
     '<p class="sub">아직 data/verify.json이 없을 수 있습니다. Actions에서 21시 실행(또는 수동 실행) 후 생성됩니다. ' +
