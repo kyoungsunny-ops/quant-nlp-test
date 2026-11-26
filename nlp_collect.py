@@ -224,6 +224,21 @@ def build_stock(dart, news):
     return {'score': score, 'issues': tags[:4], 'news': news_out}
 
 
+def save_snapshot(payload, latest_meta):
+    """검증 페이지용: 선정 당시의 감성 점수를 날짜·시간대별로 보관 (점수·태그만 저장해 용량을 줄임)"""
+    date, slot = latest_meta.get('analysis_date'), latest_meta.get('slot')
+    if not date or not slot:
+        print('[스냅샷] latest.json에 analysis_date/slot이 없어 건너뜁니다')
+        return
+    os.makedirs('data/snapshots', exist_ok=True)
+    small = {'meta': payload['meta'],
+             'stocks': {c: {'score': v['score'], 'issues': v['issues']} for c, v in payload['stocks'].items()}}
+    path = f'data/snapshots/{date}_{slot}_nlp.json'
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(small, f, ensure_ascii=False)
+    print(f'[스냅샷] {path}')
+
+
 def main():
     if not os.path.exists(LATEST):
         print('[오류] data/latest.json 이 없습니다. 퀀트 단계를 먼저 실행하세요.')
@@ -266,6 +281,7 @@ def main():
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
     print(f'[저장] {OUT} ({len(out)}종목)')
+    save_snapshot(payload, d.get('meta', {}))
 
 
 if __name__ == '__main__':

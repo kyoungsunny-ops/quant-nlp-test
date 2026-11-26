@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>선정 종목 검증</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f5;--panel:#fff;--ink:#14202e;--sub:#5b6878;--line:#d9dfe7;--up:#d6342c;--down:#1f5fbf;--warn:#a85a00;--warn-bg:#fdeed8;--sel:#e4ecf8}
+@media (prefers-color-scheme:dark){:root{--bg:#0e141b;--panel:#161e28;--ink:#e6ebf1;--sub:#93a0b0;--line:#27323f;--up:#ff6b61;--down:#6ea2f0;--warn:#ffb04d;--warn-bg:#3a2a10;--sel:#1f2d42}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans KR",-apple-system,"Malgun Gothic",sans-serif;font-size:14px;line-height:1.55;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+header{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);background:var(--panel)}
+h1{font-size:17px;margin:0;font-weight:700}
+h2{font-size:15px;margin:0 0 10px}
+.meta{color:var(--sub);font-size:12.5px}
+.meta a{color:inherit;font-weight:600}
+main{max-width:1180px;margin:0 auto;padding:16px 20px 28px;display:flex;flex-direction:column;gap:16px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.warn{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:10px 14px;font-size:13px;font-weight:600}
+.sub{color:var(--sub);font-size:12.5px}
+.up{color:var(--up)}.down{color:var(--down)}
+ul.rules{margin:6px 0 0;padding-left:18px}
+.hbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.hbar button{font:inherit;font-size:12.5px;padding:4px 12px;border:1px solid var(--line);background:transparent;color:var(--sub);border-radius:14px;cursor:pointer}
+.hbar button[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.hbar button:focus-visible{outline:2px solid var(--down)}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--sub);font-weight:600;font-size:12.5px}
+tr:last-child td{border-bottom:0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.err{max-width:760px;margin:40px auto;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+footer{max-width:1180px;margin:0 auto;padding:0 20px 24px;color:var(--sub);font-size:12px}
+@media(max-width:900px){.cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>선정 종목 검증</h1>
+  <div class="meta"><a href="index.html">← 종목 순위</a> &nbsp;|&nbsp; <span id="asof">불러오는 중…</span></div>
+</header>
+<main id="app"></main>
+<footer>검증은 과거 선정 이력 기준이며 미래 수익을 보장하지 않습니다. 투자 권유가 아닌 참고용 정보입니다.</footer>
+
+<script>
+// ===== 설정 =====
+var SOURCES = [
+  "https://raw.githubusercontent.com/kyoungsunny-ops/quant-nlp-test/main/data/",
+  "data/"
+];
+var RECORD_SHOW = 100;     // 하단 표에 보여줄 기록 수
+var MIN_SIGNALS = 20;      // 이보다 신호가 적으면 "표본 적음" 경고
+
+var DATA = null, state = {h: 5};
+
+// ===== 작은 도우미 =====
+function el(id){ return document.getElementById(id); }
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function dash(){ return '<span class="sub">-</span>'; }
+function pct(v, d){          // 부호·색이 붙은 % (양수 빨강, 음수 파랑)
+  if (v == null) return dash();
+  return '<span class="' + (v > 0 ? "up" : v < 0 ? "down" : "") + '">' + (v > 0 ? "+" : "") + v.toFixed(d == null ? 2 : d) + '%</span>';
+}
+function plain(v, suffix){ return v == null ? dash() : v + (suffix || ""); }
+function slotName(s){ return s === "1200" ? "12시" : "21시"; }
+function table(head, rows){
+  return '<div class="scroll"><table><thead><tr>' + head.map(function(h){ return "<th>" + h + "</th>"; }).join("") +
+    "</tr></thead><tbody>" + rows.join("") + "</tbody></table></div>";
+}
+function tr(cells){ return "<tr>" + cells.map(function(c){ return "<td>" + c + "</td>"; }).join("") + "</tr>"; }
+
+function loadJson(name){
+  var i = 0;
+  function next(){
+    if (i >= SOURCES.length) return Promise.reject(new Error(name + " 을(를) 불러오지 못했습니다"));
+    var url = SOURCES[i++] + name + "?t=" + Date.now();
+    return fetch(url, {cache: "no-store"}).then(function(r){ if (!r.ok) throw 0; return r.json(); }).catch(next);
+  }
+  return next();
+}
+
+// ===== 화면 조각 =====
+function viewNotice(meta){
+  var few = meta.n_signals < MIN_SIGNALS;
+  return '<div class="warn">' +
+    (few ? "지금까지 선정 신호가 " + meta.n_signals + "회뿐이라 표본이 적습니다. 숫자는 참고만 하세요. " : "") +
+    "같은 종목이 며칠씩 반복 선정되므로 표본은 서로 독립이 아니고, 시장이 오르는 시기와 내리는 시기에 결과가 크게 달라질 수 있습니다." +
+    "</div>";
+}
+
+function viewAssumptions(meta){
+  var rule = {next_open: "다음 거래일 시가에 매수", same_close: "선정일 종가에 매수", signal: "선정 시점 가격에 매수"};
+  return '<div class="panel"><h2>검증 기준</h2><ul class="rules">' +
+    "<li>21시 선정: " + (rule[meta.entry_rules["2100"]] || "-") + " / 12시 선정: " + (rule[meta.entry_rules["1200"]] || "-") + "</li>" +
+    "<li>수익률 = 선정일 기준 N거래일 뒤 종가, 거래비용 " + meta.cost_pct + "% 차감</li>" +
+    "<li>지수 대비 = 같은 기간 코스피·코스닥(소속 시장) 수익률과의 차이</li>" +
+    "<li>목표가·손절가 도달 = 매수 후 " + meta.window_days + "거래일 안에 닿았는지 (같은 날 둘 다 닿으면 손절로 계산)</li>" +
+    "<li>뉴스·공시 구분 = 선정 당시 감성 점수 ±" + meta.nlp_threshold + " 기준 (저장이 시작된 날부터만 집계)</li>" +
+    "</ul></div>";
+}
+
+function viewOverall(summary, meta){
+  var st = summary.overall.stats, hs = meta.horizons;
+  var rows = [
+    ["평균 수익률",          function(s){ return pct(s.avg); }],
+    ["평균 지수 대비 초과수익", function(s){ return pct(s.avg_excess); }],
+    ["수익률 중앙값",        function(s){ return pct(s.median); }],
+    ["승률 (수익 > 0)",      function(s){ return plain(s.win, "%"); }],
+    ["지수를 이긴 비율",      function(s){ return plain(s.beat, "%"); }],
+    ["표본 수 (종목×신호)",   function(s){ return s.n; }]
+  ].map(function(r){
+    return tr([r[0]].concat(hs.map(function(h){ var s = st[String(h)]; return s ? r[1](s) : dash(); })));
+  });
+  var hit = summary.overall.hit;
+  var note = hit ? '<p class="sub">매수 후 ' + meta.window_days + "거래일 안에 목표가 도달 " + hit.target + "%, 손절가 도달 " + hit.stop + "% (표본 " + hit.n + "건)</p>" : "";
+  var empty = hs.every(function(h){ return !st[String(h)]; })
+    ? '<p class="sub">아직 N거래일이 지난 선정 기록이 없어 수익률 통계가 비어 있습니다. 며칠 뒤 채워집니다.</p>' : "";
+  return '<div class="panel"><h2>전체 성과 (선정 후 N거래일)</h2>' + table(["구분"].concat(hs.map(function(h){ return h + "일"; })), rows) + empty + note + "</div>";
+}
+
+function viewHorizonBar(meta){
+  return '<div class="panel"><div class="hbar"><b>그룹 비교 · 평가 기간</b>' +
+    meta.horizons.map(function(h){ return '<button data-h="' + h + '" aria-pressed="' + (h === state.h) + '">' + h + "거래일</button>"; }).join("") +
+    '</div></div>';
+}
+
+function viewGroup(g){
+  var h = String(state.h);
+  var rows = g.rows.map(function(r){
+    var s = r.stats[h], hit = r.hit;
+    return tr([esc(r.label), s ? s.n : dash(), s ? pct(s.avg) : dash(), s ? pct(s.avg_excess) : dash(),
+      s ? plain(s.win, "%") : dash(), s ? plain(s.beat, "%") : dash(),
+      hit ? hit.target + "%" : dash(), hit ? hit.stop + "%" : dash()]);
+  });
+  return '<div class="panel"><h2>' + esc(g.title) + "별</h2>" +
+    table(["구분", "표본", "평균 수익률", "지수 대비", "승률", "지수 이김", "목표 도달", "손절 도달"], rows) + "</div>";
+}
+
+function viewSignals(list, meta){
+  var rows = list.map(function(s){
+    return tr([esc(s.date) + " " + slotName(s.slot), s.n].concat(meta.horizons.map(function(h){
+      return pct(s.ret[String(h)], 1) + ' <span class="sub">(' + (s.excess[String(h)] == null ? "-" : (s.excess[String(h)] > 0 ? "+" : "") + s.excess[String(h)].toFixed(1)) + ")</span>";
+    })));
+  });
+  return '<div class="panel"><h2>신호별 평균 성과</h2><p class="sub">괄호는 지수 대비 초과수익입니다.</p>' +
+    table(["선정 시점", "종목"].concat(meta.horizons.map(function(h){ return h + "일"; })), rows) + "</div>";
+}
+
+function viewRecords(records){
+  var h = String(state.h), label = {target: "목표 도달", stop: "손절 도달", none: "해당 없음", pending: "대기"};
+  var rows = records.slice(0, RECORD_SHOW).map(function(r){
+    return tr([esc(r.date) + " " + slotName(r.slot), r.rank, esc(r.name) + ' <span class="sub">' + esc(r.code) + "</span>",
+      esc(r.ma5_status), esc(r.nlp_group), pct(r.ret[h]), pct(r.excess[h]), label[r.outcome] || "-", r.mae == null ? dash() : pct(r.mae, 1)]);
+  });
+  return '<div class="panel"><h2>종목별 기록 (최근 ' + Math.min(RECORD_SHOW, records.length) + "건)</h2>" +
+    '<p class="sub">수익률·지수 대비는 위에서 고른 ' + state.h + "거래일 기준이며, 아직 기간이 지나지 않았으면 -로 표시됩니다.</p>" +
+    table(["선정 시점", "순위", "종목", "5일선", "뉴스·공시", state.h + "일 수익률", "지수 대비", "목표·손절", "최대 하락"], rows) + "</div>";
+}
+
+// ===== 전체 그리기 =====
+function render(){
+  var d = DATA, m = d.meta;
+  el("asof").textContent = "선정 기간 " + m.first_date + " ~ " + m.last_date + " · 신호 " + m.n_signals + "회 · 생성 " + m.generated_at + " (KST)";
+  var groups = d.summary.groups.map(viewGroup).join("");
+  var left = groups ? groups : "";
+  el("app").innerHTML = viewNotice(m) + viewAssumptions(m) + viewOverall(d.summary, m) + viewHorizonBar(m) +
+    '<div id="groups" class="cols">' + left + "</div>" + viewSignals(d.signals, m) + '<div id="records">' + viewRecords(d.records) + "</div>";
+  document.querySelectorAll(".hbar button").forEach(function(b){
+    b.addEventListener("click", function(){ state.h = +b.dataset.h; render(); });
+  });
+}
+
+loadJson("verify.json").then(function(d){ DATA = d; render(); }).catch(function(e){
+  el("asof").textContent = "불러오기 실패";
+  el("app").innerHTML = '<div class="err"><b>검증 데이터를 불러오지 못했습니다.</b><p class="sub">' + esc(e.message) + "</p>" +
+    '<p class="sub">아직 data/verify.json이 없을 수 있습니다. Actions에서 21시 실행(또는 수동 실행) 후 생성됩니다. ' +
+    "저장소가 공개(Public)인지, 브랜치 이름이 main인지도 확인하세요.</p></div>";
+});
+</script>
+</body>
+</html>
